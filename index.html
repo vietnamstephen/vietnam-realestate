@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>越南房地产数据平台</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <!-- 侧边栏 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-logo">VN<span>RE</span></div>
+      <div class="brand-text">
+        <div class="brand-title" data-i18n="appTitle">越南房地产数据平台</div>
+        <div class="brand-sub" data-i18n="appSubtitle">Vietnam Real Estate Data Hub</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-group" data-i18n="">— 数据 —</div>
+      <a class="nav-link active" data-target="overview" href="#overview" id="nav-overview"><span data-i18n="nav.overview">房产经济指数</span></a>
+      <a class="nav-link" data-target="fx" href="#fx" id="nav-fx"><span data-i18n="nav.fx">汇率换算</span></a>
+      <a class="nav-link" data-target="macro" href="#macro" id="nav-macro"><span data-i18n="nav.macro">宏观 · GDP与收入</span></a>
+      <a class="nav-link" data-target="cities" href="#cities" id="nav-cities"><span data-i18n="nav.cities">城市对比</span></a>
+      <div class="nav-group">— 政策 —</div>
+      <a class="nav-link" data-target="policy" href="#policy" id="nav-policy"><span data-i18n="nav.policy">政策追踪</span></a>
+      <a class="nav-link" data-target="news" href="#news" id="nav-news"><span data-i18n="nav.news">动态风向</span></a>
+      <a class="nav-link" data-target="hot" href="#hot" id="nav-hot"><span data-i18n="nav.hot">热议话题</span></a>
+      <a class="nav-link" data-target="reform" href="#reform" id="nav-reform"><span data-i18n="nav.reform">改革十年</span></a>
+      <div class="nav-group">— 市场 —</div>
+      <a class="nav-link" data-target="districts" href="#districts" id="nav-districts"><span data-i18n="nav.districts">胡志明分区</span></a>
+      <a class="nav-link" data-target="price10" href="#price10" id="nav-price10"><span data-i18n="nav.price10">十年房价</span></a>
+      <a class="nav-link" data-target="segments" href="#segments" id="nav-segments"><span data-i18n="nav.segments">房产分档</span></a>
+      <a class="nav-link" data-target="fcompare" href="#fcompare" id="nav-fcompare"><span data-i18n="nav.fcompare">外籍购房对比</span></a>
+      <a class="nav-link" data-target="projects" href="#projects" id="nav-projects"><span data-i18n="nav.projects">楼盘数据库</span></a>
+      <a class="nav-link" data-target="launches" href="#launches" id="nav-launches"><span data-i18n="nav.launches">新盘速递</span></a>
+      <a class="nav-link" data-target="insight" href="#insight" id="nav-insight"><span data-i18n="nav.insight">市场洞察</span></a>
+      <a class="nav-link" data-target="quota" href="#quota" id="nav-quota"><span data-i18n="nav.quota">外籍配额查询</span></a>
+      <a class="nav-link" data-target="cases" href="#cases" id="nav-cases"><span data-i18n="nav.cases">烂尾案例库</span></a>
+      <div class="nav-group">— 工具与生活 —</div>
+      <a class="nav-link" data-target="map" href="#map" id="nav-map"><span data-i18n="nav.map">地图探索</span></a>
+      <a class="nav-link" data-target="banking" href="#banking" id="nav-banking"><span data-i18n="nav.banking">房贷银行</span></a>
+      <a class="nav-link" data-target="benefits" href="#benefits" id="nav-benefits"><span data-i18n="nav.benefits">外籍福利</span></a>
+      <a class="nav-link" data-target="ownership" href="#ownership" id="nav-ownership"><span data-i18n="nav.ownership">产权与风险</span></a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="meta-updated" id="meta-updated">更新于 —</div>
+      <div class="meta-asof" id="meta-asof"></div>
+    </div>
+  </aside>
+
+  <div class="layout">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="menu">☰</button>
+      <div class="topbar-title" data-i18n="appTitle">越南房地产数据平台</div>
+      <div class="cutoff" id="cutoff-text">数据截至 —</div>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="newsBtn" title="最新消息">📰</button>
+        <div class="lang-seg" id="langSeg" role="group" aria-label="language">
+          <button class="lang-opt" data-lang="zh">中文</button>
+          <button class="lang-opt" data-lang="en">English</button>
+          <button class="lang-opt" data-lang="vi">Tiếng Việt</button>
+        </div>
+        <button class="icon-btn" id="themeBtn" aria-label="theme"><span id="themeIcon">🌙</span></button>
+      </div>
+    </header>
+
+    <main class="main" id="main-scroll">
+      <!-- 01 指数 -->
+      <section class="section active" id="sec-overview">
+        <div class="hero">
+          <h1 data-i18n="overview.title">近 5+1 年越南房产经济指数</h1>
+          <p class="lead" data-i18n="overview.desc"></p>
+          <div class="hero-badges">
+            <span class="badge">🇻🇳 Vietnam</span><span class="badge">📊 2020–2026</span>
+            <button class="badge badge-btn" id="chip-drill" data-i18n="overview.chipDrill">🖱️ 点击图中年份钻取</button>
+            <button class="badge badge-btn" id="chip-lang" data-i18n="overview.chipLang">🌐 中英双语</button>
+          </div>
+        </div>
+        <div class="card"><div class="chart-box chart-tall"><canvas id="chart-index"></canvas></div></div>
+        <div class="card">
+          <h3 data-i18n="overview.waveTitle">房价季度波动（一手 vs 二手）</h3>
+          <div class="wave-meta" id="wave-meta"></div>
+          <div class="chart-box"><canvas id="chart-wave"></canvas></div>
+        </div>
+        <div class="card">
+          <h3 data-i18n="overview.insightTitle">核心洞察</h3>
+          <ul class="insight-list" id="overview-insights"></ul>
+          <h3 data-i18n="overview.sourceLinksTitle">支持数据链接</h3>
+          <div id="overview-links"></div>
+        </div>
+      </section>
+
+      <!-- 02 汇率 -->
+      <section class="section" id="sec-fx">
+        <h1 data-i18n="fx.title">越南盾汇率 · 兑人民币 / 美金</h1>
+        <p class="lead" data-i18n="fx.desc"></p>
+        <div class="grid-2">
+          <div class="card">
+            <h3 data-i18n="fx.trendChart">汇率波动</h3>
+            <div class="ccy-select">
+              <div class="ccy-item">
+                <label data-i18n="fx.baseCurrency">基准货币</label>
+                <select id="fx-base">
+                  <option value="USD">美金 USD</option>
+                  <option value="CNY">人民币 CNY</option>
+                  <option value="VND">越南盾 VND</option>
+                </select>
+              </div>
+              <div class="ccy-item">
+                <label data-i18n="fx.baseYear">基准年</label>
+                <select id="fx-baseline">
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                </select>
+              </div>
+            </div>
+            <div class="chart-box"><canvas id="chart-fx"></canvas></div>
+            <div class="fx-cross" id="fx-cross-note"></div>
+          </div>
+          <div class="card">
+            <h3 data-i18n="fx.converter">取现换算器</h3>
+            <div class="rates-now" id="fx-rates-now"></div>
+            <div class="conv-form">
+              <div class="conv-field"><label data-i18n="fx.amount">金额</label><input type="number" id="fx-amount" value="10000" min="0" /></div>
+              <div class="conv-field"><label data-i18n="fx.from">从</label>
+                <select id="fx-from"><option value="USD">USD</option><option value="CNY">CNY</option><option value="VND">VND</option></select></div>
+              <div class="conv-field"><label data-i18n="fx.to">兑换至</label>
+                <select id="fx-to"><option value="VND">VND</option><option value="CNY">CNY</option><option value="USD">USD</option></select></div>
+            </div>
+            <div class="conv-result">
+              <div class="conv-amount" id="fx-result">—</div>
+              <div class="conv-rate" id="fx-rate-line"></div>
+            </div>
+            <p class="note-text" id="fx-note"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 宏观 -->
+      <section class="section" id="sec-macro">
+        <h1 data-i18n="macro.title">GDP 与人均收入中位数分析</h1>
+        <p class="lead" data-i18n="macro.desc"></p>
+        <div class="ccy-select" style="margin-bottom:18px">
+          <div class="ccy-item">
+            <label data-i18n="macro.ccyLabel">显示货币（按当年汇率换算）</label>
+            <select id="macro-ccy">
+              <option value="USD">美金 USD</option>
+              <option value="VND">越南盾 VND</option>
+              <option value="CNY">人民币 CNY</option>
+            </select>
+          </div>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card"><div class="stat-label" data-i18n="macro.statGdp">GDP 总额</div><div class="stat-value" id="stat-gdp"></div></div>
+          <div class="stat-card"><div class="stat-label" data-i18n="macro.statGrowth">GDP 增速</div><div class="stat-value" id="stat-growth"></div></div>
+          <div class="stat-card"><div class="stat-label" data-i18n="macro.statIncome">人均收入</div><div class="stat-value" id="stat-income"></div></div>
+          <div class="stat-card"><div class="stat-label" data-i18n="macro.statWage">月均工资</div><div class="stat-value" id="stat-wage"></div></div>
+        </div>
+        <div class="grid-2">
+          <div class="card"><h3 data-i18n="macro.gdpChart">GDP 总量与增速</h3><div class="chart-box"><canvas id="chart-gdp"></canvas></div></div>
+          <div class="card"><h3 data-i18n="macro.incomeChart">人均月收入</h3><div class="chart-box"><canvas id="chart-income"></canvas></div></div>
+        </div>
+        <div class="grid-2">
+          <div class="card"><h3 data-i18n="macro.hcmcTitle">胡志明市 · 城市经济</h3><div class="city-stats" id="city-hcmc"></div></div>
+          <div class="card"><h3 data-i18n="macro.hanoiTitle">河内市 · 城市经济</h3><div class="city-stats" id="city-hanoi"></div></div>
+        </div>
+        <div class="card">
+          <h3>💡 Analysis</h3>
+          <ul class="insight-list" id="macro-notes"></ul>
+          <h3 data-i18n="macro.sourceLinksTitle">支持数据链接</h3>
+          <div id="macro-links"></div>
+        </div>
+      </section>
+
+      <!-- 04 城市 -->
+      <section class="section" id="sec-cities">
+        <h1 data-i18n="cities.title">胡志明 · 河内：6 年体量与价格对比</h1>
+        <p class="lead" data-i18n="cities.desc"></p>
+        <div class="card">
+          <h3 data-i18n="cities.milestoneTitle">2026 Q2 里程碑</h3>
+          <p class="note-text highlight" id="cities-milestone"></p>
+        </div>
+        <div class="card"><h3 data-i18n="cities.priceChart">一手均价对比</h3><div class="chart-box"><canvas id="chart-city-price"></canvas></div></div>
+        <div class="grid-2">
+          <div class="card"><h3 data-i18n="cities.supplyChart">新房供应量对比</h3><div class="chart-box"><canvas id="chart-city-supply"></canvas></div></div>
+          <div class="card"><h3 data-i18n="cities.shareChart">两城供应占比</h3><div class="chart-box"><canvas id="chart-city-share"></canvas></div></div>
+        </div>
+        <div class="card">
+          <h3>💡 Analysis</h3>
+          <ul class="insight-list" id="cities-notes"></ul>
+          <h3 data-i18n="cities.sourceLinksTitle">支持数据链接</h3>
+          <div id="cities-links"></div>
+        </div>
+      </section>
+
+      <!-- 05 政策 -->
+      <section class="section" id="sec-policy">
+        <h1 data-i18n="policy.title">政府文件 · 法规追踪</h1>
+        <p class="lead" data-i18n="policy.desc"></p>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="policy.date">发布</th><th data-i18n="policy.effective">生效</th><th data-i18n="policy.category">类型</th>
+                <th data-i18n="policy.titleCol">文件</th><th data-i18n="policy.keyPoint">核心要点</th><th data-i18n="policy.status">状态</th><th data-i18n="policy.official">官方链接</th>
+              </tr></thead>
+              <tbody id="policy-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 动态风向 -->
+      <section class="section" id="sec-news">
+        <h1 data-i18n="news.title">动态风向 · 市政与政策</h1>
+        <p class="lead" data-i18n="news.desc"></p>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th data-i18n="news.date">时间</th><th data-i18n="news.tag">标签</th><th data-i18n="news.content">事件</th><th data-i18n="news.src">来源</th></tr></thead>
+              <tbody id="news-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06b 热议话题 -->
+      <section class="section" id="sec-hot">
+        <h1 data-i18n="hot.title">热议话题 · 越南房产热搜榜</h1>
+        <p class="lead" data-i18n="hot.desc"></p>
+        <p class="note-text" id="hot-asof" style="margin:-6px 0 14px"></p>
+        <div class="hot-grid" id="hot-grid"></div>
+      </section>
+
+      <!-- 06c 改革十年 -->
+      <section class="section" id="sec-reform">
+        <h1 data-i18n="reform.title">改革十年 · 越南房地产制度轨迹</h1>
+        <p class="lead" data-i18n="reform.desc"></p>
+        <div class="card">
+          <div class="rf-span" id="reform-span"></div>
+          <div class="note-text" id="reform-note"></div>
+        </div>
+        <div class="rf-timeline" id="reform-timeline"></div>
+      </section>
+
+      <!-- 06d 十年房价追踪 -->
+      <section class="section" id="sec-price10">
+        <h1 data-i18n="price10.title">十年房价追踪 · 全国 / 胡志明 / 河内</h1>
+        <p class="lead" data-i18n="price10.desc"></p>
+        <div class="card chart-card">
+          <div class="chart-box" style="height:320px"><canvas id="chart-price10"></canvas></div>
+        </div>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table" id="price10-table">
+              <thead><tr>
+                <th data-i18n="price10.year">年份</th>
+                <th data-i18n="price10.fx">汇率 USD/VND</th>
+                <th data-i18n="price10.natVnd">全国 (百万盾/㎡)</th>
+                <th data-i18n="price10.natUsd">全国 (USD/㎡)</th>
+                <th data-i18n="price10.hcmc">胡志明 (USD/㎡)</th>
+                <th data-i18n="price10.hanoi">河内 (USD/㎡)</th>
+                <th data-i18n="price10.gap">河内/胡志明</th>
+              </tr></thead>
+              <tbody id="price10-body"></tbody>
+            </table>
+          </div>
+          <p class="note-text" id="price10-caliber" style="margin-top:12px"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="price10.insightTitle">十年三个拐点</h3>
+          <p class="note-text" id="price10-insight"></p>
+        </div>
+      </section>
+
+      <!-- 06e 房产分档 -->
+      <section class="section" id="sec-segments">
+        <h1 data-i18n="segments.title">房产分档 · 外籍高端 / 本地中产 / 保障房</h1>
+        <p class="lead" data-i18n="segments.desc"></p>
+        <div class="note-text" id="segments-note" style="margin:-6px 0 14px"></div>
+        <div class="seg-grid" id="seg-grid"></div>
+        <div class="card">
+          <h3 data-i18n="segments.affordTitle">负担比 · 本地白领买得起吗</h3>
+          <p class="note-text" id="seg-afford"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="segments.socialTitle">保障房政策链与供给</h3>
+          <p class="note-text" id="seg-social"></p>
+          <div class="src-note" id="seg-sources"></div>
+        </div>
+      </section>
+
+      <!-- 06f 外籍购房对比 + 时间波动轴 -->
+      <section class="section" id="sec-fcompare">
+        <h1 data-i18n="fcmp.title">外籍购房对比 · 越南（胡志明+河内）vs 中国</h1>
+        <p class="lead" data-i18n="fcmp.desc"></p>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="fcmp.dim">对比维度</th>
+                <th data-i18n="fcmp.vn">🇻🇳 越南（胡志明 + 河内）</th>
+                <th data-i18n="fcmp.cn">🇨🇳 中国内地</th>
+              </tr></thead>
+              <tbody id="fcmp-body"></tbody>
+            </table>
+          </div>
+          <p class="note-text" id="fcmp-verdict" style="margin-top:12px"></p>
+        </div>
+
+        <h2 class="sub-h" data-i18n="tl.title">时间波动轴 · 招商引资 × 汇率 × 政策 × 关税</h2>
+        <p class="lead" data-i18n="tl.desc"></p>
+        <div class="card chart-card">
+          <div class="chart-box" style="height:340px"><canvas id="chart-timeline"></canvas></div>
+        </div>
+        <div class="tl-years" id="tl-years"></div>
+        <div class="tl-detail" id="tl-detail"></div>
+        <div class="card">
+          <h3 data-i18n="tl.howTitle">四线联动读法</h3>
+          <p class="note-text" id="tl-note"></p>
+          <div class="src-note" id="tl-source"></div>
+        </div>
+      </section>
+
+      <!-- 07 分区 -->
+      <section class="section" id="sec-districts">
+        <h1 data-i18n="districts.title">胡志明分区年度新盘分析</h1>
+        <p class="lead" data-i18n="districts.desc"></p>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="districts.district">区域</th><th data-i18n="districts.project">楼盘</th><th data-i18n="districts.developer">开发商</th><th data-i18n="districts.year">开盘</th>
+                <th data-i18n="districts.price">开盘价区间</th><th data-i18n="districts.priceNow">当前二手价</th><th data-i18n="districts.area">面积</th><th data-i18n="districts.type">户型</th>
+                <th data-i18n="districts.housing">住宅性质</th><th data-i18n="districts.gas">煤气</th>
+                <th data-i18n="districts.foreign">外籍</th><th data-i18n="districts.launch">开盘时间</th><th data-i18n="districts.units">数量</th>
+                <th data-i18n="common.mgmtFee">管理费</th><th data-i18n="common.internet">宽带</th><th data-i18n="common.down">首付/付款</th>
+              </tr></thead>
+              <tbody id="districts-body"></tbody>
+            </table>
+          </div>
+          <p class="note-text" id="districts-note" style="margin-top:12px"></p>
+        </div>
+        <div class="card table-card">
+          <h3 data-i18n="districts.hanoiTitle">河内高端楼盘（参照胡志明分区）</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="districts.district">区域</th><th data-i18n="districts.project">楼盘</th><th data-i18n="districts.developer">开发商</th><th data-i18n="districts.year">开盘</th>
+                <th data-i18n="districts.price">开盘价区间</th><th data-i18n="districts.priceNow">当前二手价</th><th data-i18n="districts.area">面积</th><th data-i18n="districts.type">户型</th>
+                <th data-i18n="districts.foreign">外籍</th><th data-i18n="districts.launch">开盘时间</th><th data-i18n="districts.units">数量</th>
+                <th data-i18n="common.mgmtFee">管理费</th><th data-i18n="common.down">首付/付款</th>
+              </tr></thead>
+              <tbody id="hanoi-districts-body"></tbody>
+            </table>
+          </div>
+          <p class="note-text" id="hanoi-districts-note" style="margin-top:12px"></p>
+        </div>
+      </section>
+
+      <!-- 08 楼盘库 -->
+      <section class="section" id="sec-projects">
+        <h1 data-i18n="projects.title">主流楼盘历史数据</h1>
+        <p class="lead" data-i18n="projects.desc"></p>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="projects.name">楼盘</th><th data-i18n="projects.district">区域</th><th data-i18n="projects.segment">档次</th>
+                <th data-i18n="districts.housing">住宅性质</th><th data-i18n="districts.gas">煤气</th>
+                <th data-i18n="projects.trend">价格走势</th><th data-i18n="projects.quota">外籍配额</th>
+                <th data-i18n="common.mgmtFee">管理费</th><th data-i18n="common.internet">宽带</th>
+                <th data-i18n="common.down">首付/付款</th><th data-i18n="projects.yieldCol">租金回报</th>
+              </tr></thead>
+              <tbody id="projects-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="rent-head">
+            <h3 data-i18n="rents.title">租金行情（月租 · 按房型）</h3>
+            <div class="rent-ccy" id="rent-ccy">
+              <button class="ccy-btn active" data-ccy="VND">越南盾 VND</button>
+              <button class="ccy-btn" data-ccy="USD">美金 USD</button>
+              <button class="ccy-btn" data-ccy="CNY">人民币 CNY</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="rents.project">楼盘</th><th data-i18n="rents.city">城市</th><th data-i18n="rents.district">区域</th>
+                <th data-i18n="rents.unit">房型</th><th data-i18n="rents.area">面积</th><th data-i18n="rents.rent">月租金</th><th data-i18n="rents.yield">毛租金回报</th>
+              </tr></thead>
+              <tbody id="rents-body"></tbody>
+            </table>
+          </div>
+          <p class="note-text" id="rents-yield-basis" style="margin-top:12px"></p>
+          <p class="note-text" id="rents-note"></p>
+        </div>
+      </section>
+
+      <!-- 09 新盘 -->
+      <section class="section" id="sec-launches">
+        <h1 data-i18n="launches.title">新盘速递（2025 在售 + 2026 开盘）</h1>
+        <p class="lead" data-i18n="launches.desc"></p>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="launches.name">楼盘</th><th data-i18n="launches.developer">开发商</th><th data-i18n="launches.city">城市</th>
+                <th data-i18n="launches.launch">开盘</th><th data-i18n="launches.price">均价</th><th data-i18n="launches.priceNow">当前价格区间</th>
+                <th data-i18n="launches.unitsCol">户型</th><th data-i18n="launches.foreign">外籍</th><th data-i18n="launches.status">状态</th>
+                <th data-i18n="launches.mapCol">Google 地图</th><th data-i18n="launches.saleCol">发售入口</th>
+              </tr></thead>
+              <tbody id="launches-body"></tbody>
+            </table>
+          </div>
+          <p class="warn-note" id="launches-note"></p>
+        </div>
+        <div class="grid-2" id="launch-cards"></div>
+      </section>
+
+      <!-- 09b 市场洞察：河内归因 + 投资选项 -->
+      <section class="section" id="sec-insight">
+        <h1 data-i18n="insight.hanoiTitle">为什么河内涨得比胡志明猛？</h1>
+        <p class="lead" data-i18n="insight.hanoiSummary"></p>
+        <div class="warn-note" id="hanoi-caveat"></div>
+        <div class="grid-2" id="hanoi-factors"></div>
+        <div class="card"><h3 data-i18n="overview.sourceLinksTitle">支持数据链接</h3><div id="hanoi-links"></div></div>
+        <h1 data-i18n="insight.investTitle" style="margin-top:34px">若现在要投资越南房产</h1>
+        <p class="lead" data-i18n="insight.investNote"></p>
+        <div class="grid-2" id="invest-options"></div>
+        <div class="card"><h3 data-i18n="overview.sourceLinksTitle">支持数据链接</h3><div id="invest-links"></div></div>
+      </section>
+
+      <!-- 10 配额查询 -->
+      <section class="section" id="sec-quota">
+        <h1 data-i18n="quota.title">外籍配额查询</h1>
+        <p class="lead" data-i18n="quota.desc"></p>
+        <div class="card">
+          <input type="search" class="search-bar" id="quota-search" data-i18n-ph="quota.searchPh" placeholder="搜索楼盘名 / 区域" />
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="quota.project">楼盘</th><th data-i18n="quota.district">区域</th><th data-i18n="quota.total">总套数</th>
+                <th data-i18n="quota.sold">外籍已售(估)</th><th data-i18n="quota.remain">剩余(估)</th><th data-i18n="quota.pct">占用比</th>
+              </tr></thead>
+              <tbody id="quota-body"></tbody>
+            </table>
+          </div>
+          <p class="warn-note" id="quota-warn"></p>
+        </div>
+      </section>
+
+      <!-- 11 案例库 -->
+      <section class="section" id="sec-cases">
+        <h1 data-i18n="cases.title">烂尾楼 / 争议案例库</h1>
+        <p class="lead" data-i18n="cases.desc"></p>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="cases.name">案例</th><th data-i18n="cases.developer">开发商</th><th data-i18n="cases.year">时间</th><th data-i18n="cases.event">事件</th>
+                <th data-i18n="cases.status">现状</th><th data-i18n="cases.src">新闻源</th>
+              </tr></thead>
+              <tbody id="cases-body"></tbody>
+            </table>
+          </div>
+          <p class="warn-note" id="cases-note"></p>
+        </div>
+      </section>
+
+      <!-- 12 地图 -->
+      <section class="section" id="sec-map">
+        <h1 data-i18n="map.title">胡志明地图探索</h1>
+        <p class="lead" data-i18n="map.desc"></p>
+        <div class="card">
+          <div class="map-legend">
+            <label><input type="checkbox" data-layer="projects" checked> 🏢 <span data-i18n="nav.projects">楼盘</span></label>
+            <label><input type="checkbox" data-layer="metro" checked> 🚇 地铁</label>
+            <label><input type="checkbox" data-layer="hospitals"> 🏥 医院</label>
+            <label><input type="checkbox" data-layer="schools"> 🏫 学校</label>
+            <label><input type="checkbox" data-layer="malls"> 🛒 商业</label>
+            <label><input type="checkbox" data-layer="transport"> ✈️ 交通枢纽</label>
+          </div>
+          <div id="hcmc-map" class="map-container"></div>
+          <p class="src-note" id="map-metro-note"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="map.legendTitle">地铁线路图 · 线号 / 颜色 / 始发-终点</h3>
+          <div id="metro-legend" class="metro-legend"></div>
+        </div>
+        <div class="card table-card">
+          <h3 data-i18n="map.metroTable">地铁线路 · 开通/预计时间</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="map.line">线路</th><th data-i18n="map.status">状态</th><th data-i18n="map.since">开通/开工</th>
+                <th data-i18n="map.expect">预计通车</th><th data-i18n="map.length">长度</th><th data-i18n="map.stations">站点</th>
+              </tr></thead>
+              <tbody id="metro-body"></tbody>
+            </table>
+          </div>
+          <h3 data-i18n="map.sourceLinksTitle">支持数据链接</h3>
+          <div id="map-links"></div>
+        </div>
+      </section>
+
+      <!-- 13 银行 -->
+      <section class="section" id="sec-banking">
+        <h1 data-i18n="banking.title">房贷银行 · 利率与首付</h1>
+        <p class="lead" data-i18n="banking.desc"></p>
+        <div class="card table-card">
+          <h3 data-i18n="banking.local">本地银行（居民房贷 · 优惠期 vs 浮动）</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="banking.bank">银行</th><th data-i18n="banking.teaser">优惠期利率</th><th data-i18n="banking.teaserPeriod">优惠期时长</th><th data-i18n="banking.float">优惠期后浮动</th><th data-i18n="banking.ltv">LTV</th><th data-i18n="banking.tenor">期限</th><th data-i18n="banking.promo">居民优惠</th>
+              </tr></thead>
+              <tbody id="banking-local-body"></tbody>
+            </table>
+          </div>
+          <p class="note-text" id="banking-local-note" style="margin-top:12px"></p>
+        </div>
+        <div class="card table-card">
+          <h3 data-i18n="banking.depositVsLoanTitle">存款利率 vs 贷款利率（国家银行 2026-08 官方口径）</h3>
+          <div class="grid-2">
+            <div>
+              <h4 style="font-size:13.5px;margin:6px 0 10px" data-i18n="banking.depositRatesTitle">存款利率（按期限，%/年）</h4>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead><tr><th data-i18n="banking.term">期限</th><th data-i18n="banking.rate">利率</th></tr></thead>
+                  <tbody id="banking-deposit-rates-body"></tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <h4 style="font-size:13.5px;margin:6px 0 10px" data-i18n="banking.loanRatesTitle">贷款利率（%/年）</h4>
+              <div class="table-wrap">
+                <table class="data-table">
+                  <thead><tr><th data-i18n="banking.term">类别</th><th data-i18n="banking.rate">利率</th></tr></thead>
+                  <tbody id="banking-loan-rates-body"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <p class="warn-note" id="banking-deposit-vs-loan"></p>
+        </div>
+        <div class="card table-card">
+          <h3 data-i18n="banking.foreign">外资银行（外籍实况与条件）</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th data-i18n="banking.bank">银行</th><th data-i18n="banking.rate">外籍利率/资格</th><th data-i18n="banking.ltv">LTV</th><th data-i18n="banking.tenor">期限</th><th data-i18n="banking.cond">外籍贷款条件</th></tr></thead>
+              <tbody id="banking-foreign-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <h3 data-i18n="banking.downTitle">首付比例</h3>
+          <p id="banking-down" class="note-text"></p>
+          <h3 data-i18n="banking.foreignNoteTitle">外籍贷款要点</h3>
+          <p id="banking-foreign-note" class="note-text"></p>
+        </div>
+        <div class="card table-card">
+          <h3 data-i18n="banking.depositTitle">外籍定存利率参考</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th data-i18n="banking.depositBank">银行/产品</th><th data-i18n="banking.depositRate">利率</th><th data-i18n="banking.depositNote">备注</th></tr></thead>
+              <tbody id="deposit-body"></tbody>
+            </table>
+          </div>
+          <p class="warn-note" id="deposit-note"></p>
+          <p class="note-text" id="interest-tax-note"></p>
+          <h3 data-i18n="banking.sourceLinksTitle">支持数据链接</h3>
+          <div id="banking-links"></div>
+        </div>
+      </section>
+
+      <!-- 14 福利 -->
+      <section class="section" id="sec-benefits">
+        <h1 data-i18n="benefits.title">工作签证外籍人士可享福利</h1>
+        <p class="lead" data-i18n="benefits.desc"></p>
+        <div class="card table-card">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th data-i18n="benefits.item">福利项目</th><th data-i18n="benefits.available">是否可享</th><th data-i18n="benefits.note">说明</th></tr></thead>
+              <tbody id="benefits-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <h3 data-i18n="funds.title" id="funds-title"></h3>
+          <ol class="insight-list" id="funds-steps"></ol>
+        </div>
+        <div class="card">
+          <h3 data-i18n="benefits.pathsTitle">50 年产权 → 类永久权益</h3>
+          <ul class="insight-list" id="own-paths"></ul>
+        </div>
+      </section>
+
+      <!-- 15 产权 -->
+      <section class="section" id="sec-ownership">
+        <h1 data-i18n="ownership.title">外籍购房：产权 · 合同 · 风险</h1>
+        <p class="lead" data-i18n="ownership.desc"></p>
+        <div class="grid-2">
+          <div class="card"><h3 data-i18n="ownership.termTitle">使用权年限</h3><p class="note-text highlight" id="own-term"></p></div>
+          <div class="card"><h3 data-i18n="ownership.rightsTitle">拥有权要点</h3><ul class="insight-list" id="own-rights"></ul></div>
+        </div>
+        <div class="card">
+          <h3 data-i18n="ownership.contractTitle">合同种类</h3>
+          <ul class="insight-list" id="own-contracts"></ul>
+          <div id="own-contracts-note" class="wp-box"></div>
+        </div>
+        <div class="card table-card">
+          <h3 data-i18n="taxes.title">购房税费一览（外籍，2026 口径）</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th data-i18n="taxes.item">税项</th><th data-i18n="taxes.rate">税率/金额</th><th data-i18n="taxes.note">说明</th></tr></thead>
+              <tbody id="taxes-body"></tbody>
+            </table>
+          </div>
+          <p class="note-text" id="taxes-note" style="margin-top:12px"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="certificates.title">产权证：土地证 / 房产证 / 粉皮书</h3>
+          <p class="note-text" id="certificates-note"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="benefits.leaseTitle">租房实况</h3>
+          <p class="note-text" id="own-lease"></p>
+        </div>
+        <div class="card table-card">
+          <h3 data-i18n="ownership.riskTitle">需关注的风险</h3>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th data-i18n="ownership.riskItem">风险</th><th data-i18n="ownership.level">等级</th><th data-i18n="ownership.tip">规避建议</th></tr></thead>
+              <tbody id="own-risks"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer-tagline" id="footer-tagline"></p>
+        <div class="footer-meta">
+          <div><div class="foot-label" data-i18n="common.sources">数据来源</div><ul class="sources" id="sources-list"></ul></div>
+          <div><div class="foot-label" data-i18n="common.disclaimer">免责声明</div><p class="disclaimer" id="disclaimer"></p></div>
+        </div>
+      </footer>
+    </main>
+
+    <button class="back-top" id="backTop" aria-label="back to top">↑</button>
+  </div>
+
+  <!-- 消息抽屉 -->
+  <div class="drawer" id="news-drawer">
+    <div class="drawer-head">
+      <h3 id="drawer-title">最新消息</h3>
+      <button class="icon-btn" id="drawer-close">✕</button>
+    </div>
+    <div class="drawer-body" id="drawer-body"></div>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- 年度钻取弹窗 -->
+  <div class="modal" id="drill-modal">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 id="drill-title">年度钻取</h3>
+        <button class="icon-btn" id="drill-close">✕</button>
+      </div>
+      <div class="grid-2">
+        <div><h4 data-i18n="drill.priceTitle">房价</h4><div class="chart-box chart-sm"><canvas id="chart-drill-price"></canvas></div></div>
+        <div><h4 data-i18n="drill.fxTitle">USD/VND 月度</h4><div class="chart-box chart-sm"><canvas id="chart-drill-fx"></canvas></div></div>
+      </div>
+      <div id="drill-conv" class="conv-panel"></div>
+    </div>
+  </div>
+
+  <!-- 户型详情弹窗 -->
+  <div class="modal" id="unit-modal">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 id="unit-title">户型详情</h3>
+        <button class="icon-btn" id="unit-close">✕</button>
+      </div>
+      <div id="unit-body"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
