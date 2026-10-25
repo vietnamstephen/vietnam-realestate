@@ -15,3 +15,7 @@
 | `js/app.js` | 渲染逻辑 |
 
 数据由本地定时任务每日更新后推送，本仓库仅托管静态文件。
+
+同步脚本 `sync_from_source.sh`：把源项目（`~/WorkBuddy/2026-10-06-22-23-12/vietnam-realestate/`）的
+`index.html`、`css/style.css`、`js/data.js`、`js/app.js` 复制进来，有变更才 commit + push，
+无变更输出 `NO_CHANGE` 并退出 0。
