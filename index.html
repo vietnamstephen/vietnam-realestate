@@ -59,6 +59,10 @@
       <div class="topbar-title" data-i18n="appTitle">越南房地产数据平台</div>
       <div class="cutoff" id="cutoff-text">数据截至 —</div>
       <div class="topbar-actions">
+        <div class="pv-badge" id="pv-badge" title="浏览量 / 访客数（不蒜子统计）">
+          <span id="busuanzi_container_site_pv" style="display:none">👁 <b id="busuanzi_value_site_pv">0</b></span>
+          <span id="busuanzi_container_site_uv" style="display:none">🧑 <b id="busuanzi_value_site_uv">0</b></span>
+        </div>
         <button class="icon-btn" id="newsBtn" title="最新消息">📰</button>
         <div class="lang-seg" id="langSeg" role="group" aria-label="language">
           <button class="lang-opt" data-lang="zh">中文</button>
@@ -701,5 +705,14 @@
 
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script>
+    // 统计服务不可用（被墙/超时）时把徽标隐藏，避免出现空框
+    setTimeout(function () {
+      var v = document.getElementById('busuanzi_value_site_pv');
+      var b = document.getElementById('pv-badge');
+      if (v && b && !v.textContent.trim()) b.style.display = 'none';
+    }, 3000);
+  </script>
 </body>
 </html>
