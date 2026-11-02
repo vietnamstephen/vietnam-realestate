@@ -76,8 +76,9 @@
       },
       projects: {
         title: "主流楼盘历史数据（含价格走势）",
-        desc: "2020–2026 价格迷你走势、外籍配额占比、管理费、宽带、首付与付款、定位标签与官网链接。价格与配额为代表性估算。",
-        name: "楼盘", district: "区域", segment: "档次", trend: "价格走势(USD/㎡)", quota: "外籍配额", foreign: "外籍", yieldCol: "租金回报"
+        desc: "走势图 = 各年代表性成交/挂牌均价（USD/㎡），起点为该盘开盘年、终点为 2026 年；图下「年份: 单价 → 年份: 单价」即开盘价到现价，不是「开盘价区间的上下限」。下方另标注每盘开盘时间与销售状态（在售/预售/已交付）。价格与配额为代表性估算。",
+        name: "楼盘", district: "区域", segment: "档次", trend: "价格走势(USD/㎡)", quota: "外籍配额", foreign: "外籍", yieldCol: "租金回报",
+        launch: "开盘", noHistory: "新盘 · 官方价目未公示"
       },
       launches: { title: "新盘速递（2025 在售 + 2026 开盘）", desc: "汇总 2025–2026 胡志明与河内在售/即将开盘新盘：开发商背景、外籍配额、预售进度、开盘优惠与户型。", name: "楼盘", developer: "开发商", city: "城市", district: "区域", launch: "开盘", launchTime: "开盘时间", price: "均价", priceNow: "当前价格区间", unitsCol: "户型", units: "户型（1房-2房）", quota: "外籍配额", presale: "预售情况", promo: "开盘优惠", mapCol: "Google 地图", saleCol: "发售入口", foreign: "外籍", status: "状态" },
       insight: {
@@ -109,7 +110,7 @@
       },
       taxes: { title: "购房税费一览（外籍，2026 口径）", item: "税项", rate: "税率/金额", note: "说明" },
       certificates: { title: "产权证：土地证 / 房产证 / 粉皮书" },
-      unit: { title: "户型详情", area: "面积", price: "单价（开盘）", total: "总价（开盘，估算）", floorPlan: "示意户型图", official: "官方户型页" },
+      unit: { title: "户型详情", area: "面积", price: "单价（开盘）", total: "总价（开盘，估算）", floorPlan: "示意户型图", official: "官方户型页", resale: "二手单价", rent: "当前租金", yield: "毛租金回报" },
       funds: { title: "资金入境与定存指南：工资在汇丰（2%）→ 转入本地银行定存（6.8–8.5%）" },
       benefits: {
         title: "工作签证外籍人士可享福利（拓展版）",
@@ -225,8 +226,9 @@
       },
       projects: {
         title: "Project Database (with price trends)",
-        desc: "2020–2026 mini price trends, foreign-quota share, mgmt fee, internet, down payment & terms, positioning tags and official links. Estimates for reference.",
-        name: "Project", district: "District", segment: "Segment", trend: "Price trend (USD/sqm)", quota: "Foreign quota", foreign: "Foreign", yieldCol: "Rental yield"
+        desc: "Trend = representative average price by year (USD/sqm), starting at each project's launch year and ending in 2026; the caption \"year: price → year: price\" is launch price to current price, NOT the low/high of a launch range. Launch timing and sales status (selling / pre-sale / delivered) are tagged under each name. Estimates for reference.",
+        name: "Project", district: "District", segment: "Segment", trend: "Price trend (USD/sqm)", quota: "Foreign quota", foreign: "Foreign", yieldCol: "Rental yield",
+        launch: "Launch", noHistory: "New · price list not published"
       },
       launches: { title: "New Launches (2025 on-sale + 2026)", desc: "HCMC & Hanoi launches 2025–2026: developer background, foreign quota, presale progress, launch promos and unit types.", name: "Project", developer: "Developer", city: "City", district: "District", launch: "Launch", launchTime: "Launch time", price: "Avg price", priceNow: "Current range", unitsCol: "Units", units: "Units (1BR–2BR)", quota: "Foreign quota", presale: "Presale", promo: "Launch promos", mapCol: "Google Maps", saleCol: "Sales entry", foreign: "Foreign", status: "Status" },
       insight: {
@@ -258,7 +260,7 @@
       },
       taxes: { title: "Purchase Taxes (foreigner, 2026)", item: "Item", rate: "Rate / amount", note: "Note" },
       certificates: { title: "Title: Land Use Right / House / Pink Book" },
-      unit: { title: "Unit Details", area: "Area", price: "Unit price (launch)", total: "Total (launch, est.)", floorPlan: "Schematic floor plan", official: "Official floor plans" },
+      unit: { title: "Unit Details", area: "Area", price: "Unit price (launch)", total: "Total (launch, est.)", floorPlan: "Schematic floor plan", official: "Official floor plans", resale: "Resale psm", rent: "Current rent", yield: "Gross yield" },
       funds: { title: "Funds-in & deposit guide: HSBC salary (2%) → local VND term deposit (6.8–8.5%)" },
       benefits: {
         title: "Benefits for Work-Visa Holders (extended)",
@@ -374,8 +376,9 @@
       },
       projects: {
         title: "CSDL dự án chính (kèm xu hướng giá)",
-        desc: "Xu hướng giá 2020–2026, tỷ lệ hạn mức ngoại quốc, phí quản lý, internet, trả trước & thanh toán, thẻ định vị và link chính thức. Giá & hạn mức là ước tính.",
-        name: "Dự án", district: "Khu vực", segment: "Phân khúc", trend: "Xu hướng giá (USD/m²)", quota: "Hạn mức ngoại quốc", foreign: "Ngoại quốc", yieldCol: "Lợi suất thuê"
+        desc: "Xu hướng = giá trung bình đại diện theo năm (USD/m²), bắt đầu từ năm mở bán đến 2026; chú thích \"năm: giá → năm: giá\" là giá mở bán đến giá hiện tại, KHÔNG phải khoảng giá mở bán. Thời điểm mở bán và tình trạng bán hàng được gắn dưới tên dự án. Giá & hạn mức là ước tính.",
+        name: "Dự án", district: "Khu vực", segment: "Phân khúc", trend: "Xu hướng giá (USD/m²)", quota: "Hạn mức ngoại quốc", foreign: "Ngoại quốc", yieldCol: "Lợi suất thuê",
+        launch: "Mở bán", noHistory: "Mới · chưa công bố giá"
       },
       launches: { title: "Dự án mới (2025 đang bán + 2026)", desc: "Tổng hợp dự án mới 2025–2026 tại TP.HCM & Hà Nội: chủ đầu tư, hạn mức ngoại quốc, tiến độ mở bán, ưu đãi và loại căn.", name: "Dự án", developer: "Chủ đầu tư", city: "Thành phố", district: "Khu vực", launch: "Mở bán", launchTime: "Thời điểm mở bán", price: "Giá TB", priceNow: "Khoảng giá hiện tại", unitsCol: "Loại căn", units: "Loại căn (1PN-2PN)", quota: "Hạn mức ngoại quốc", presale: "Tình trạng mở bán", promo: "Ưu đãi", mapCol: "Google Maps", saleCol: "Cổng bán hàng", foreign: "Ngoại quốc", status: "Trạng thái" },
       insight: {
@@ -407,7 +410,7 @@
       },
       taxes: { title: "Thuế phí mua nhà (người nước ngoài, 2026)", item: "Khoản", rate: "Thuế suất/Số tiền", note: "Ghi chú" },
       certificates: { title: "Giấy chứng nhận: QSD đất / Nhà ở / Sổ hồng" },
-      unit: { title: "Chi tiết loại căn", area: "Diện tích", price: "Đơn giá (mở bán)", total: "Tổng giá (mở bán, ước)", floorPlan: "Sơ đồ mặt bằng", official: "Trang mặt bằng chính thức" },
+      unit: { title: "Chi tiết loại căn", area: "Diện tích", price: "Đơn giá (mở bán)", total: "Tổng giá (mở bán, ước)", floorPlan: "Sơ đồ mặt bằng", official: "Trang mặt bằng chính thức", resale: "Giá chuyển nhượng", rent: "Giá thuê hiện tại", yield: "Lợi suất gộp" },
       funds: { title: "Hướng dẫn chuyển tiền & tiền gửi: lương tại HSBC (2%) → gửi kỳ hạn VND nội địa (6,8–8,5%)" },
       benefits: {
         title: "Phúc lợi cho người nước ngoài có thị thực lao động",
@@ -1073,6 +1076,36 @@
       rects + '</svg>';
   }
 
+  /* 当前租金：按 楼盘 + 户型 从租金库取值（单位：百万盾/月） */
+  function rentRowOf(projName, typeZh, typeEn) {
+    const items = (D.rents && D.rents.items) || [];
+    let it = items.find(r =>
+      r.nameEn === projName || r.nameZh === projName ||
+      (r.nameEn && projName.indexOf(r.nameEn) >= 0) || (r.nameZh && projName.indexOf(r.nameZh) >= 0));
+    if (!it) {   // 兜底：按名称中的特征词匹配（如 The Horizon · Midtown → Midtown Phu My Hung）
+      const toks = String(projName).split(/[^A-Za-z0-9À-ỹ]+/).filter(x => x.length >= 5);
+      it = items.find(r => toks.some(tk =>
+        (r.nameEn && r.nameEn.indexOf(tk) >= 0) || (r.nameZh && r.nameZh.indexOf(tk) >= 0)));
+    }
+    if (!it) return null;
+    const row = it.rows.find(x => x.typeZh === typeZh || x.typeEn === typeEn);
+    return { row: row || null, item: it };
+  }
+  /* 同盘其他户型作为参考（该户型暂无样本时） */
+  function rentFallback(item) {
+    const pick = it => (lang === 'zh' ? it.typeZh : it.typeEn);
+    const unit = lang === 'zh' ? '百万盾/月' : lang === 'vi' ? 'triệu VND/tháng' : 'm VND/mo';
+    return (lang === 'zh' ? '该户型暂无样本 · 同盘参考：' : lang === 'vi' ? 'Chưa có mẫu · tham chiếu cùng dự án: ' : 'No sample for this type · same-project reference: ')
+      + item.rows.map(r => pick(r) + ' ' + r.rentVnd[0] + '–' + r.rentVnd[1] + ' ' + unit).join('；');
+  }
+  function rentText(hit) {
+    const r = hit.row; if (!r) return '';
+    const fx = (D.meta && D.meta.fxRate) || 26000;
+    const loUsd = Math.round(r.rentVnd[0] * 1e6 / fx / 10) * 10;
+    const hiUsd = Math.round(r.rentVnd[1] * 1e6 / fx / 10) * 10;
+    return r.rentVnd[0] + '–' + r.rentVnd[1] + ' ' + (lang === 'zh' ? '百万盾/月' : lang === 'vi' ? 'triệu VND/tháng' : 'm VND/mo')
+      + '（≈' + fmt(loUsd) + '–' + fmt(hiUsd) + ' USD）';
+  }
   function openUnitModal(projName, idx) {
     const list = D.hcmcDistricts.concat(D.hanoiDistricts);
     const d = list.find(p => (p.nameEn || p.name) === projName);
@@ -1080,21 +1113,26 @@
     const u = d.unitsBreakdown[idx];
     const zh = lang === 'zh';
     const official = d.link;
+    const priceZh = /[0-9]/.test(u.price || '') ? u.price + ' USD/㎡' : (u.price || '—');
+    const hit = rentRowOf(projName, u.type, u.typeEn);
     document.getElementById('unit-title').textContent = pick(d, 'name', 'nameEn') + ' · ' + pick(u, 'type', 'typeEn');
     document.getElementById('unit-body').innerHTML =
       '<div class="fp-grid">' +
         '<div class="fp-svg">' + floorPlanSvg(pick(u, 'type', 'typeEn')) + '</div>' +
         '<div class="fp-meta">' +
           '<div><b>' + t('unit.area') + '</b>：' + u.area + '</div>' +
-          '<div><b>' + t('unit.price') + '</b>：' + u.price + ' USD/㎡</div>' +
+          '<div><b>' + t('unit.price') + '</b>：' + priceZh + '</div>' +
           '<div><b>' + t('unit.total') + '</b>：' + (zh ? u.totalZh : u.totalEn) + '</div>' +
+          (u.resaleZh ? '<div><b>' + t('unit.resale') + '</b>：' + pick(u, 'resaleZh', 'resaleEn') + '</div>' : '') +
+          (hit ? '<div><b>' + t('unit.rent') + '</b>：' + (hit.row ? rentText(hit) : rentFallback(hit.item)) + '</div>' : '') +
+          (hit && hit.item.yieldText ? '<div><b>' + t('unit.yield') + '</b>：' + hit.item.yieldText + '</div>' : '') +
           '<div><b>' + t('common.down') + '</b>：' + txn(d.down) + '</div>' +
           '<div><b>' + t('common.mgmtFee') + '</b>：' + txn(d.mgmtFee) + '</div>' +
           (d.currentPrice ? '<div><b>' + t('districts.priceNow') + '</b>：' + d.currentPrice + '</div>' : '') +
           '<a class="mini-link" href="' + official + '" target="_blank" rel="noopener">🔗 ' + t('unit.official') + ' ↗</a>' +
         '</div>' +
       '</div>' +
-      '<p class="fp-note">' + (zh ? '示意图非官方比例，仅供户型结构参考；面积/单价/总价为开盘估算区间，以开发商售楼处为准。' : 'Schematic is not to scale — for layout reference only; area/price are launch estimates, confirm with the sales gallery.') + '</p>';
+      '<p class="fp-note">' + (zh ? '示意图非官方比例，仅供户型结构参考；面积/开盘单价/总价为开盘估算区间。二手单价按「该盘二手均价 ÷ 开盘均价」比率推算（2026-10 估算），租金取自本站租金库（2026-10 估算，不含物业费/水电）；实际以开发商售楼处与房东报价为准。' : 'Schematic is not to scale — for layout reference only; area/price are launch estimates. Resale psm is derived from the project resale/launch ratio (Oct 2026 estimate); rent comes from this site\'s rent table (Oct 2026 estimate, excl. mgmt fee & utilities). Confirm with the sales gallery and landlord.') + '</p>';
     document.getElementById('unit-modal').classList.add('open');
   }
   function closeUnitModal() { document.getElementById('unit-modal').classList.remove('open'); }
@@ -1108,14 +1146,14 @@
       return `
       <tr>
         <td data-label="${t('projects.name')}"><a href="${p.link}" target="_blank" rel="noopener" class="proj-link">${pick(p,'name','nameEn')} ↗</a>
-          <div class="tag-row">${pick(p.tags,'zh','en').map(x => '<span class="chip">' + x + '</span>').join('')}</div>
+          <div class="tag-row">${(p.salesZh ? '<span class="chip chip-sales">' + pick(p,'salesZh','salesEn') + '</span>' : '')}${(p.launch ? '<span class="chip">' + t('projects.launch') + ' ' + p.launch + '</span>' : '')}${pick(p.tags,'zh','en').map(x => '<span class="chip">' + x + '</span>').join('')}</div>
         </td>
         <td data-label="${t('projects.district')}">${pick(p,'district','districtEn')}</td>
         <td data-label="${t('projects.segment')}"><span class="chip">${pick(p,'segment','segmentEn')}</span></td>
         <td data-label="${t('districts.housing')}" class="td-muted">${hm.housing}</td>
         <td data-label="${t('districts.gas')}" class="td-muted">${hm.gas}</td>
         <td data-label="${t('projects.trend')}"><canvas class="spark" id="spark-${i}" width="110" height="34"></canvas>
-          <div class="spark-cap">${fmt(p.priceLow)}–${fmt(p.priceHigh)}</div></td>
+          <div class="spark-cap">${sparkCaption(p)}</div></td>
         <td data-label="${t('projects.quota')}">
           <div class="qbar"><div class="qbar-fill" style="width:${pct}%;background:${pct >= 27 ? 'var(--no)' : 'var(--ok)'}"></div></div>
           <div class="td-muted">${pct}% · ${lang === 'zh' ? '余≈' : '≈'}${fmt(Math.max(0, remain))}${lang === 'zh' ? '套' : ' left'}</div>
@@ -1128,6 +1166,14 @@
     }).join('');
     document.querySelectorAll('.spark').forEach(cv => drawSpark(cv));
   }
+  /* 走势说明：起点=开盘年单价，终点=2026 年单价；不是「开盘价→现价」的区间上下限 */
+  function sparkCaption(p) {
+    const ys = Object.keys(p.priceHistory || {}).sort();
+    if (!ys.length) return '<span class="td-muted">' + t('projects.noHistory') + '</span>';
+    if (ys.length === 1) return ys[0] + ' ' + fmt(p.priceHistory[ys[0]]) + ' USD/㎡';
+    const a = ys[0], b = ys[ys.length - 1];
+    return a + ': ' + fmt(p.priceHistory[a]) + ' → ' + b + ': ' + fmt(p.priceHistory[b]);
+  }
   function drawSpark(cv) {
     const i = parseInt(cv.id.split('-')[1], 10);
     const hist = D.projects[i].priceHistory;
@@ -1135,6 +1181,14 @@
     const vals = years.map(y => hist[y]);
     const ctx = cv.getContext('2d');
     const w = cv.width, h = cv.height, pad = 4;
+    if (vals.length < 2) {   // 单一年份（新开盘）：画一个点，不画折线
+      if (vals.length === 1) {
+        const cs0 = getComputedStyle(document.documentElement);
+        ctx.fillStyle = cs0.getPropertyValue('--accent').trim() || '#e5484d';
+        ctx.beginPath(); ctx.arc(w / 2, h / 2, 2.6, 0, Math.PI * 2); ctx.fill();
+      }
+      return;
+    }
     const min = Math.min(...vals), max = Math.max(...vals), rng = (max - min) || 1;
     const cs = getComputedStyle(document.documentElement);
     const color = cs.getPropertyValue('--accent').trim() || '#e5484d';

@@ -367,6 +367,7 @@ h1 { font-size: 26px; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.
 .chip-local { background: rgba(26,127,79,0.14); color: #1a7f4f; }
 .chip-foreign { background: rgba(37,99,235,0.14); color: #2563eb; }
 .chip-jv { background: rgba(139,92,246,0.16); color: #8b5cf6; }
+.chip-sales { background: rgba(229,72,77,0.14); color: var(--accent); font-weight: 600; }
 
 /* ---- V4: 地铁图例 ---- */
 .metro-legend { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
