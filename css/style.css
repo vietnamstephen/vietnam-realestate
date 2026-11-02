@@ -429,8 +429,52 @@ h1 { font-size: 26px; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.
   font-size: 13px; font-weight: 600; color: var(--text-2);
 }
 .map-legend label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+.map-base-group { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+.map-base-label { font-size: 12px; color: var(--text-3); font-weight: 600; }
+.map-base-btn {
+  cursor: pointer; border: 1px solid var(--border); background: var(--surface-2);
+  font: inherit; font-size: 12px; padding: 3px 10px; border-radius: 999px; color: var(--text-2);
+}
+.map-base-btn.active { border-color: var(--accent); color: var(--accent); background: var(--accent-soft, var(--surface-2)); }
+@media (max-width: 640px) { .map-base-group { margin-left: 0; } }
 .map-container { height: 520px; border-radius: 10px; overflow: hidden; z-index: 1; }
 @media (max-width: 900px) { .map-container { height: 380px; } }
+.map-tip { background: rgba(20,22,28,.92); color: #fff; border: none; font-size: 11.5px; padding: 2px 6px; border-radius: 5px; }
+.metro-end span {
+  display: inline-block; font-size: 10.5px; font-weight: 700; color: #fff;
+  padding: 1px 6px; border-radius: 999px; white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0,0,0,.35); transform: translate(-50%, -160%);
+}
+
+/* 线网示意图 */
+.metro-diagram { overflow-x: auto; }
+.metro-svg { width: 100%; min-width: 620px; height: auto; color: var(--text-1); }
+.msvg-line { font-size: 12px; font-weight: 700; }
+.msvg-sub { font-size: 10px; fill: var(--text-3); }
+.msvg-st { font-size: 11.5px; font-weight: 600; fill: var(--text-2); }
+
+/* 进度血条 */
+.pbar-wrap { display: flex; align-items: center; gap: 8px; min-width: 120px; }
+.pbar { flex: 1; height: 9px; border-radius: 999px; background: var(--surface-3, rgba(128,128,128,.18)); overflow: hidden; }
+.pbar-fill { height: 100%; border-radius: 999px; transition: width .4s; }
+.pbar-fill.pb-ok { background: var(--ok, #22c55e); }
+.pbar-fill.pb-mid { background: var(--accent, #f59e0b); }
+.pbar-fill.pb-low { background: #3b82f6; }
+.pbar-val { font-size: 12px; font-weight: 700; min-width: 34px; text-align: right; }
+.pbar-basis { font-size: 11px; line-height: 1.45; margin-top: 4px; max-width: 340px; }
+
+/* 停滞项目统计 */
+.stat-list { display: flex; flex-direction: column; gap: 8px; }
+.stat-row { display: grid; grid-template-columns: 1.1fr 1fr 1.6fr; gap: 10px; align-items: baseline; padding: 8px 10px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); font-size: 12.5px; }
+.stat-label { color: var(--text-2); }
+.stat-value { font-size: 14px; color: var(--text-1); }
+.stat-src { font-size: 11px; }
+@media (max-width: 780px) { .stat-row { grid-template-columns: 1fr; } }
+
+/* 利率走势事件 */
+.lt-events { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+.lt-event { display: flex; gap: 10px; font-size: 12px; line-height: 1.5; }
+.lt-date { flex: 0 0 62px; font-weight: 700; color: var(--accent); }
 
 /* 抽屉 */
 .drawer {

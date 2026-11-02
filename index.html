@@ -483,6 +483,11 @@
           </div>
           <p class="warn-note" id="cases-note"></p>
         </div>
+        <div class="card">
+          <h3 data-i18n="cases.statsTitle">停滞项目清理进展（官方口径）</h3>
+          <div id="cases-stats" class="stat-list"></div>
+          <p class="src-note" id="cases-stats-note"></p>
+        </div>
       </section>
 
       <!-- 12 地图 -->
@@ -497,9 +502,20 @@
             <label><input type="checkbox" data-layer="schools"> 🏫 学校</label>
             <label><input type="checkbox" data-layer="malls"> 🛒 商业</label>
             <label><input type="checkbox" data-layer="transport"> ✈️ 交通枢纽</label>
+            <span class="map-base-group">
+              <span class="map-base-label" data-i18n="map.base">底图</span>
+              <button class="map-base-btn active" data-base="clean" data-i18n="map.baseClean">简洁</button>
+              <button class="map-base-btn" data-base="std" data-i18n="map.baseStd">标准</button>
+              <button class="map-base-btn" data-base="sat" data-i18n="map.baseSat">影像</button>
+            </span>
           </div>
           <div id="hcmc-map" class="map-container"></div>
           <p class="src-note" id="map-metro-note"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="map.diagramTitle">线网示意图（非按比例）</h3>
+          <div id="metro-diagram" class="metro-diagram"></div>
+          <p class="src-note" id="metro-diagram-note"></p>
         </div>
         <div class="card">
           <h3 data-i18n="map.legendTitle">地铁线路图 · 线号 / 颜色 / 始发-终点</h3>
@@ -512,10 +528,12 @@
               <thead><tr>
                 <th data-i18n="map.line">线路</th><th data-i18n="map.status">状态</th><th data-i18n="map.since">开通/开工</th>
                 <th data-i18n="map.expect">预计通车</th><th data-i18n="map.length">长度</th><th data-i18n="map.stations">站点</th>
+                <th data-i18n="map.progress">完成进度</th><th data-i18n="map.timeGap">距目标</th>
               </tr></thead>
               <tbody id="metro-body"></tbody>
             </table>
           </div>
+          <p class="src-note" id="metro-progress-note"></p>
           <h3 data-i18n="map.sourceLinksTitle">支持数据链接</h3>
           <div id="map-links"></div>
         </div>
@@ -536,6 +554,12 @@
             </table>
           </div>
           <p class="note-text" id="banking-local-note" style="margin-top:12px"></p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="banking.loanTrendTitle">2026 房贷利率走势（自 2026-01-01 起逐月记录）</h3>
+          <div class="chart-box" style="height:320px"><canvas id="chart-loan-trend"></canvas></div>
+          <div id="loan-trend-events" class="lt-events"></div>
+          <p class="src-note" id="loan-trend-basis"></p>
         </div>
         <div class="card table-card">
           <h3 data-i18n="banking.depositVsLoanTitle">存款利率 vs 贷款利率（国家银行 2026-08 官方口径）</h3>

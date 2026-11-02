@@ -91,11 +91,16 @@
         title: "外籍配额查询", desc: "输入楼盘名或区域查询外籍可购配额余量（估算）。配额规则：单楼 ≤30%，独栋每坊 ≤250 套。",
         searchPh: "搜索楼盘名 / 区域，如：Golden River / 第1区", project: "楼盘", district: "区域", total: "总套数", sold: "外籍已售(估)", remain: "剩余(估)", pct: "占用比", warn: "以上为公开信息估算（示意），签约前务必索取建设厅/开发商盖章的配额确认函。"
       },
-      cases: { title: "烂尾楼 / 争议案例库", desc: "何时发生何事、开发商、现状与规避要点，附新闻源入口。", name: "案例", developer: "开发商", year: "时间", event: "事件", status: "现状", src: "新闻源", noteTitle: "规避要点" },
+      cases: { title: "烂尾楼 / 争议案例库", desc: "何时发生何事、开发商、现状与规避要点，附新闻源入口；并附全国与胡志明市停滞项目清理进展统计。", name: "案例", developer: "开发商", year: "时间", event: "事件", status: "现状", src: "新闻源", noteTitle: "规避要点", latest: "2026 最新", statsTitle: "停滞项目清理进展（官方口径）", statsItem: "指标", statsValue: "数值", statsSrc: "口径/来源" },
       map: {
-        title: "胡志明地图探索", desc: "楼盘、地铁（通车实线/在建虚线）、医院、学校、商业、交通枢纽。可缩放拖动，点图例切换图层；楼盘定位含「学区/医疗/生活/投资」参考。",
+        title: "胡志明地图探索", desc: "楼盘、地铁（通车实线/在建虚线）、医院、学校、商业、交通枢纽。可缩放拖动，点图例切换图层；底图可切换「简洁/标准/影像」。",
         layers: "图层", metroTable: "地铁线路 · 开通/预计时间", line: "线路", status: "状态", since: "开通/开工", expect: "预计通车", length: "长度", stations: "站点",
-        metroNote: "线路走向为近似示意，来源：老东报/国会工人报（2026）。", sourceLinksTitle: "支持数据链接"
+        legendTitle: "地铁线路图 · 线号 / 颜色 / 始发-终点",
+        metroNote: "线路走向为近似示意，来源：老东报/国会工人报（2026）。", sourceLinksTitle: "支持数据链接",
+        progress: "完成进度", timeGap: "距目标", diagramTitle: "线网示意图（非按比例）", diagramNote: "",
+        base: "底图", baseClean: "简洁", baseStd: "标准", baseSat: "影像",
+        gapMonths: "个月", gapAhead: "已通车", gapDue: "距通车", operating: "已通车",
+        loanTrendTitle: "2026 房贷利率走势（2026-01 起，逐月）", loanTrendNote: ""
       },
       banking: {
         title: "房贷银行 · 利率与首付（2026 核实版）",
@@ -103,6 +108,7 @@
         local: "本地银行（居民房贷 · 优惠期 vs 浮动）", foreign: "外资银行（外籍实况与条件）",
         bank: "银行", rate: "利率", teaser: "优惠期利率", teaserPeriod: "优惠期时长", float: "优惠期后浮动", promo: "居民优惠", cond: "外籍贷款条件", ltv: "贷款成数 LTV", tenor: "期限", note: "备注", term: "期限/类别",
         depositVsLoanTitle: "存款利率 vs 贷款利率（国家银行 2026-08 官方口径）",
+        loanTrendTitle: "2026 房贷利率走势（自 2026-01-01 起逐月记录）", loanTrendBasis: "口径", loanTrendEvents: "关键锚点 / 事件",
         depositRatesTitle: "存款利率（按期限，%/年）", loanRatesTitle: "贷款利率（%/年）",
         downTitle: "首付比例", foreignNoteTitle: "外籍贷款要点（实测结论）",
         depositTitle: "外籍定期存款利率参考（12个月）", depositBank: "银行/产品", depositRate: "利率", depositNote: "备注",
@@ -241,11 +247,16 @@
         title: "Foreign Quota Checker", desc: "Search by project/district for remaining foreign quota (estimates). Rules: ≤30% per building; ≤250 landed units per ward.",
         searchPh: "Search project / district, e.g. Golden River / D1", project: "Project", district: "District", total: "Total units", sold: "Foreign sold (est)", remain: "Remaining (est)", pct: "Taken", warn: "Estimates from public info. Before signing, obtain a stamped quota confirmation from the developer / Dept of Construction."
       },
-      cases: { title: "Stalled / Disputed Project Cases", desc: "What happened, when, developer, current status and mitigation tips, with news-source entries.", name: "Case", developer: "Developer", year: "Period", event: "Event", status: "Status", src: "News", noteTitle: "Mitigation" },
+      cases: { title: "Stalled / Disputed Project Cases", desc: "What happened, when, developer, current status and mitigation tips, with news-source entries; plus nationwide and HCMC unblocking statistics.", name: "Case", developer: "Developer", year: "Period", event: "Event", status: "Status", src: "News", noteTitle: "Mitigation", latest: "2026 update", statsTitle: "Unblocking progress (official figures)", statsItem: "Metric", statsValue: "Value", statsSrc: "Basis / source" },
       map: {
-        title: "HCMC Map Explorer", desc: "Projects, metro (operating solid / building dashed), hospitals, schools, malls, transport hubs. Zoom & pan freely; toggle layers via the legend.",
+        title: "HCMC Map Explorer", desc: "Projects, metro (operating solid / building dashed), hospitals, schools, malls, transport hubs. Zoom & pan freely; toggle layers via the legend; switch basemap Clean / Standard / Satellite.",
         layers: "Layers", metroTable: "Metro lines · opened / expected", line: "Line", status: "Status", since: "Opened/Start", expect: "Expected", length: "Length", stations: "Stations",
-        metroNote: "Line paths are approximate. Source: Lao Dong / Cong Doan Vietnam (2026).", sourceLinksTitle: "Supporting Sources"
+        legendTitle: "Metro map · line number / colour / termini",
+        metroNote: "Line paths are approximate. Source: Lao Dong / Cong Doan Vietnam (2026).", sourceLinksTitle: "Supporting Sources",
+        progress: "Progress", timeGap: "Gap", diagramTitle: "Network schematic (not to scale)", diagramNote: "",
+        base: "Basemap", baseClean: "Clean", baseStd: "Standard", baseSat: "Satellite",
+        gapMonths: "mo", gapAhead: "In service", gapDue: "To opening", operating: "Operating",
+        loanTrendTitle: "2026 mortgage rate trend (monthly from 2026-01)", loanTrendNote: ""
       },
       banking: {
         title: "Mortgage Banks · Rates & Down Payment (verified 2026)",
@@ -253,6 +264,7 @@
         local: "Local Banks (residents · teaser vs floating)", foreign: "Foreign Banks (expat reality & conditions)",
         bank: "Bank", rate: "Rate", teaser: "Teaser rate", teaserPeriod: "Teaser period", float: "Floating after", promo: "Resident perks", cond: "Foreigner loan conditions", ltv: "LTV", tenor: "Tenor", note: "Note", term: "Term / Type",
         depositVsLoanTitle: "Deposit vs Lending Rates (State Bank 2026-08)",
+        loanTrendTitle: "2026 mortgage rate trend (monthly, from 2026-01-01)", loanTrendBasis: "Method", loanTrendEvents: "Key anchors / events",
         depositRatesTitle: "Deposit rates (by term, %/yr)", loanRatesTitle: "Lending rates (%/yr)",
         downTitle: "Down Payment", foreignNoteTitle: "Foreign Financing Notes (verified)",
         depositTitle: "Expat Term-Deposit Rates (12-month)", depositBank: "Bank/Product", depositRate: "Rate", depositNote: "Note",
@@ -391,11 +403,16 @@
         title: "Tra cứu hạn mức ngoại quốc", desc: "Tìm theo dự án/khu vực để xem hạn mức còn lại (ước tính). Quy định: ≤30%/tòa; ≤250 căn liền kề/phường.",
         searchPh: "Tìm dự án / khu vực, VD: Golden River / Q1", project: "Dự án", district: "Khu vực", total: "Tổng số căn", sold: "Ngoại quốc đã bán (ước)", remain: "Còn lại (ước)", pct: "Đã dùng", warn: "Ước tính từ thông tin công khai. Trước khi ký, yêu cầu xác nhận hạn mức có dấu từ chủ đầu tư / Sở Xây dựng."
       },
-      cases: { title: "Dự án đình trệ / tranh chấp", desc: "Chuyện gì, khi nào, chủ đầu tư, hiện trạng và cách phòng tránh, kèm nguồn tin.", name: "Vụ việc", developer: "Chủ đầu tư", year: "Thời gian", event: "Sự kiện", status: "Hiện trạng", src: "Nguồn tin", noteTitle: "Phòng tránh" },
+      cases: { title: "Dự án đình trệ / tranh chấp", desc: "Chuyện gì, khi nào, chủ đầu tư, hiện trạng và cách phòng tránh, kèm nguồn tin; cùng thống kê tháo gỡ dự án tồn đọng toàn quốc và TP.HCM.", name: "Vụ việc", developer: "Chủ đầu tư", year: "Thời gian", event: "Sự kiện", status: "Hiện trạng", src: "Nguồn tin", noteTitle: "Phòng tránh", latest: "Cập nhật 2026", statsTitle: "Tiến độ tháo gỡ (số liệu chính thức)", statsItem: "Chỉ tiêu", statsValue: "Giá trị", statsSrc: "Căn cứ / nguồn" },
       map: {
-        title: "Khám phá bản đồ TP.HCM", desc: "Dự án, metro (đã chạy nét liền / đang xây nét đứt), bệnh viện, trường học, TTTM, đầu mối giao thông. Kéo/zoom tự do; bật lớp theo chú thích.",
+        title: "Khám phá bản đồ TP.HCM", desc: "Dự án, metro (đã chạy nét liền / đang xây nét đứt), bệnh viện, trường học, TTTM, đầu mối giao thông. Kéo/zoom tự do; bật lớp theo chú thích; đổi nền bản đồ Gọn / Chuẩn / Vệ tinh.",
         layers: "Lớp", metroTable: "Tuyến metro · đã mở / dự kiến", line: "Tuyến", status: "Trạng thái", since: "Mở/Khởi công", expect: "Dự kiến", length: "Chiều dài", stations: "Ga",
-        metroNote: "Hướng tuyến là gần đúng. Nguồn: Lao Động / Công Đoàn Việt Nam (2026).", sourceLinksTitle: "Nguồn dữ liệu tham chiếu"
+        legendTitle: "Sơ đồ metro · số tuyến / màu / điểm đầu-cuối",
+        metroNote: "Hướng tuyến là gần đúng. Nguồn: Lao Động / Công Đoàn Việt Nam (2026).", sourceLinksTitle: "Nguồn dữ liệu tham chiếu",
+        progress: "Tiến độ", timeGap: "Chênh thời gian", diagramTitle: "Sơ đồ mạng lưới (không theo tỷ lệ)", diagramNote: "",
+        base: "Nền bản đồ", baseClean: "Gọn", baseStd: "Chuẩn", baseSat: "Vệ tinh",
+        gapMonths: "tháng", gapAhead: "Đã vận hành", gapDue: "Còn", operating: "Đã vận hành",
+        loanTrendTitle: "Xu hướng lãi suất vay mua nhà 2026 (từng tháng, từ 2026-01)", loanTrendNote: ""
       },
       banking: {
         title: "Ngân hàng cho vay · Lãi suất & Trả trước (kiểm chứng 2026)",
@@ -403,6 +420,7 @@
         local: "Ngân hàng nội địa (cư dân · ưu đãi vs thả nổi)", foreign: "Ngân hàng ngoại (thực tế với người nước ngoài)",
         bank: "Ngân hàng", rate: "Lãi suất", teaser: "Lãi suất ưu đãi", teaserPeriod: "Thời gian ưu đãi", float: "Thả nổi sau ưu đãi", promo: "Ưu đãi cư dân", cond: "Điều kiện vay ngoại quốc", ltv: "LTV", tenor: "Kỳ hạn", note: "Ghi chú", term: "Kỳ hạn / Loại",
         depositVsLoanTitle: "Lãi suất huy động vs cho vay (NHNN 2026-08)",
+        loanTrendTitle: "Xu hướng lãi suất vay mua nhà 2026 (từng tháng, từ 2026-01-01)", loanTrendBasis: "Cách tính", loanTrendEvents: "Mốc / sự kiện chính",
         depositRatesTitle: "Lãi suất huy động (theo kỳ hạn, %/năm)", loanRatesTitle: "Lãi suất cho vay (%/năm)",
         downTitle: "Tỷ lệ trả trước", foreignNoteTitle: "Lưu ý vay vốn ngoại quốc (kiểm chứng)",
         depositTitle: "Lãi suất tiền gửi kỳ hạn (12 tháng) cho người nước ngoài", depositBank: "Ngân hàng/Sản phẩm", depositRate: "Lãi suất", depositNote: "Ghi chú",
@@ -473,12 +491,29 @@
   const charts = {};
   let leafletReady = false;
   let mapLayers = null, myMap = null, tileLayerRef = null;
-  function swapMapTiles() {
-    if (!tileLayerRef || !myMap) return;
-    myMap.removeLayer(tileLayerRef);
-    tileLayerRef = L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
-      maxZoom: 19, attribution: '&copy; OpenStreetMap contributors'
+  /* 底图：clean=简洁素色（类规划图），std=标准 OSM，sat=影像 */
+  const BASEMAPS = {
+    clean: { url: 'https://{s}.basemaps.cartocdn.com/{style}/all/{z}/{x}/{y}{r}.png', attr: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 20 },
+    std: { url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', attr: '&copy; OpenStreetMap contributors', maxZoom: 19 },
+    sat: { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', attr: 'Tiles &copy; Esri', maxZoom: 18 }
+  };
+  let curBase = 'clean';
+  function baseUrl(k) {
+    const b = BASEMAPS[k] || BASEMAPS.clean;
+    if (k === 'clean') return b.url.replace('{style}', theme === 'dark' ? 'dark' : 'light');
+    return b.url;
+  }
+  function addBaseLayer() {
+    const b = BASEMAPS[curBase] || BASEMAPS.clean;
+    tileLayerRef = L.tileLayer(baseUrl(curBase), {
+      maxZoom: b.maxZoom, attribution: b.attr, updateWhenIdle: true, keepBuffer: 2, subdomains: 'abcd'
     }).addTo(myMap);
+  }
+  function swapMapTiles() {
+    if (!myMap) return;
+    if (tileLayerRef) myMap.removeLayer(tileLayerRef);
+    addBaseLayer();
+    if (tileLayerRef) tileLayerRef.bringToBack();
   }
 
   /* ------------------------- 工具 / Utils ------------------------- */
@@ -615,9 +650,10 @@
     renderPolicy(); renderNews(); renderHot(); renderDistricts(); renderProjects(); renderLaunches();
     renderQuota(); renderCases(); renderBanking(); renderBenefits(); renderOwnership();
     renderTaxes(); renderCertificates(); renderRents(); applyRentCcy();
-    renderMetroLegend(); renderInsight();
+    renderMetroLegend(); renderMetroTable(); renderMetroDiagram(); renderInsight();
     renderReform(); renderPrice10(); renderSegments(); renderFcmp(); renderTimeline();
     renderFxPanel();
+    buildLoanTrendChart();
   }
 
   function sourceLinksHtml(keys) {
@@ -1279,6 +1315,36 @@
     document.getElementById('quota-warn').textContent = t('quota.warn');
   }
 
+  /* ------------- 2026 房贷利率月度走势 ------------- */
+  function buildLoanTrendChart() {
+    const cv = document.getElementById('chart-loan-trend');
+    if (!cv || !window.Chart || !D.loanRateTrend) return;
+    const L = D.loanRateTrend;
+    if (charts.loanTrend) { charts.loanTrend.destroy(); delete charts.loanTrend; }
+    charts.loanTrend = new Chart(cv, {
+      type: 'line',
+      data: {
+        labels: L.months.map(m => (lang === 'zh' ? Number(m.slice(5)) + '月' : m)),
+        datasets: [
+          { label: lang === 'zh' ? L.fixedLabelZh : L.fixedLabelEn, data: L.fixed, borderColor: PALETTE.blue, backgroundColor: PALETTE.blue + '22', tension: 0.32, borderWidth: 3, pointRadius: 3, pointHitRadius: 12, fill: true },
+          { label: lang === 'zh' ? L.floatLabelZh : L.floatLabelEn, data: L.floating, borderColor: PALETTE.red, backgroundColor: PALETTE.red + '18', tension: 0.32, borderWidth: 3, pointRadius: 3, pointHitRadius: 12, fill: true }
+        ]
+      },
+      options: Object.assign({}, baseOpts(), {
+        scales: {
+          x: { grid: { display: false } },
+          y: { min: 8, max: 16, title: { display: true, text: '% / ' + (lang === 'zh' ? '年' : 'yr') }, grid: { color: 'rgba(128,128,128,0.12)' }, ticks: { callback: v => v + '%' } }
+        },
+        plugins: { legend: { position: 'top', labels: { usePointStyle: true, boxWidth: 8 } } }
+      })
+    });
+    const ev = document.getElementById('loan-trend-events');
+    if (ev) ev.innerHTML = L.events.map(e =>
+      '<div class="lt-event"><span class="lt-date">' + e.date + '</span><span class="td-muted">' + (lang === 'zh' ? e.textZh : e.textEn) + '</span></div>').join('');
+    const bs = document.getElementById('loan-trend-basis');
+    if (bs) bs.textContent = (lang === 'zh' ? '口径：' : 'Method: ') + (lang === 'zh' ? L.basisZh : L.basisEn);
+  }
+
   /* ------------------------- 案例库 ------------------------- */
   function renderCases() {
     document.getElementById('cases-body').innerHTML = D.failedCases.map(c => `
@@ -1287,10 +1353,21 @@
         <td data-label="${t('cases.developer')}" class="td-muted">${pick(c,'developerZh','developerEn')}</td>
         <td data-label="${t('cases.year')}">${c.year}</td>
         <td data-label="${t('cases.event')}" class="td-muted">${pick(c,'eventZh','eventEn')}</td>
-        <td data-label="${t('cases.status')}"><span class="chip">${pick(c,'statusZh','statusEn')}</span></td>
+        <td data-label="${t('cases.status')}"><span class="chip">${pick(c,'statusZh','statusEn')}</span>${c.latestZh ? '<div class="td-muted pbar-basis"><b>' + t('cases.latest') + '：</b>' + pick(c,'latestZh','latestEn') + '</div>' : ''}</td>
         <td data-label="${t('cases.src')}"><a class="mini-link" href="${c.link}" target="_blank" rel="noopener">↗</a></td>
       </tr>`).join('');
     document.getElementById('cases-note').textContent = lang === 'zh' ? D.failedCasesNoteZh : D.failedCasesNoteEn;
+    const st = document.getElementById('cases-stats');
+    if (st && D.stalledStats) {
+      st.innerHTML = D.stalledStats.items.map(s => `
+        <div class="stat-row">
+          <span class="stat-label">${lang === 'zh' ? s.labelZh : s.labelEn}</span>
+          <b class="stat-value">${lang === 'zh' ? s.value : s.valueEn}</b>
+          <span class="td-muted stat-src">${lang === 'zh' ? s.srcZh : s.srcEn}</span>
+        </div>`).join('');
+      const sn = document.getElementById('cases-stats-note');
+      if (sn) sn.textContent = lang === 'zh' ? D.stalledStats.noteZh : D.stalledStats.noteEn;
+    }
   }
 
   /* ------------------------- 银行 ------------------------- */
@@ -1647,13 +1724,23 @@
       center: [10.785, 106.720], zoom: 12, scrollWheelZoom: true,
       preferCanvas: true, zoomAnimation: true, fadeAnimation: true, markerZoomAnimation: false
     });
-    tileLayerRef = L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
-      maxZoom: 19, attribution: '&copy; OpenStreetMap contributors', updateWhenIdle: true, keepBuffer: 2
-    }).addTo(myMap);
+    addBaseLayer();
+
+    // 底图切换
+    document.querySelectorAll('.map-base-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const k = btn.dataset.base;
+        if (!BASEMAPS[k] || k === curBase) return;
+        curBase = k;
+        swapMapTiles();
+        document.querySelectorAll('.map-base-btn').forEach(x => x.classList.toggle('active', x.dataset.base === k));
+      });
+    });
 
     const mk = (n, lat, lng, color, emoji) => L.circleMarker([lat, lng], {
-      radius: 5, color: color, weight: 1.5, fillColor: color, fillOpacity: 0.75
-    }).bindPopup('<b>' + emoji + ' ' + n + '</b><br><span style="font-size:11px;color:#888">' + (lang === 'zh' ? '示意坐标（近似）' : 'approx. coordinates') + '</span>');
+      radius: 7, color: '#fff', weight: 2, fillColor: color, fillOpacity: 0.95
+    }).bindPopup('<b>' + emoji + ' ' + n + '</b><br><span style="font-size:11px;color:#888">' + (lang === 'zh' ? '示意坐标（近似）' : 'approx. coordinates') + '</span>')
+      .bindTooltip(n, { permanent: false, direction: 'top', className: 'map-tip' });
 
     mapLayers = {
       projects: L.layerGroup(D.mapPois.projects.map(p => mk(p.n, p.lat, p.lng, '#e5484d', '🏢'))).addTo(myMap),
@@ -1664,26 +1751,35 @@
       transport: L.layerGroup(D.mapPois.transport.map(p => mk(p.n, p.lat, p.lng, '#0ea5e9', '✈️')))
     };
 
-    // 地铁线路（示意 polyline，popup 含线路信息与附近楼盘）
     const zh = lang === 'zh';
-    const line1 = [[10.7708,106.6978],[10.7767,106.7033],[10.7819,106.7083],[10.7960,106.7155],[10.7980,106.7185],[10.8005,106.7337],[10.8030,106.7440],[10.8120,106.7600],[10.8214,106.7581],[10.8310,106.7860],[10.8405,106.7945],[10.8500,106.8050],[10.8680,106.8030],[10.8794,106.8139]];
-    const line2w = [[10.7722,106.6984],[10.7765,106.6915],[10.7835,106.6820],[10.7920,106.6735],[10.8000,106.6660],[10.8090,106.6580]];
-    const line2e = [[10.7722,106.6984],[10.7728,106.7010],[10.7765,106.7210]];
-    const nearby1 = zh
-      ? '附近楼盘：Grand Marina Saigon（滨城站）、Vinhomes Golden River（Ba Son 站）、The Global City（Thao Dien–An Phu 沿线）、Vinhomes Grand Park（仙泉端）'
-      : 'Nearby: Grand Marina Saigon (Ben Thanh), Vinhomes Golden River (Ba Son), The Global City (Thao Dien–An Phu), Vinhomes Grand Park (Suoi Tien end)';
-    const nearby2w = zh
-      ? '附近楼盘：The Marq、滨城核心区旧改盘'
-      : 'Nearby: The Marq & downtown core projects';
-    const nearby2e = zh
-      ? '附近楼盘：The Metropole Thu Thiem、Empire City'
-      : 'Nearby: The Metropole Thu Thiem, Empire City';
-    L.polyline(line1, { color: '#1a7f4f', weight: 4 }).bindPopup('<b>🟢 1号线 Ben Thanh–Suoi Tien</b><br>2024-12-22 通车（实线）<br><span style="font-size:11px">' + nearby1 + '</span>').addTo(myMap);
-    L.polyline(line2w, { color: '#2563eb', weight: 4, dashArray: '8 6' }).bindPopup('<b>🔵 2号线西段 Ben Thanh–Tham Luong</b><br>2026-01 开工 / 2030-12 通车（虚线=在建）<br><span style="font-size:11px">' + nearby2w + '</span>').addTo(myMap);
-    L.polyline(line2e, { color: '#2563eb', weight: 4, dashArray: '8 6' }).bindPopup('<b>🔵 2号线东段 Ben Thanh–Thu Thiem</b><br>2026-04 开工 / 2030（虚线=在建）<br><span style="font-size:11px">' + nearby2e + '</span>').addTo(myMap);
-    // 1 号线延伸段（平阳新城线，已批待开工，虚线=未通车）
-    const line1ext = [[10.8794,106.8139],[10.8980,106.8040],[10.9180,106.7800],[10.9400,106.7450],[10.9550,106.7150]];
-    L.polyline(line1ext, { color: '#1a7f4f', weight: 3, dashArray: '8 6' }).bindPopup('<b>🟢 1号线延伸·平阳新城线（已批待开工）</b><br>Suoi Tien → Binh Duong New City · 32.8 km · 预计 2030<br><span style="font-size:11px">虚线 = 未通车（示意走向）</span>').addTo(myMap);
+    // 全部线路（含延伸段）按数据绘制，未通车段用虚线，popup 含进度与时间差
+    D.metro.forEach(m => {
+      if (!m.path || m.path.length < 2) return;
+      const dash = m.status === 'operating' ? '' : (m.status === 'building' ? '10 7' : '4 6');
+      const op = m.status === 'approved' ? 0.55 : 0.9;
+      const gap = m.status === 'operating'
+        ? (zh ? '已通车' : 'In service')
+        : (monthGap(m.target) == null ? (m.expect || '—') : (zh ? '距预计通车 ' + monthGap(m.target) + ' 个月' : monthGap(m.target) + ' months to opening'));
+      const body = '<b>' + pick(m, 'line', 'lineEn') + ' · ' + pick(m, 'name', 'nameEn') + '</b><br>' +
+        (zh ? '走向' : 'Route') + ': ' + pick(m, 'from', 'fromEn') + ' → ' + pick(m, 'to', 'toEn') + ' · ' + m.length + '<br>' +
+        (zh ? '状态' : 'Status') + ': ' + pick(m, 'statusZh', 'statusEn') + ' · ' + (m.progress == null ? '—' : m.progress + '%') + '<br>' +
+        (zh ? '时间' : 'Timing') + ': ' + m.since + (m.expect && m.status !== 'operating' ? ' → ' + m.expect : '') + '<br>' +
+        '<span style="font-size:11px;color:#888">' + gap + ' · ' + (zh ? '示意走向' : 'schematic alignment') + '</span>';
+      L.polyline(m.path, { color: m.color, weight: m.status === 'operating' ? 6 : 5, dashArray: dash, opacity: op, lineCap: 'round' })
+        .bindPopup(body)
+        .bindTooltip(pick(m, 'line', 'lineEn') + (m.progress == null ? '' : ' · ' + m.progress + '%'), { sticky: true, className: 'map-tip' })
+        .addTo(myMap);
+      // 端点站名
+      if (m.stops && m.stops.length) {
+        const names = zh ? m.stops : (m.stopsEn || m.stops);
+        [[0, m.path[0]], [names.length - 1, m.path[m.path.length - 1]]].forEach(([idx, pt]) => {
+          L.marker(pt, {
+            icon: L.divIcon({ className: 'metro-end', html: '<span style="background:' + m.color + '">' + names[idx] + '</span>' }),
+            interactive: false
+          }).addTo(myMap);
+        });
+      }
+    });
 
     // 图例切换
     document.querySelectorAll('.map-legend input[type="checkbox"]').forEach(cb => {
@@ -1697,6 +1793,35 @@
     setTimeout(() => myMap.invalidateSize(), 300);
   }
 
+  /* 距目标月份差（以页面数据日为基准） */
+  function monthGap(target) {
+    if (!target) return null;
+    const p = String(target).split('-');
+    const ty = +p[0], tm = +p[1];
+    const base = (D.meta && D.meta.lastUpdated) ? D.meta.lastUpdated : new Date().toISOString().slice(0, 10);
+    const b = base.split('-');
+    const by = +b[0], bm = +b[1];
+    return (ty - by) * 12 + (tm - bm);
+  }
+  function gapText(m) {
+    if (m.status === 'operating') {
+      const g = -monthGap(String(m.since).slice(0, 7));
+      return '<span class="chip chip-ok">' + t('map.gapAhead') + ' ' + (g > 0 ? g : 0) + ' ' + t('map.gapMonths') + '</span>';
+    }
+    const g = monthGap(m.target);
+    if (g === null) return '—';
+    const overdue = g < 0;
+    return '<span class="chip ' + (g <= 12 ? 'chip-mid' : '') + '">' + t('map.gapDue') + ' ' + Math.abs(g) + ' ' + t('map.gapMonths') + (overdue ? ' ⚠' : '') + '</span>';
+  }
+  function progressCell(m) {
+    const p = (m.progress == null) ? null : m.progress;
+    const cls = m.status === 'operating' ? 'pb-ok' : (p >= 50 ? 'pb-mid' : 'pb-low');
+    return '<div class="pbar-wrap">' +
+      '<div class="pbar"><div class="pbar-fill ' + cls + '" style="width:' + (p || 0) + '%"></div></div>' +
+      '<span class="pbar-val">' + (p == null ? '—' : p + '%') + '</span></div>' +
+      '<div class="td-muted pbar-basis">' + pick(m, 'basisZh', 'basisEn') + '</div>';
+  }
+
   function renderMetroTable() {
     document.getElementById('metro-body').innerHTML = D.metro.map(m => `
       <tr>
@@ -1706,7 +1831,69 @@
         <td data-label="${t('map.expect')}">${m.expect || '—'}</td>
         <td data-label="${t('map.length')}">${m.length}</td>
         <td data-label="${t('map.stations')}">${m.stations || '—'}</td>
+        <td data-label="${t('map.progress')}">${progressCell(m)}</td>
+        <td data-label="${t('map.timeGap')}">${gapText(m)}<div class="td-muted pbar-basis">${pick(m,'latestZh','latestEn')}</div></td>
       </tr>`).join('');
+    const pn = document.getElementById('metro-progress-note');
+    if (pn) pn.textContent = lang === 'zh' ? D.metroProgressNoteZh : D.metroProgressNoteEn;
+  }
+
+  /* ----------- 线网示意图（上海式：每条线一行，站点为圆点，虚线=未通车） ----------- */
+  function renderMetroDiagram() {
+    const el = document.getElementById('metro-diagram');
+    if (!el) return;
+    const X0 = 152, X1 = 636, Y0 = 34, STEP = 48, R = 5;
+    const H = Y0 + D.metro.length * STEP + 26;
+    const W = 780;
+    const stopsOf = m => (lang === 'zh' ? (m.stops || []) : (m.stopsEn || m.stops || []));
+    const pos = {};
+    D.metro.forEach((m, i) => {
+      const ss = stopsOf(m), n = Math.max(ss.length, 1);
+      const y = Y0 + i * STEP;
+      pos[i] = ss.map((s, k) => ({ name: s, x: X0 + (X1 - X0) * (n === 1 ? 0.5 : k / (n - 1)), y: y }));
+    });
+    // 换乘连接：同名站点之间画灰线
+    const links = [];
+    const seen = {};
+    D.metro.forEach((m, i) => {
+      const ss = stopsOf(m);
+      ss.forEach((s, k) => {
+        const key = s.trim();
+        if (seen[key] !== undefined) {
+          const a = seen[key];
+          if (a.i !== i) links.push([a.x, a.y, pos[i][k].x, pos[i][k].y]);
+        } else seen[key] = { i: i, x: pos[i][k].x, y: pos[i][k].y };
+      });
+    });
+    let svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" class="metro-svg" role="img">';
+    svg += links.map(l => '<line x1="' + l[0] + '" y1="' + l[1] + '" x2="' + l[2] + '" y2="' + l[3] + '" stroke="rgba(128,128,128,.45)" stroke-width="1.5" stroke-dasharray="2 3"/>').join('');
+    D.metro.forEach((m, i) => {
+      const y = Y0 + i * STEP;
+      const dash = m.status === 'operating' ? '' : (m.status === 'building' ? ' stroke-dasharray="9 6"' : ' stroke-dasharray="4 5"');
+      const op = m.status === 'approved' ? ' opacity=".72"' : '';
+      svg += '<line x1="' + X0 + '" y1="' + y + '" x2="' + X1 + '" y2="' + y + '" stroke="' + m.color + '" stroke-width="5" stroke-linecap="round"' + dash + op + '/>';
+      // 进度段（已通车不画，其余按 progress 在起点侧叠加实线）
+      if (m.status !== 'operating' && m.progress > 0) {
+        const xe = X0 + (X1 - X0) * (m.progress / 100);
+        svg += '<line x1="' + X0 + '" y1="' + y + '" x2="' + xe + '" y2="' + y + '" stroke="' + m.color + '" stroke-width="8" stroke-linecap="round" opacity=".28"/>';
+      }
+      const ss = stopsOf(m);
+      ss.forEach((s, k) => {
+        const p = pos[i][k];
+        svg += '<circle cx="' + p.x + '" cy="' + p.y + '" r="' + R + '" fill="#fff" stroke="' + m.color + '" stroke-width="2.4"/>';
+      });
+      // 线路标签（左）+ 进度（右）
+      svg += '<text x="8" y="' + (y - 9) + '" class="msvg-line" fill="currentColor">' + pick(m, 'line', 'lineEn') + '</text>';
+      svg += '<text x="8" y="' + (y + 8) + '" class="msvg-sub">' + m.length + '</text>';
+      const first = ss[0], last = ss[ss.length - 1];
+      svg += '<text x="' + (X0 - 6) + '" y="' + (y - 12) + '" text-anchor="end" class="msvg-st">' + first + '</text>';
+      svg += '<text x="' + (X1 + 6) + '" y="' + (y - 12) + '" class="msvg-st">' + last + '</text>';
+      svg += '<text x="' + (X1 + 6) + '" y="' + (y + 6) + '" class="msvg-sub">' + (m.progress == null ? '' : m.progress + '%') + '</text>';
+    });
+    svg += '</svg>';
+    el.innerHTML = svg;
+    const dn = document.getElementById('metro-diagram-note');
+    if (dn) dn.textContent = lang === 'zh' ? D.metroDiagramNoteZh : D.metroDiagramNoteEn;
   }
 
   /* 地铁图例：线号+颜色+始发-终点 */
@@ -1838,7 +2025,7 @@
     initNav(); initHeader();
     applyTheme();
     renderDynamic();
-    renderMetroTable(); renderMetroLegend(); renderInsight();
+    renderMetroTable(); renderMetroLegend(); renderMetroDiagram(); renderInsight();
     renderDrawer();
   });
 })();

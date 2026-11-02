@@ -11,7 +11,7 @@ window.RE_DATA = {
   /* ---------- 元信息 / Meta ---------- */
   meta: {
     lastUpdated: "2026-11-02",
-    lastUpdatedAt: "2026-11-02 21:10",
+    lastUpdatedAt: "2026-11-02 21:40",
     dataAsOfZh: "房价数据截至 2026 年 Q3（Knight Frank/CBRE/Savills），汇率截至 2026 年 11 月",
     dataAsOfEn: "Price data as of Q3 2026 (Knight Frank/CBRE/Savills); FX as of Nov 2026",
     fxRate: 25990,
@@ -4060,7 +4060,9 @@ window.RE_DATA = {
       eventEn: "Van Thinh Phat-linked SCB case froze the project in 2022; owners protested; later revived by new investors.",
       statusZh: "已复工",
       statusEn: "Revived",
-      link: "https://vnexpress.net"
+      link: "https://vnexpress.net",
+      latestZh: "2026-11 复核：公开渠道未见新的官方进展披露，维持「已复工」判断；该项目属万盛发/SCB 案关联资产处置序列。",
+      latestEn: "Nov 2026 recheck: no new official disclosure found; status unchanged as \"revived\". Part of the Van Thinh Phat / SCB asset-resolution sequence."
     },
     {
       name: "Khải Hoàn–Minh Châu II（平政）",
@@ -4072,7 +4074,9 @@ window.RE_DATA = {
       eventEn: "Stalled nearly a decade after the 2008 crisis; buyers waited years before a phased settlement — a textbook stall case.",
       statusZh: "已解决",
       statusEn: "Resolved",
-      link: "https://vnexpress.net"
+      link: "https://vnexpress.net",
+      latestZh: "2026-11 复核：案件已分期解决完毕，作为本地「烂尾」教科书案例保留；无新增争议。",
+      latestEn: "Nov 2026 recheck: settled in phases and closed; kept as a textbook local stall case, no new disputes."
     },
     {
       name: "Golden An Phú（第2郡）",
@@ -4084,7 +4088,9 @@ window.RE_DATA = {
       eventEn: "Handover delayed over a decade with tangled legal disputes — a representative long-stalled project.",
       statusZh: "悬而未决",
       statusEn: "Unresolved",
-      link: "https://tuoitre.vn"
+      link: "https://tuoitre.vn",
+      latestZh: "2026-11 复核：仍未见权威渠道披露最终处置结论，维持「悬而未决」。胡志明市本轮停滞项目清理中 838 个项目仅剩 28 个因跨法域问题仍在审查，本项目是否列入尚待核实。",
+      latestEn: "Nov 2026 recheck: no authoritative final resolution disclosed; still \"unresolved\". Of HCMC's 838 stalled projects only 28 remain under review for cross-legal-regime issues — whether this project is among them is unconfirmed."
     },
     {
       name: "Hưng Thịnh 系部分项目（2023 风波）",
@@ -4096,7 +4102,65 @@ window.RE_DATA = {
       eventEn: "Bond-credit squeeze stalled several projects; revived via restructuring + government coordination.",
       statusZh: "逐步复工",
       statusEn: "Gradually resumed",
-      link: "https://tuoitre.vn"
+      link: "https://tuoitre.vn",
+      latestZh: "2026-11 复核：公司已完成债务重组，多数项目恢复施工；2026 年胡志明市公布 37 个符合未来销售条件的楼盘（21,165 套），较 2025 年全年增长 133%，显示解困产能正在释放。",
+      latestEn: "Nov 2026 recheck: restructuring completed and most projects resumed. In 2026 HCMC cleared 37 projects (21,165 units) as eligible for future sale, up 133% vs full-year 2025 — unblocked supply is coming to market."
+    },
+    {
+      name: "Saigon LightHouse（阮必成街 448 号）",
+      nameEn: "Saigon LightHouse (448 Nguyen Tat Thanh)",
+      developerZh: "BT 合同项目（2016 年签约）",
+      developerEn: "Build-transfer project (contract signed 2016)",
+      year: "2016–2026",
+      eventZh: "源自 2016 年 BT（建设-移交）合同，2018 年初基建完工移交，但因土地使用费计算时点争议，土地支付被搁置多年，项目停滞近十年。列入胡志明市重点解困清单后走完全部法律程序。",
+      eventEn: "Originating from a 2016 build-transfer contract; infrastructure was completed and handed over in early 2018, but land payment was frozen for years over the land-fee calculation date, stalling the project for nearly a decade. All legal procedures were completed after it was placed on the city priority unblocking list.",
+      statusZh: "已复工（2026-07 动工）",
+      statusEn: "Restarted (groundbreaking Jul 2026)",
+      latestZh: "2026-07 初正式动工，是胡志明市解困清单的标志性案例之一；官方称共耗时 10 年解决法律问题。",
+      latestEn: "Broke ground in early July 2026 — a flagship case on HCMC's unblocking list; officials say resolving the legal issues took 10 years.",
+      link: "https://en.nhandan.vn/reviving-stalled-projects-to-create-new-growth-momentum-for-ho-chi-minh-city-post164913.html"
+    },
+    {
+      name: "The Grand Manhattan（第一郡）",
+      nameEn: "The Grand Manhattan (District 1)",
+      developerZh: "Novaland（诺瓦集团）",
+      developerEn: "Novaland",
+      year: "2022–2026",
+      eventZh: "位于郭婆街与郭江街临街地块、占地约 1.4 万㎡，含 3 栋 38 层塔楼、逾 1,000 套公寓。因集团债务重组与法务问题停工逾三年。",
+      eventEn: "A ~14,000 sqm site fronting Co Giang and Co Bac streets with three 38-storey towers and over 1,000 apartments. Idle for more than three years amid the group's debt restructuring and legal issues.",
+      statusZh: "已复工 · 2026 Q3 起交房",
+      statusEn: "Restarted · handover from Q3 2026",
+      latestZh: "2026 年进入冲刺施工阶段，自三季度起向客户交房，参考售价约 3.5 亿盾/㎡。集团称政府与胡志明市领导推动解困是关键。",
+      latestEn: "Entered the final construction push in 2026 with handovers from Q3; reference price around VND 350 million/sqm. The group credits government and city leaders for clearing the legal path.",
+      link: "https://en.nhandan.vn/reviving-stalled-projects-to-create-new-growth-momentum-for-ho-chi-minh-city-post164913.html"
+    },
+    {
+      name: "Noble Rivera（原 Noble Palace Riverside，河内福寿）",
+      nameEn: "Noble Rivera (ex-Noble Palace Riverside, Phuc Tho, Hanoi)",
+      developerZh: "原 Vimedimex 系（待核实）",
+      developerEn: "Vimedimex-linked (TBC)",
+      year: "2006–2026",
+      eventZh: "占地约 400 公顷、总投资约 20 亿美元的大型项目，停工近 20 年后重启，是河内「老烂尾」中体量最大的一批。",
+      eventEn: "A ~400 hectare, ~USD 2 billion master-planned project restarted after nearly 20 years idle — among the largest of Hanoi's long-stalled projects.",
+      statusZh: "已复工（2026）",
+      statusEn: "Restarted (2026)",
+      latestZh: "2026 年复工。全国口径约 4,500 个项目积压、涉及资金逾 300 万亿盾，已化解 1,000 余个、释放约 80 万亿盾。",
+      latestEn: "Restarted in 2026. Nationwide roughly 4,500 projects remain stuck with over VND 3,000 trillion tied up; more than 1,000 have been unblocked, releasing ~VND 800 trillion.",
+      link: "https://aveluro.com/news/NVL/sector-sentiment-2026-08-05-du-an-bat-dong-san-dong-loat-hoi-sinh-sau-go-phap-ly"
+    },
+    {
+      name: "NO-11 公寓（河内 Dịch Vọng）",
+      nameEn: "NO-11 apartments (Dich Vong, Hanoi)",
+      developerZh: "待核实",
+      developerEn: "TBC",
+      year: "2010s–2026",
+      eventZh: "长期停滞的公寓项目，2025 年底取得施工许可，2026 年恢复推进，属本轮「解困潮」中获证复工的一类。",
+      eventEn: "A long-stalled apartment project that received its building permit in late 2025 and resumed in 2026 — one of the projects restarted in the current unblocking wave.",
+      statusZh: "已获施工许可 · 复工推进中",
+      statusEn: "Permit granted · works resuming",
+      latestZh: "2025 年底获施工许可，2026 年推进；具体交付节点待核实。",
+      latestEn: "Permit granted in late 2025, progressing through 2026; delivery milestones still to be verified.",
+      link: "https://aveluro.com/news/NVL/sector-sentiment-2026-08-05-du-an-bat-dong-san-dong-loat-hoi-sinh-sau-go-phap-ly"
     }
   ],
   failedCasesNoteZh: "规避要点：查开发商交付记录→查项目法律文件（投资许可/施工许可/消防验收）→分期付款交房前≤70%→保留尾款5%至粉皮书→优先头部开发商。",
@@ -4120,7 +4184,47 @@ window.RE_DATA = {
       expect: "—",
       length: "19.7 km",
       stations: 14,
-      color: "#1a7f4f"
+      color: "#1a7f4f",
+      progress: 100,
+      target: null,
+      planStart: "2024-12-22",
+      basisZh: "2024-12-22 正式商业运营，日均客流稳定；全长 19.7 km、14 站（含地下 3 站）。",
+      basisEn: "In commercial operation since 2024-12-22; 19.7 km / 14 stations.",
+      latestZh: "2026-10：1 号线延伸段（平阳新城–仙泉，约 31–32.8 km）已完成中期报告，拟 2026-12 报批，目标 2030。",
+      latestEn: "Oct 2026: the Line 1 extension (Binh Duong New City–Suoi Tien, ~31–32.8 km) finished its mid-term report, to be submitted in Dec 2026, targeting 2030.",
+      stops: [
+        "滨城",
+        "歌剧院",
+        "巴逊",
+        "文圣",
+        "新港",
+        "草田",
+        "安富",
+        "沥节",
+        "福隆",
+        "平泰",
+        "守德",
+        "高新园区",
+        "国家大学",
+        "仙泉"
+      ],
+      stopsEn: [
+        "Ben Thanh",
+        "Opera House",
+        "Ba Son",
+        "Van Thanh",
+        "Tan Cang",
+        "Thao Dien",
+        "An Phu",
+        "Rach Chiec",
+        "Phuoc Long",
+        "Binh Thai",
+        "Thu Duc",
+        "Hi-Tech Park",
+        "Nat. University",
+        "Suoi Tien"
+      ],
+      path: [[10.7708, 106.6978], [10.7767, 106.7033], [10.7819, 106.7083], [10.796, 106.7155], [10.798, 106.7185], [10.8005, 106.7337], [10.803, 106.744], [10.812, 106.76], [10.8214, 106.7581], [10.831, 106.786], [10.8405, 106.7945], [10.85, 106.805], [10.868, 106.803], [10.8794, 106.8139]]
     },
     {
       line: "2号线西段",
@@ -4138,7 +4242,33 @@ window.RE_DATA = {
       expect: "2030-12 通车",
       length: "11.3 km",
       stations: 11,
-      color: "#2563eb"
+      color: "#2563eb",
+      progress: 12,
+      target: "2030-12",
+      planStart: "2026-01-15",
+      basisZh: "11 站（10 地下+1 高架）：10/22 官方口径已开工 5 站，10 月底再加 3 站、12 月完成剩余 3 站；高架段与车辆段 11 月初同步开工。2026 年度资本 7,500 亿盾已拨付 6,600 亿（≈88%）。工程主体结构完成率仍处个位数，故形象进度取约 12%（估算）。",
+      basisEn: "11 stations (10 underground + 1 elevated): 5 under construction per MAUR on 10/22, +3 by end-Oct and the last 3 in Dec; elevated section and depot start early Nov. FY2026 capital 7,500 bn VND, 6,600 bn disbursed (~88%). Structural completion is still single-digit, so visual progress is estimated at ~12%.",
+      latestZh: "2026-10-15：承建方 Bachy Soletanche Vietnam 举行 ST6 站开工仪式；目标 2029-03 完成主体、2030 年底前商业运营。拆迁交地已 100%。",
+      latestEn: "15 Oct 2026: contractor Bachy Soletanche Vietnam broke ground on station ST6; main structures due Mar 2029, commercial operation before end-2030. Land clearance 100%.",
+      stops: [
+        "滨城",
+        "骚坛",
+        "民主",
+        "和平",
+        "富寿",
+        "新平",
+        "参良"
+      ],
+      stopsEn: [
+        "Ben Thanh",
+        "Tao Dan",
+        "Dan Chu",
+        "Hoa Hung",
+        "Phu Tho",
+        "Tan Binh",
+        "Tham Luong"
+      ],
+      path: [[10.7722, 106.6984], [10.7765, 106.6915], [10.7835, 106.682], [10.792, 106.6735], [10.8, 106.666], [10.809, 106.658], [10.82, 106.65], [10.83, 106.643]]
     },
     {
       line: "2号线东段",
@@ -4156,7 +4286,25 @@ window.RE_DATA = {
       expect: "2030-04",
       length: "6.2 km",
       stations: 6,
-      color: "#2563eb"
+      color: "#2563eb",
+      progress: 8,
+      target: "2030-12",
+      planStart: "2026-04-30",
+      basisZh: "2026-04-29/30 开工，全长 6.2 km、6 站，目前处于管线迁改与围护结构阶段，形象进度约 8%（估算）。",
+      basisEn: "Started 29–30 Apr 2026; 6.2 km / 6 stations. Currently in utility relocation and diaphragm-wall stage; visual progress ~8% (est.).",
+      latestZh: "2026-10：官方口径目标 2030 年建成，与西段同步推进；过西贡河段为控制性节点。",
+      latestEn: "Oct 2026: official target remains 2030, running in parallel with the western section; the Saigon River crossing is the critical node.",
+      stops: [
+        "滨城",
+        "白藤",
+        "守添"
+      ],
+      stopsEn: [
+        "Ben Thanh",
+        "Bach Dang",
+        "Thu Thiem"
+      ],
+      path: [[10.7722, 106.6984], [10.7728, 106.701], [10.7765, 106.721], [10.778, 106.729]]
     },
     {
       line: "滨城–芹椰",
@@ -4174,7 +4322,25 @@ window.RE_DATA = {
       expect: "2028",
       length: "约54 km",
       stations: null,
-      color: "#f59e0b"
+      color: "#f59e0b",
+      progress: 10,
+      target: "2028-12",
+      planStart: "2025-12-19",
+      basisZh: "2025-12-19 开工，全长约 54 km；2026 年度补偿安置预算已拨付 73%，土地移交投资者计划 11 月进行。主体工程尚未全面开工，形象进度约 10%（估算）。",
+      basisEn: "Groundbreaking 19 Dec 2025; ~54 km. 73% of the FY2026 compensation/resettlement budget disbursed, land handover to investors scheduled for November. Main works not yet fully underway; visual progress ~10% (est.).",
+      latestZh: "2026-10-19：胡志明市计划 2026 年底前再开工 5 条、合计逾 167 km 的线路；本线目标 2028 年通车。",
+      latestEn: "19 Oct 2026: HCMC plans to break ground on five more lines totalling over 167 km by end-2026; this line targets 2028.",
+      stops: [
+        "滨城",
+        "芽郫",
+        "芹椰"
+      ],
+      stopsEn: [
+        "Ben Thanh",
+        "Nha Be",
+        "Can Gio"
+      ],
+      path: [[10.7708, 106.6978], [10.74, 106.71], [10.7, 106.75], [10.63, 106.8], [10.55, 106.86], [10.52, 106.88]]
     },
     {
       line: "守添–隆城",
@@ -4192,7 +4358,25 @@ window.RE_DATA = {
       expect: "2030",
       length: "约47.7 km",
       stations: 19,
-      color: "#8b5cf6"
+      color: "#8b5cf6",
+      progress: 5,
+      target: "2030-12",
+      planStart: "2026-06-30",
+      basisZh: "2026-06-30 开工，全长约 47.7 km、19 站，目前处于前期工程与征地阶段，形象进度约 5%（估算）。",
+      basisEn: "Started 30 Jun 2026; ~47.7 km / 19 stations. Still in preliminary works and land acquisition; visual progress ~5% (est.).",
+      latestZh: "2026-10：隆城国际机场整体工程量已完成逾 80%，本线为配套轨道接入，目标 2030 通车。",
+      latestEn: "Oct 2026: Long Thanh International Airport is over 80% complete; this line is the rail link, targeting 2030.",
+      stops: [
+        "守添",
+        "仁泽",
+        "隆城机场"
+      ],
+      stopsEn: [
+        "Thu Thiem",
+        "Nhon Trach",
+        "Long Thanh Airport"
+      ],
+      path: [[10.776, 106.729], [10.79, 106.76], [10.77, 106.8], [10.75, 106.85], [10.76, 106.92], [10.78, 107]]
     },
     {
       line: "6号线",
@@ -4210,7 +4394,23 @@ window.RE_DATA = {
       expect: "2030",
       length: "22.85 km",
       stations: null,
-      color: "#e5484d"
+      color: "#e5484d",
+      progress: 0,
+      target: "2030-12",
+      planStart: "2026-12",
+      basisZh: "一期（新山一机场–富友，22.85 km）已完成中期报告，拟 2026-12 报批后开工；正与国防部就机场片区国防用地完成协议程序。尚未开工，进度 0%。",
+      basisEn: "Phase 1 (Tan Son Nhat–Phu Huu, 22.85 km) finished its mid-term report, to be submitted for approval in Dec 2026 before construction. Agreement procedures with the Ministry of Defence over airport-area defence land are being finalised. Not started, 0%.",
+      latestZh: "2026-10：MAUR 争取 2026 年 12 月获批，作为 2026 年底集中开工的 3 条新线之一。",
+      latestEn: "Oct 2026: MAUR aims for approval in Dec 2026, one of three new lines to be started around end-2026.",
+      stops: [
+        "新山一机场",
+        "富友"
+      ],
+      stopsEn: [
+        "Tan Son Nhat",
+        "Phu Huu"
+      ],
+      path: [[10.8188, 106.6587], [10.815, 106.68], [10.81, 106.7], [10.805, 106.72], [10.798, 106.74], [10.79, 106.76]]
     },
     {
       line: "平阳新城线",
@@ -4228,7 +4428,57 @@ window.RE_DATA = {
       expect: "2030",
       length: "32.8 km",
       stations: 17,
-      color: "#14b8a6"
+      color: "#14b8a6",
+      progress: 0,
+      target: "2030-12",
+      planStart: "2026-12",
+      basisZh: "即 1 号线延伸段（平阳新城–仙泉，约 31–32.8 km、17 站）：走向方案已由规划建筑局呈报，补偿项目单独获批实施，中期报告已完成，拟 2026-12 获批开工。尚未开工，进度 0%。",
+      basisEn: "The Line 1 extension (Binh Duong New City–Suoi Tien, ~31–32.8 km, 17 stations): the alignment plan has been submitted by the planning department, the compensation project approved separately, mid-term report done; approval and start targeted Dec 2026. Not started, 0%.",
+      latestZh: "2026-10：与 2 号线北段、6 号线一期同批推进，三条新线合计约 90 km、初步总投资逾 254 万亿盾。",
+      latestEn: "Oct 2026: advanced in the same batch as Line 2 North and Line 6 phase 1 — three new lines totalling ~90 km with preliminary investment above VND 254 trillion.",
+      stops: [
+        "平阳新城",
+        "仙泉"
+      ],
+      stopsEn: [
+        "Binh Duong New City",
+        "Suoi Tien"
+      ],
+      path: [[11.03, 106.68], [10.99, 106.71], [10.95, 106.745], [10.918, 106.78], [10.898, 106.804], [10.8794, 106.8139]]
+    },
+    {
+      line: "2号线北段",
+      lineEn: "Line 2 North",
+      from: "土龙木",
+      fromEn: "Thu Dau Mot",
+      to: "骚坛",
+      toEn: "Tao Dan",
+      name: "土龙木–骚坛",
+      nameEn: "Thu Dau Mot–Tao Dan",
+      status: "approved",
+      statusZh: "已批待开工",
+      statusEn: "Approved",
+      since: "2026-12 预计开工",
+      expect: "2030",
+      length: "33.2 km",
+      stations: null,
+      color: "#0891b2",
+      progress: 0,
+      target: "2030-12",
+      planStart: "2026-12",
+      basisZh: "2026-10 官方口径：全长 33.2 km，与平阳新城线、6 号线一期同批，拟 2026-12 获批后开工。尚未开工，进度 0%。",
+      basisEn: "Oct 2026 official: 33.2 km, in the same batch as the Binh Duong line and Line 6 phase 1, approval and start targeted Dec 2026. Not started, 0%.",
+      latestZh: "2026-10：三条新线合计约 90 km、初步总投资逾 254 万亿盾（≈98 亿美元），目标 2030 建成。",
+      latestEn: "Oct 2026: the three new lines total ~90 km with preliminary investment above VND 254 trillion (~USD 9.8 bn), targeted for 2030.",
+      stops: [
+        "土龙木",
+        "骚坛"
+      ],
+      stopsEn: [
+        "Thu Dau Mot",
+        "Tao Dan"
+      ],
+      path: [[11.02, 106.66], [10.98, 106.68], [10.93, 106.69], [10.88, 106.69], [10.83, 106.69], [10.79, 106.692], [10.771, 106.692]]
     }
   ],
   metroSourceUrl: "https://news.laodong.vn/xa-hoi/metro-tphcm-vao-giai-doan-but-toc-1692893.ldo",
@@ -5700,5 +5950,140 @@ window.RE_DATA = {
     file: "docs/vietnam-property-contract-whitepaper.pdf",
     descZh: "《外籍购房合同范本与签约白皮书》（中英双语 PDF）：SPA/定金/LTRA 核心条款、付款保护、风险清单与签约 Checklist。",
     descEn: "Contract Templates & Signing Whitepaper (bilingual PDF): key SPA/deposit/LTRA clauses, payment protections, risk checklist."
+  },
+  metroProgressNoteZh: "进度口径：已通车=100%；在建线按 MAUR（胡志明市城市铁路管理局）2026-10-22 记者会披露的「站点开工数 / 资金拨付 / 主体结构完成度」折算为形象进度，属估算值，非官方工程量百分比。时间差按页面数据日期与预计通车月份计算。",
+  metroProgressNoteEn: "Progress basis: operating = 100%; lines under construction are estimated from MAUR disclosures on 22 Oct 2026 (stations started / capital disbursed / structural completion) — an indicative estimate, not an official work-volume percentage. Time gap is computed from the page data date to the expected opening month.",
+  metroDiagramNoteZh: "线路示意图（非按比例）：横向为线路走向，圆点为已命名站点，虚线=在建/待开工，灰线为换乘连接。仅用于快速识别线网结构，实际走向以官方规划图为准。",
+  metroDiagramNoteEn: "Schematic diagram (not to scale): each row is one line, dots are named stations, dashed = under construction / pending, grey links are interchanges. For quick network orientation only — refer to official alignment maps for exact routes.",
+  loanRateTrend: {
+    asOf: "2026-11-02",
+    startLabelZh: "2026-01",
+    months: [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11"
+    ],
+    fixed: [
+      9.5,
+      9.5,
+      9.6,
+      9.6,
+      9.7,
+      9.75,
+      9.85,
+      10,
+      10.1,
+      10.3,
+      10.3
+    ],
+    floating: [
+      13,
+      13,
+      13.1,
+      13.4,
+      13.7,
+      14,
+      13.9,
+      14,
+      14.1,
+      14.3,
+      14.4
+    ],
+    fixedLabelZh: "优惠期固定利率（首年，%/年）",
+    fixedLabelEn: "Teaser fixed rate (1st year, %/yr)",
+    floatLabelZh: "优惠期后浮动利率（%/年）",
+    floatLabelEn: "Post-teaser floating rate (%/yr)",
+    basisZh: "口径：季度为权威机构区间的中值（Q1 浮动 12–14%、Q2–Q3 浮动 13–15%、10 月 13–15%/个别 16%；Q2 优惠 8.5–11%、Q3 前 12 个月固定 8.5–11.5%），月度点为季度锚点之间的线性插值，非逐月实测挂牌价。曲线用于看趋势方向，不作为报价依据。",
+    basisEn: "Method: quarterly anchors are mid-points of authoritative ranges (Q1 floating 12–14%; Q2–Q3 floating 13–15%; Oct 13–15% with some at 16%; Q2 teaser 8.5–11%; Q3 first-12-month fixed 8.5–11.5%). Monthly points are linear interpolation between quarterly anchors, not month-by-month board rates. Use for direction, not for quoting.",
+    events: [
+      {
+        date: "2026-06",
+        textZh: "国家银行（SBV）6 月口径：新发放+存量一般贷款平均 8.1–10.5%/年；上半年房贷普遍 12–14%/年。",
+        textEn: "SBV June: average general lending rate 8.1–10.5%/yr; H1 mortgages commonly 12–14%/yr."
+      },
+      {
+        date: "2026-08",
+        textZh: "主要银行平均优惠固定利率升至约 10.9%/年；SBV 8 月平均贷款利率 8.4–10.7%（环比 +0.2pp，同比约 +3pp）。",
+        textEn: "Average teaser fixed rate at major banks rose to ~10.9%/yr; SBV August average lending rate 8.4–10.7% (+0.2pp MoM, ~+3pp YoY)."
+      },
+      {
+        date: "2026-09",
+        textZh: "DXS-FERI 三季度：房地产贷款前 12 个月固定 8.5–11.5%，优惠期后浮动升至 13–15%（较上半年再上一档）。",
+        textEn: "DXS-FERI Q3: first-12-month fixed 8.5–11.5%, post-teaser floating 13–15% — one notch above H1."
+      },
+      {
+        date: "2026-10",
+        textZh: "商业银行购房贷 11–14%、优惠期后浮动 13–15%、个别 16%；10/27 定向优惠包落地（Vietcombank 2 万亿盾额度较常规低 1pp、BIDV 3 万亿盾包 12 个月固定 9.5%）。",
+        textEn: "Commercial banks: home loans 11–14%, post-teaser floating 13–15%, some 16%. On 27 Oct targeted packages landed (Vietcombank VND 2 tn quota at 1pp below normal; BIDV VND 3 tn package, 12-month fixed 9.5%)."
+      },
+      {
+        date: "2026-11",
+        textZh: "DXS-FERI 预测：最可行情景下 2026 年底浮动贷款利率仍为 11–13%（尚未落地）；11/1 起 12 个月期定存挂牌多数降至 7% 以下，但存款端降幅被促销加价抵消。",
+        textEn: "DXS-FERI forecast: in the most feasible scenario year-end floating lending stays 11–13% (not yet realised). From 1 Nov most 12-month deposit boards fell below 7%, though promotional top-ups offset the cut."
+      }
+    ]
+  },
+  stalledStats: {
+    asOf: "2026-11-02",
+    items: [
+      {
+        labelZh: "全国仍有困难待处理项目",
+        labelEn: "Nationwide projects still facing obstacles",
+        value: "约 5,012 个",
+        valueEn: "~5,012",
+        srcZh: "建设部 2026 Q3 报告（27/34 个地方上报）",
+        srcEn: "Ministry of Construction, Q3 2026 (27 of 34 localities reporting)"
+      },
+      {
+        labelZh: "全国积压项目 / 涉及资金",
+        labelEn: "Nationwide backlog / capital tied up",
+        value: "约 4,500 个 / 逾 300 万亿盾",
+        valueEn: "~4,500 / >VND 3,000 tn",
+        srcZh: "2026-08 官方口径；已化解 1,000 余个、释放约 80 万亿盾",
+        srcEn: "Aug 2026 official; 1,000+ resolved, ~VND 800 tn released"
+      },
+      {
+        labelZh: "胡志明市停滞项目总数",
+        labelEn: "HCMC stalled projects total",
+        value: "838 个",
+        valueEn: "838",
+        srcZh: "其中中央权限 54 个、地方权限 784 个",
+        srcEn: "54 under central authority, 784 under local authority"
+      },
+      {
+        labelZh: "胡志明市已解决 / 基本解决",
+        labelEn: "HCMC resolved / largely resolved",
+        value: "417 / 393 个",
+        valueEn: "417 / 393",
+        srcZh: "仅 28 个因跨法域问题仍在审查；释放逾 206 万亿盾投资、约 1.7 万公顷土地",
+        srcEn: "Only 28 still under review for cross-regime issues; >VND 206 tn investment and ~17,000 ha unlocked"
+      },
+      {
+        labelZh: "三季度库存（27 个地方上报）",
+        labelEn: "Q3 inventory (27 localities)",
+        value: "约 51,950 套/地块",
+        valueEn: "~51,950 units/plots",
+        srcZh: "高于上一季度",
+        srcEn: "Higher than the previous quarter"
+      },
+      {
+        labelZh: "2026 年符合未来销售条件",
+        labelEn: "Cleared for future sale in 2026",
+        value: "37 个楼盘 · 21,165 套",
+        valueEn: "37 projects · 21,165 units",
+        srcZh: "胡志明市建设厅；较 2025 年全年（26 个 / 9,075 套）增长 133%",
+        srcEn: "HCMC Dept. of Construction; +133% vs full-year 2025 (26 / 9,075)"
+      }
+    ],
+    noteZh: "口径说明：以上为建设部 / 胡志明市人民委员会 / 主流媒体的公开统计，统计时点与「困难」定义各口径略有差异，跨源数字不可直接相加。",
+    noteEn: "Note: figures come from the Ministry of Construction, the HCMC People's Committee and mainstream media; counting dates and the definition of \"stalled\" differ slightly across sources, so numbers are not directly additive."
   }
 };
