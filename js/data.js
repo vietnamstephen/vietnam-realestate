@@ -10,8 +10,8 @@ window.RE_DATA = {
 
   /* ---------- 元信息 / Meta ---------- */
   meta: {
-    lastUpdated: "2026-11-02",
-    lastUpdatedAt: "2026-11-02 23:50",
+    lastUpdated: "2026-11-03",
+    lastUpdatedAt: "2026-11-03 05:00",
     dataAsOfZh: "房价数据截至 2026 年 Q3（Knight Frank/CBRE/Savills），汇率截至 2026 年 11 月",
     dataAsOfEn: "Price data as of Q3 2026 (Knight Frank/CBRE/Savills); FX as of Nov 2026",
     fxRate: 25990,
@@ -204,9 +204,9 @@ window.RE_DATA = {
       cnyVnd: 3645,
       asOf: "2026-10"
     },
-    noteZh: "越南盾 2020→2026 对美元累计贬值约 12%（23,200→25,990）、对人民币约 9%——人民币同期对美元也小幅贬值，两者同向贬值相抵，故对人民币贬值更少。切换上方「基准年」可看不同起点的累计变化。注：2026 年内 VND 转为升值（年初约 26,480 → 25,990，约 1.85%）。11/1 口径：银行美元卖出价连续第二日低于 26,000（2025 年 4 月中旬以来首次）。Vietcombank 买入 25,580、卖出 25,990（较早间再降 30 盾），ACB 卖出 25,980，VietinBank 与 BIDV 同步降至 25,980；SBV 11/1 中央汇率维持 25,637（连续第二日持平），±5% 区间 24,355–26,919。银行汇率较年初低约 1.5%，越盾 10 个月后对美元转为升值。自由市场价差显著收窄：河内兑换点买 25,700、卖 25,780，已低于银行卖出价（与 10/31 记录的反向价差并存，渠道口径不同、待核实）。人民币：VCB 挂牌 3,779.79 现金买入 / 3,817.97 转账买入 / 3,940.35 卖出（较上周未变）；本表 cnyVnd 采用 25,990/7.13 的交叉折算口径（3,645），与银行挂牌不同源、勿直接对比。外部：美联储 10/28 以 10:2 维持 3.75%–4.00%，9 月 PCE 加速、Q3 GDP 超预期，CME 口径 12 月加息概率约 80%；DXY 回升至 101 上方；金价 11/2 早间 3,874 美元/盎司、为 2025 年 10 月以来低位（周跌约 121 美元），SJC 金条 1.36–1.39 亿盾/两。机构预测：MBS 年底 26,800–27,000（油价与美元走强仍是压力），UOB 预计 Q4 26,300、2027 Q1–Q2 分别 26,600/26,800，Techcombank 维持 26,000 附近。购房款须以越南盾经境内账户支付，首笔入金水单务必保存（资金出境凭证）。",
-    noteEn: "VND depreciated ~12% vs USD (23,200 to 25,990) and ~9% vs CNY over 2020-2026 — CNY itself slipped vs USD, so the two same-direction moves offset and VND lost less against CNY. Switch the base year above to see cumulative moves from any start. Note: within 2026 VND has turned stronger vs USD (about 26,480 in January to 25,990 now, ~1.85%). As of the Oct 31 close (Saturday): bank dollar quotes fell below 26,000 for the first time since mid-April 2025 — Vietcombank bid 25,610 / asked 25,990 (down 30 dong from the morning), other state banks quoted 25,440-25,980, and only a few private banks (Sacombank, TPBank) kept asks near 26,000. Bank dollar asks stayed below 26,000 for a second session on Nov 1, the first time since mid-April 2025. Vietcombank bid 25,580 and asked 25,990 (another 30 dong lower intraday), ACB asked 25,980, and VietinBank and BIDV matched at 25,980. The SBV central rate held at 25,637 on Nov 1 (flat for a second day), with the +/-5% band at 24,355-26,919. Bank rates are down roughly 1.5% since the start of the year, meaning the dong has turned stronger against the dollar over ten months. The unofficial spread has narrowed sharply: Hanoi desks bid 25,700 and ask 25,780, now below bank asks (this coexists with the inverse gap logged on Oct 31 — different channel basis, to be verified). CNY: Vietcombank boards 3,779.79 cash bid / 3,817.97 transfer bid / 3,940.35 ask, unchanged on the week; the cnyVnd figure here is a 25,990/7.13 cross rate (3,645), a different basis from bank boards. Abroad, the Fed held at 3.75%-4.00% on Oct 28 by a 10-2 vote, September PCE accelerated and Q3 GDP beat expectations, keeping CME odds of a December hike near 80%, and DXY recovered above 101; gold was $3,874/oz on the morning of Nov 2, the lowest since October 2025 (down about $121 on the week), with SJC bars at VND 136-139m per tael. Forecasts: MBS 26,800-27,000 by year-end, UOB 26,300 for Q4 and 26,600/26,800 for Q1-Q2 2027, Techcombank around 26,000. Property must be paid in VND via onshore accounts — keep the first inbound remittance slip (repatriation proof).",
-    sourceUrl: "https://news.qq.com/rain/a/20261031A050UN00"
+    noteZh: "越南盾 2020→2026 对美元累计贬值约 12%（23,200→25,990）、对人民币约 9%——人民币同期对美元也小幅贬值，两者同向贬值相抵，故对人民币贬值更少。切换上方「基准年」可看不同起点的累计变化。注：2026 年内 VND 转为升值（年初约 26,480 → 25,990，约 1.85%）。11/2 口径：Vietcombank 美元卖出 25,990，为一年半低位（银行卖出价连续三个交易日低于 26,000）；SBV 中央汇率 25,631（-0.02%），±5% 区间随之移至约 24,349–26,913。同期自由市场报价回升近 1.1% 至 26,050，与银行卖出价差重新拉开至约 60 盾——11/1 曾出现自由市场低于银行的反向价差（买 25,700/卖 25,780），渠道口径差异大，按「待核实」处理、勿据此判断趋势。银行汇率较年初低约 1.5%，越盾 10 个月后对美元转为升值。人民币：VCB 挂牌 3,779.79 现金买入 / 3,817.97 转账买入 / 3,940.35 卖出（较上周未变）；本表 cnyVnd 采用 25,990/7.13 的交叉折算口径（3,645），与银行挂牌不同源、勿直接对比。外部：美联储 10/28 以 10:2 维持 3.75%–4.00%，9 月 PCE 加速、Q3 GDP 超预期，CME 口径 12 月加息概率约 80%；DXY 回升至 101 上方；金价 11/2 早间 3,874 美元/盎司、为 2025 年 10 月以来低位（周跌约 121 美元），SJC 金条 1.36–1.39 亿盾/两。机构预测：MBS 年底 26,800–27,000（油价与美元走强仍是压力），UOB 预计 Q4 26,300、2027 Q1–Q2 分别 26,600/26,800，Techcombank 维持 26,000 附近。购房款须以越南盾经境内账户支付，首笔入金水单务必保存（资金出境凭证）。",
+    noteEn: "VND depreciated ~12% vs USD (23,200 to 25,990) and ~9% vs CNY over 2020-2026 — CNY itself slipped vs USD, so the two same-direction moves offset and VND lost less against CNY. Switch the base year above to see cumulative moves from any start. Note: within 2026 VND has turned stronger vs USD (about 26,480 in January to 25,990 now, ~1.85%). As of the Oct 31 close (Saturday): bank dollar quotes fell below 26,000 for the first time since mid-April 2025 — Vietcombank bid 25,610 / asked 25,990 (down 30 dong from the morning), other state banks quoted 25,440-25,980, and only a few private banks (Sacombank, TPBank) kept asks near 26,000. As of Nov 2, Vietcombank asked VND 25,990, a one-and-a-half-year low, keeping bank asks below 26,000 for a third session; the SBV central rate was VND 25,631 (-0.02%), putting the +/-5% band near 24,349-26,913. The informal quote rebounded nearly 1.1% to VND 26,050 the same day, reopening a ~VND 60 gap over bank asks, after the street rate briefly printed below banks on Nov 1 (bid 25,700 / ask 25,780) — a channel discrepancy wide enough to treat as unverified rather than a trend. Bank rates are down roughly 1.5% since the start of the year, meaning the dong has turned stronger against the dollar over ten months. CNY: Vietcombank boards 3,779.79 cash bid / 3,817.97 transfer bid / 3,940.35 ask, unchanged on the week; the cnyVnd figure here is a 25,990/7.13 cross rate (3,645), a different basis from bank boards. Abroad, the Fed held at 3.75%-4.00% on Oct 28 by a 10-2 vote, September PCE accelerated and Q3 GDP beat expectations, keeping CME odds of a December hike near 80%, and DXY recovered above 101; gold was $3,874/oz on the morning of Nov 2, the lowest since October 2025 (down about $121 on the week), with SJC bars at VND 136-139m per tael. Forecasts: MBS 26,800-27,000 by year-end, UOB 26,300 for Q4 and 26,600/26,800 for Q1-Q2 2027, Techcombank around 26,000. Property must be paid in VND via onshore accounts — keep the first inbound remittance slip (repatriation proof).",
+    sourceUrl: "https://econotimes.com/Dollar-Rises-to-VND26-050-at-Vietnam-s-Informal-Exchange-Points-1768545"
   },
 
   /* ---------- 政策追踪（含官方链接） ---------- */
@@ -519,6 +519,46 @@ window.RE_DATA = {
   /* ---------- 动态消息 / News Feed（利好/利坏/政策/市政） ---------- */
   newsFeed: [
     {
+      date: "2026-11-03",
+      tag: "政策 / Policy",
+      tagClass: "good",
+      zh: "存款降息扩至约 30 家银行（11/2 口径）：Eximbank 11/2 下调 6–12 个月 0.5pp 至 6–11 月 4.2%、12 月 4.5%；Techcombank、Sacombank、MSB 各降 0.5pp；NCB 6 个月以上最多降 0.6pp；SeABank 18–36 个月最多降 0.7pp；BIDV 自 11 月起柜面 6 个月以上降 0.5pp，个人定存最高 5.4%、线上最高 6.8%、企业 12–60 月 4%。贷款端同步加码：Agribank 最高降 2pp、Vietcombank 降 1.5–2pp（部分短期品种较现行最多降 3pp）、VietinBank 最高降 2pp；Techcombank 投放 40 万亿盾、Sacombank 20 万亿盾（个人，降 1.5–2pp）、MSB 10 万亿盾（企业，7.5% 起、低于常规 ≥2pp）。提示：挂牌价与实际付息仍双轨，实际吸存个别仍在 8% 以上，存款成本下降向房贷利率的传导尚未体现。",
+      en: "Deposit-rate cuts spread to about 30 banks (Nov 2 count): Eximbank cut 0.5pp on 6-12 month terms on Nov 2 to 4.2% for 6-11 months and 4.5% for 12 months; Techcombank, Sacombank and MSB each cut 0.5pp; NCB cut up to 0.6pp beyond six months; SeABank cut up to 0.7pp on 18-36 months; BIDV cut counter rates 0.5pp from November, leaving individuals at a 5.4% maximum, online at 6.8% and corporates at 4% for 12-60 months. Lending support widened too: Agribank up to 2pp, Vietcombank 1.5-2pp (up to 3pp on some short-term products) and VietinBank up to 2pp; Techcombank allocated VND 40tn, Sacombank VND 20tn for individuals (1.5-2pp) and MSB VND 10tn for corporates (from 7.5%, at least 2pp below normal). Caveat: board rates and paid rates remain two tracks, with some effective yields still above 8%, so cheaper funding has yet to reach mortgage pricing.",
+      src: "https://www.vietnam.vn/en/30-ngan-hang-giam-lai-suat-huy-dong"
+    },
+    {
+      date: "2026-11-03",
+      tag: "数据 / Data",
+      tagClass: "mid",
+      zh: "汇率 11/2–11/3：Vietcombank 美元卖出 25,990，为一年半低位；SBV 中央汇率 25,631（-0.02%）。同日自由市场报价回升近 1.1% 至 26,050，与银行卖出价差重新拉开至约 60 盾——11/1 曾出现自由市场低于银行的反向价差，渠道口径差异大，按「待核实」处理、勿据此判断趋势。外部：美元指数 101.83（-0.15%），市场关注美国中期选举；欧元 1.1182 接近 17 个月低位（惠誉将法国展望下调至负面），日元 157.73。本页汇率口径仍为银行卖出价 25,990，cnyVnd 3,645 为交叉折算（25,990/7.13）。",
+      en: "FX Nov 2-3: Vietcombank asked VND 25,990, a one-and-a-half-year low, and the SBV central rate was VND 25,631 (-0.02%). The informal quote rebounded nearly 1.1% to VND 26,050 the same day, reopening a gap of about VND 60 over bank asks — on Nov 1 the street rate had briefly printed below banks, a channel discrepancy wide enough to treat as unverified rather than a trend. Abroad, DXY was 101.83 (-0.15%) with attention on the US midterms; EUR traded at 1.1182 near a 17-month low after Fitch cut France's outlook to negative, and JPY at 157.73. This page still uses the bank ask of VND 25,990, with cnyVnd 3,645 as a 25,990/7.13 cross rate.",
+      src: "https://econotimes.com/Dollar-Rises-to-VND26-050-at-Vietnam-s-Informal-Exchange-Points-1768545"
+    },
+    {
+      date: "2026-11-02",
+      tag: "数据 / Data",
+      tagClass: "mid",
+      zh: "胡志明 Q3 一手价格分层（DKRA，含 VAT）：最低 3,280 万盾/㎡、均值 6,850 万盾/㎡、最高 5.203 亿盾/㎡；中心区与守添 1.82–3.9 亿盾/㎡，东/南 9,880 万–1.43 亿，西区豪宅 1.17–1.248 亿；原平阳与原巴地—头顿一手 1,800–4,500 美元/㎡。供给结构（HoREA 10 月中报告）：年初以来具备融资条件的项目中高端占 73.6%、中端 7.1%、平价为零；截至 9 月初全市 1,338 个长期停滞项目、总投资 658,084 亿盾，已化解 723 个（54%）。口径提醒：DKRA 为含 VAT 的一手成交均价，与本页 Knight Frank 季度均价（约 4,210 美元/㎡）不同源，勿混入 quarterly 表。",
+      en: "HCMC Q3 primary price bands (DKRA, VAT included): from VND 32.8m/sqm at the low end and VND 520.3m at the top, averaging VND 68.5m/sqm; the CBD and Thu Thiem run VND 182-390m/sqm, the east and south VND 98.8-143m, and western luxury projects VND 117-124.8m, while former Binh Duong and Ba Ria-Vung Tau quote USD 1,800-4,500/sqm. Supply mix (HoREA mid-October report): 73.6% of projects able to raise funds since January are high-end, 7.1% mid-range and none affordable; as of early September the city counted 1,338 long-stalled projects worth VND 658,084bn, of which 723 (54%) have been resolved. Note: DKRA's average is a VAT-inclusive primary transaction basis and differs from this page's Knight Frank quarterly average (about USD 4,210/sqm) — do not mix into the quarterly table.",
+      src: "https://www.vietnam.vn/zh-cn/thi-truong-nha-o-tphcm-thieu-nguon-cung-nha-gia-thap"
+    },
+    {
+      date: "2026-11-02",
+      tag: "利坏 / Negative",
+      tagClass: "bad",
+      zh: "流动性压力延续（11/2 汇总口径）：VARS Q3 河内均价 7,930 万、胡志明 8,830 万、岘港 6,890 万盾/㎡，环比均持平，但较 2019 Q1 分别 +97%/+69.8%/+76.2%。Savills 河内 Q3 成交环比 -26%、同比 -48%，新供应环比 -42%、同比 -51%；DKRA 胡志明及周边一手去化约 26%。2026 上半年两地新供应同比 +33%，而全国成交量同比 -36%；2026 Q2 两市新开盘去化率降至 73%（2025 年同期 95%）。房贷平均利率升至 14–16%（DKRA），CBRE 口径浮动 13–15%，仍是买方主要障碍；河内二手 Q2 由约 6,200 万降至 6,000 万盾/㎡（-3%）。Q4 供应预计因河内、岘港、胡志明卫星城大项目继续增加，去化能否跟上仍待观察。",
+      en: "Liquidity pressure persists (Nov 2 round-up): VARS puts Q3 averages at VND 79.3m/sqm in Hanoi, 88.3m in HCMC and 68.9m in Da Nang, all flat QoQ but up 97%/69.8%/76.2% versus Q1 2019. Savills logged Hanoi Q3 sales down 26% QoQ and 48% YoY, with new supply down 42% and 51%, while DKRA put HCMC-area absorption near 26%. In H1 2026 new supply in the two cities rose 33% YoY even as nationwide transactions fell 36%, and the absorption rate of newly opened stock dropped to 73% in Q2 from 95% a year earlier. Average housing loan rates rose to 14-16% (DKRA), with CBRE citing 13-15% floating, still the main barrier; Hanoi secondary prices slipped from about VND 62m to 60m/sqm in Q2 (-3%). Q4 supply is expected to rise again on large satellite-city projects in Hanoi, Da Nang and HCMC, with absorption still the open question.",
+      src: "https://news.laodong.vn/bat-dong-san/xu-huong-gia-chung-cu-dao-chieu-thi-truong-doi-mat-voi-ap-luc-thanh-khoan-1791502.ldo"
+    },
+    { date: "2026-11-02", tag: "中性 / Neutral", tagClass: "mid", zh: "2026 年 11 月 2 日房地产新闻更新，无具体来源信息。", en: "Real estate news update for Nov 2, 2026, with no specific source information.", src: "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOVg3TmdiMU1qaHhHVHFSekozRWtSeG10NWlFYkxlZVlJc29ZZF84VVdkcjdIa3dyNkJZcUxlNkhscHJuODlWTEg4Wk5mZmF6YzdFTUx3bHlBSXBuNFNXTFlabGp0X2Ztd2FoZC1heVM5RVQyQ2o1enpHNV9nN29aVWc4Wkl3VjMtcVBabTNn?oc=5" },
+    { date: "2026-11-02", tag: "中性 / Neutral", tagClass: "mid", zh: "工业地产行业正在探索新的发展路径，以应对市场变化。", en: "The industrial real estate sector is exploring new development paths to respond to market changes.", src: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWUtNMnEyekZnRHE0THhfNVhSZGJ0b1FZb0tCWXZFNWJjNWZvU2YwQUJ6aEVmek9JZzZScS1CSURseVZvQ1oxazZjN3cyaTUtUjZaNmdBM3BOangzUW1KMmlCTVA1QkhsQ244MF8xVlpOeFlIZWxPZlZ5aTRoWGxxR0d5ODlhV1VwZDlR?oc=5" },
+    { date: "2026-11-02", tag: "利好 / Positive", tagClass: "good", zh: "工业园区内的房地产企业业绩表现良好，呈现积极态势。", en: "Real estate firms in industrial parks show good performance and a positive trend.", src: "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTzZuTzQwMXY1YUhlbXdvb1dpSmNkY1BtOUNBTkt5SzBkcXZlcWlzaFM1N1pjQzhTQ1NES0cyNWxNRWVXbHJCRDVrTVdTcURsSHNTSHhSMlBEQ1g1ZE5zc0I0TVFxUjlyN040VnpGX28xSUJCTjA4LUZCRzVaS1hoR1lQZDk3aFFmSEtPRVNQcmtKbjVmYmJCWDJ6TTNrV1VhZ1HSAZ4BQVVfeXFMTVUtazVrenotTWZvclZHMUpjNkotWVZfWjRaRktacVdiWm9XVE13VUJaZGctR1JjTzcwSWpCbnVtQS1KUHBvcjBLTUtUMlpVMlZFYWRkb2d0NlI0aGdiQ2FuU1lqLUNBQzdxUTNWUzVQUlZmZ0tsUnZqdjgtTW1McGc2emNucEU1UGNCSXQxeEZhMVExNHhDY2N2SFNNZ1E?oc=5" },
+    { date: "2026-11-02", tag: "中性 / Neutral", tagClass: "mid", zh: "河内市面临房地产数据缺失问题，需建立开放数据体系。", en: "Hanoi faces a lack of real estate data and needs to build an open data system.", src: "https://news.google.com/rss/articles/CBMidEFVX3lxTE5MLXZja0pWY2xMVTNMeGpUMkJIbW9YTzlHck4yUHdlWUFtSEFJRkpLSkkzMGplZDJPaWFIajRiM2JwSks2T0d6c2d2Nl9sVXBBYy1pc2xYV2xhREszajMtbkZfajlDXzFPZXRLaWZBR290RmRj?oc=5" },
+    { date: "2026-11-02", tag: "新盘 / Launch", tagClass: "good", zh: "2026 年出现房地产项目转让浪潮，市场价值在产业链中发生转移。", en: "A wave of real estate project transfers occurs in 2026, with market value shifting along the chain.", src: "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZnY3NXJRbWJBVDhjYUt2U2xFRDNYZUlOTjY4YllZN3N6MS0wTzlJZzNyR1F6Vzd3ZlBYNG1uMlJKRFdDZ05NUTZiTk9VRHBYM05BakdWeTZ6UlptbEFCSV95T2VqYU9OLTBKYXF1cEFYZ213RzVjRTN4SHhpTFhxZkNKTnZvekROcXI2SW16THhldEFaRFZBdGJnb0pNMEVRWmxxVg?oc=5" },
+    { date: "2026-11-02", tag: "数据 / Data", tagClass: "mid", zh: "2026 年产业链中发生价值转移，新的价值流动模式正在形成。", en: "Value shifts occur in the chain in 2026, forming new value flow patterns.", src: "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRnUxRGgxTGwxX1A2MTh6WHFKamo2bW9fc1QxQlpocWlkYkI2blZaaHdkcE5BQ0tWUm9VOVd2OGNocy1WdDRYQ05YOXhzNTcyR2JmLWRaUENqbDlvOVZDVlNRZkZlbmV2MzFNcGtyRzBkSm5IYWw1eHdFMVlRUjlWcEg2cnpqdWJQZENPdjRvVmlHelNHZFFaNXI1ZEg?oc=5" },
+    { date: "2026-11-02", tag: "数据 / Data", tagClass: "mid", zh: "正在服刑的张美兰女士收到关于其名下超过 1120 亿元房地产拍卖的新消息。", en: "Zhang Meilan, currently serving a sentence, receives news about auctions of her over 112 billion yuan properties.", src: "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSjd4UkFtZ1pDTk1VYWdqRGhETG9aUDFodS1aX3dfaVRWakczREs4YXF1MFliUE56UnhhdmNtbk5KOGdTbDJpSGRHREJVZHlXVnhWeV9DdktnNENzMHlvV3JtcFRPdnl6MGFFTlJDOUFDSGZHT2JESXZEU21semZpdzVLd1JoclFIYlprUHVLdW9KV3NiZ1pEeC1aTGZ1bHhFMzFQT3JoZTJ5Y3pHVm9QLURKczAwd3NYd3dlVHpJRU0?oc=5" },
+    { date: "2026-11-02", tag: "数据 / Data", tagClass: "mid", zh: "电子身份代码将提升房地产市场透明度，加强市场管理并遏制违规行为。", en: "Electronic ID codes will boost real estate market transparency, strengthen management, and curb violations.", src: "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeFpGNzluRXdZTDlnRm84VTNmdXNVNkVtN3R2Qk5nWmRkNjB1Y19ZOXFqNkVTVy1qZnRvcFZTRFBuV2NmM2RrUXhKVllnSGJYTGg1S2V5ejRER0Jidk1YUGc1WWFhaFJjSWVQQ1VIcldkNG9TQ1hoN2g2dlg1MS1oazNIMURFZGZ3STdKcHRMQ3UyNHhWTS1zV1NEOU1OYVUx?oc=5" },
+    {
       date: "2026-11-02",
       tag: "市政 / Infrastructure",
       tagClass: "good",
@@ -550,734 +590,71 @@ window.RE_DATA = {
       en: "Q3 2026 secondary and absorption readings added (used for this page secondary curve and city comparison): Savills — Hanoi primary asking VND 107m/sqm and secondary VND 75m/sqm (down QoQ, up YoY), with a 28% Grade A and 17% Grade B primary-secondary gap and 11 projects / ~7,000 units expected in Q4. DKRA — HCMC and surroundings primary supply 13,215 units (-31% QoQ) with 3,471 sales (-66% QoQ) and ~26% sell-through, while project-level secondary listings fell 4-7% QoQ, mostly leveraged sellers. Savills (HCMC within old boundaries) logged ~1,900 new launches, 5,800 units of primary stock and 25% absorption (~1,400 deals). CBRE separately quotes HCMC secondary near VND 60m/sqm on net usable area — not comparable with this series. Avison Young sees ~8 projects / ~10,000 units preparing to launch in HCMC in Q4. This page therefore fills 2026 Q3 secondary as Hanoi $2,886 (VND 75m converted) and HCMC $2,930 (DKRA -4% applied); Q4 stays blank until published.",
       src: "https://news.laodong.vn/bat-dong-san/gia-chung-cu-ha-noi-dat-trung-binh-107-trieu-dongm2-1783792.ldo"
     },
-    {
-      date: "2026-11-02",
-      tag: "复盘 / Weekly",
-      tagClass: "mid",
-      zh: "周度复盘（2026-10-27 至 11-02）：①利率——11 月初全系统 6 个月以上挂牌定存普降约 0.5pp（VCB/BIDV/CTG 同步），12 月期多数落入 7% 以下，CD 同步小幅下调；10 月底体系存款增逾 100 万亿盾，短期存款占比约 80%；但挂牌之上叠加 1–3pp 加成后实付仍达 8.3–9%，房贷浮动 12–16% 未跟进。②汇率——银行美元卖出价连续跌破 26,000（2025-04 中以来首次），VCB 买 25,580/卖 25,990，SBV 中央汇率 25,637 连续持平；越盾年内升值约 1.85%，金价跌至 3,874 美元（一年低位）。③政策——10/30 国会全体会议讨论《房地产经营法》修订草案，清化代表提议禁止转让期房合同并设完工后售房路线图，VARS 与专家明确反对；三部法（土地/住房/经营）仍按议程 11/21 上午同时表决。④市场——DXS-FERI：9 个月新供应 49,657 套（+33%）、累计 114,857 套（+21%），但 Q3 仅 12,357 套（环比 -40%/同比 -54%）；HoREA：胡志明前 9 个月高端公寓占供应 73.6%、平价产品消失，新案均价 7,500 万盾/㎡。⑤市政与新盘——河内批准北升龙都市区约 99,788 亿盾（约 40 亿美元、Handico×Sunshine 等 5 家）；Celesta Gold（南西贡 420 套、签约 5% 首付）11/1 发布；电价降 2%、汽油特别消费税 11/1 起归零。⑥下周关注——国会 11 月会期续议三部法并就 11/21 表决前的修正稿收敛，银行逐家公布 11 月新牌价。",
-      en: "Weekly review (Oct 27 - Nov 2): (1) Rates — early November brought system-wide cuts of about 0.5pp on six-month-plus deposit boards (VCB, BIDV and CTG moved together), leaving most 12-month rates under 7% with certificates of deposit trimmed too; system deposits rose more than VND 100tn in late October and short-term deposits are about 80% of the total, but 1-3pp bonus tiers still lift effective yields to 8.3-9% while floating mortgages stay at 12-16%. (2) FX — bank dollar asks held below 26,000 for a second session, the first time since mid-April 2025, with Vietcombank at 25,580 bid / 25,990 ask and the SBV central rate flat at 25,637; the dong is up about 1.85% year-to-date and gold slid to $3,874, a one-year low. (3) Policy — the National Assembly debated the amended Real Estate Business Law on Oct 30, where a Thanh Hoa deputy proposed banning transfers of off-plan contracts with a roadmap to selling only completed homes, drawing clear opposition from the Vietnam Real Estate Association and experts; the three laws (land, housing, business) remain scheduled for a single vote on the morning of Nov 21. (4) Market — DXS-FERI counts nine-month new supply at 49,657 units (+33%) and cumulative supply at 114,857 (+21%), yet Q3 alone saw only 12,357 (-40% QoQ, -54% YoY); HoREA says high-end apartments were 73.6% of HCMC supply in the first nine months with affordable product absent and new launches averaging VND 75m/sq.m. (5) Infrastructure and launches — Hanoi approved the roughly VND 99,788bn (about $4bn) Bac Thang Long urban project with Handico, Sunshine and three other investors; Celesta Gold (420 units in South Saigon, 5% down on signing) launched on Nov 1; electricity prices were cut 2% and the petrol special consumption tax went to zero from Nov 1. (6) Next week — the National Assembly continues its November sitting and converges amendments before the Nov 21 vote, and banks publish their new November boards.",
-      src: "https://vietnamnet.vn/en/uneven-real-estate-price-fluctuations-drive-investors-to-adapt-2567266.html"
-    },
-    {
-      date: "2026-11-02",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "汇率（11/1）：银行美元卖出价连续第二日低于 26,000。Vietcombank 买入 25,580、卖出 25,990（较早间再降 30 盾），ACB 卖出 25,980，VietinBank 与 BIDV 同报 25,980；SBV 11/1 中央汇率维持 25,637（连续两日持平），±5% 区间 24,355–26,919。银行汇率较年初低约 1.5%，越盾年内对美元升值约 1.85%。自由市场价差收窄至低于银行卖出价（河内买 25,700/卖 25,780），与 10/31 记录的反向价差并存，渠道口径不同、待核实。人民币：VCB 3,779.79 现金买入 / 3,817.97 转账买入 / 3,940.35 卖出，较上周未变；cnyVnd 仍用 25,990/7.13 交叉折算 3,645。外部：DXY 回升至 101 上方，金价 11/2 早间 3,874 美元/盎司（2025-10 以来低位，周跌约 121 美元），SJC 金条 1.36–1.39 亿盾/两。",
-      en: "FX (Nov 1): bank dollar asks stayed below 26,000 for a second session. Vietcombank bid 25,580 and asked 25,990 (another 30 dong lower intraday), ACB asked 25,980 and VietinBank and BIDV quoted 25,980; the SBV central rate held at 25,637 for a second day, with the +/-5% band at 24,355-26,919. Bank rates are about 1.5% below the start of the year and the dong is up roughly 1.85% year-to-date. The unofficial spread narrowed below bank asks (Hanoi 25,700 bid / 25,780 ask), coexisting with the inverse gap logged on Oct 31 — different channel basis, to be verified. CNY: Vietcombank 3,779.79 cash bid / 3,817.97 transfer bid / 3,940.35 ask, unchanged on the week; cnyVnd remains a 25,990/7.13 cross at 3,645. Abroad, DXY recovered above 101 and gold was $3,874/oz on the morning of Nov 2 (lowest since October 2025, down about $121 on the week), with SJC bars at VND 136-139m per tael.",
-      src: "https://civl.com/news/story/vietnamese-banks-lower-dollar-selling-rates-below-26-000-dong-2bb9b2f9"
-    },
-    {
-      date: "2026-11-02",
-      tag: "利率 / Rates",
-      tagClass: "mid",
-      zh: "定存 11 月初普降（11/1）：在 SBV 要求 6 个月以上挂牌至少降 0.5pp 后，各商业银行 11 月初普遍下调约 0.5pp，VCB、BIDV、CTG 等主要银行同步调整，12 个月期挂牌多数降至 7% 以下，存单（CD）利率同步小幅下调。存款端同期仍在增长——10 月底银行体系存款较此前增逾 100 万亿盾；SBV 行长 10/31 在国会说明，12 个月以下短期存款占总量约 80%、滚存率高，使银行能以较低成本获取资金。风险点：部分银行在挂牌之上叠加优惠，实际执行年利率个别逾 8.3%、甚至高于 9%，挂牌与实际双轨未收敛；贷款端仅降 0.99%（存款 +1.42%，SBV 口径），房地产与购房类贷款仍 12–14%、浮动 15–16%。",
-      en: "Deposits cut across the board in early November (Nov 1): after the SBV ordered boards of 0.5pp or more on six-month-plus deposits, commercial banks generally cut about 0.5pp in early November, with VCB, BIDV and CTG moving together, most 12-month boards falling below 7% and certificates of deposit trimmed slightly. Funding kept growing — system deposits rose more than VND 100tn in late October — and the SBV governor told the National Assembly on Oct 31 that sub-12-month deposits are about 80% of the total with high rollover rates, letting banks raise funds at lower cost. The catch: some banks stack bonuses on top of boards, pushing effective yields above 8.3% and in some cases past 9%, so the two tracks have not converged; on the lending side rates rose only 0.99% against 1.42% for deposits (SBV basis), while property and home-purchase loans remain at 12-14% with floating rates of 15-16%.",
-      src: "https://aveluro.com/blog/vietnam-market-daily-report-2026-11-01"
-    },
-    {
-      date: "2026-11-01",
-      tag: "政策 / Policy",
-      tagClass: "mid",
-      zh: "央行行长 10/31 国会说明（信贷与利率口径）：全系统信贷较 2025 年底增长 12.27%；其中房地产信贷仅 +9.84%、低于总体增速，生产经营领域占未偿贷款 77.44%；中小企业未偿贷款超 4 千万亿盾（约 1,542 亿美元）。利率端：存款利率上行 1.42%、贷款利率仅上行 0.99%，存贷利差收窄以让利经济；短期存款占总量约 80%。社房方面，SBV 正按总理指示落实社房贷款再融资方案，并通过再融资与公开市场工具支持信贷机构。代表建议：将遇困企业的债务重组（延期还本、维持原债务分类）延长至 2027 年底、扩大中小企业/租户/社房购房者优惠信贷覆盖；行长回应重组机制已在法律（含第 39 号通知）框架内、属信贷机构职权，将鼓励依规支持。",
-      en: "SBV governor's Oct 31 testimony to the National Assembly (credit and rate basis): system credit grew 12.27% from end-2025, of which real estate credit rose only 9.84%, below overall growth, while production and business absorbed 77.44% of outstanding loans; SME outstandings exceed VND 4 quadrillion (about $154.2bn). On rates, deposits rose 1.42% while lending rose only 0.99%, narrowing the spread to share the burden with the economy, and sub-12-month deposits are about 80% of the total. On social housing, the SBV is running a refinancing scheme for social-housing loans as directed by the Prime Minister and supports lenders via refinancing and open-market operations. Deputies proposed extending debt restructuring (payment deferral with unchanged classification) for distressed firms to end-2027 and broadening preferential credit to SMEs, tenants and social-housing buyers; the governor replied that restructuring already sits within the legal framework including Circular 39 and is a credit institution's own call, and that the SBV will encourage compliant support.",
-      src: "https://en.sggp.org.vn/central-bank-urges-smes-to-improve-transparency-to-access-credit-post130679.html"
-    },
-    {
-      date: "2026-10-31",
-      tag: "政策 / Policy",
-      tagClass: "mid",
-      zh: "10/30 国会《房地产经营法》修订草案全体会议：清化省代表黎清完提议在草案中禁止转让期房买卖合同，并设路线图转向「工程完工后再售房」，理由是该类交易转让的是合同中的「位置」而非已验收交付的实物。越南房地产协会副主席陈国勇明确反对：控制投机、防炒价的目标正确，但不能以干预民众财产权与市场正常运行为代价，禁令不等于消除投机却会收窄购房者选择，遇失业、经营亏损或家庭变故者将无法处置资产；原胡志明市房地产协会副主席杜氏鸾主张区分合法交易与操纵市场；经济学家阮明丰称禁令是「砍梢」而非治本，期房合同是受法律保护的有价凭证。会议同时关注定金条件、银行担保与「保留合同价值 5% 至购房者取得权证」条款。草案拟 11/21 上午与《土地法》《住房法》一并表决。",
-      en: "National Assembly plenary on the amended Real Estate Business Law, Oct 30: Thanh Hoa deputy Le Thanh Van proposed banning transfers of off-plan sale contracts with a roadmap toward selling only completed homes, arguing such deals transfer a 'position' in a contract rather than a finished, inspected asset. Vietnam Real Estate Association vice chairman Tran Quoc Dung objected: curbing speculation and price-pushing is the right goal, but not at the cost of property rights and normal market operation — a ban would not eliminate speculation yet would narrow buyers' choices and leave households hit by job loss, business losses or family events unable to dispose of the asset. Former HCMC Real Estate Association vice chair Do Thi Loan urged distinguishing lawful trades from market manipulation, and economist Nguyen Minh Phong called the ban a trim of the branches rather than a cure, noting off-plan contracts are legally protected instruments of value. The session also focused on deposit conditions, bank guarantees and the clause retaining 5% of contract value until the buyer obtains title. The draft is due for a single vote with the Land and Housing laws on the morning of Nov 21.",
-      src: "https://yuenan.com/zh-hant/special/tracking-economic-vietnam-real-estate-law-resale-ban-2026-10-30"
-    },
-    {
-      date: "2026-11-01",
-      tag: "利好 / Positive",
-      tagClass: "good",
-      zh: "河内批准北升龙都市区（Bac Thang Long Urban City）：总投资约 99,788 亿盾（约 40 亿美元）的多功能都市项目获批，投资方为 5 家企业联合体，含 Handico 与 Sunshine Group。项目位于河内北部（东英—朔山方向）城市拓展轴，属河内 2026 年规模最大的都市区批文之一，将带动北部基础设施与住宅供给；具体分期、户数与开工时间尚未公布（待核实）。同期河内 5 条城铁（1/2/8/10/14 号线，253.5 km、逾 900 万亿盾）EPC 已于 10/15 签约、目标 2030 年通车。",
-      en: "Hanoi approved Bac Thang Long Urban City: a mixed-use urban project worth about VND 99,788bn (roughly $4bn) was cleared for a five-investor consortium including Handico and Sunshine Group. Located on the capital's northern expansion axis toward Dong Anh and Soc Son, it is among Hanoi's largest urban approvals of 2026 and should support northern infrastructure and housing supply; phasing, unit counts and a start date have not been published (to be verified). In parallel, Hanoi's five metro lines (lines 1, 2, 8, 10 and 14; 253.5 km; over VND 900tn) had their EPC contracts signed on Oct 15 with a 2030 target.",
-      src: "https://aveluro.com/blog/vietnam-market-daily-report-2026-11-01"
-    },
-    {
-      date: "2026-11-01",
-      tag: "新盘 / Launch",
-      tagClass: "good",
-      zh: "Celesta Gold 正式发布（11/1，南西贡）：Keppel、Phu Long 与 Nomura Real Estate Vietnam 联合开发的 Celesta 都市区新一期正式亮相，到场近 1,800 位嘉宾（含分销与金融机构）。项目位于阮友景路、占地 1.28 ha，2 栋 25 层、420 套河景公寓 + 商业裙楼；共享 Celesta 都市区既有配套，内部近 60 项设施（50 m 电解盐泳池、双层 Clubhouse、24/7 健身房与普拉提室、屋顶配套），BCA Green Mark Gold（新加坡）认证，并获 PropertyGuru 2026「最佳健康住宅开发」奖。交通：临近规划中的地铁 4 号线站点，守添 4 桥、富美 2 桥、ben luc—隆城高速在建。付款：签约仅 5% 首付。单价与开盘去化未公布（待核实）。",
-      en: "Celesta Gold officially launched (Nov 1, South Saigon): Keppel, Phu Long and Nomura Real Estate Vietnam unveiled the new phase of the Celesta urban area before nearly 1,800 guests including distributors and financial institutions. The project sits on Nguyen Huu Tho Street on 1.28 ha with two 25-storey towers, 420 riverside apartments and a commercial podium; it shares Celesta's existing amenities and adds nearly 60 facilities (50 m salt-electrolysis pool, two-storey clubhouse, 24/7 gym and pilates studio, rooftop amenities), holds BCA Green Mark Gold (Singapore) and won PropertyGuru Vietnam 2026 for Best Wellbeing Condo Development. Connectivity: near a planned Metro Line 4 station, with the Thu Thiem 4 and Phu My 2 bridges and the Ben Luc-Long Thanh expressway under construction. Payment: only 5% down on signing. Pricing and launch absorption were not disclosed (to be verified).",
-      src: "https://www.vietnam.vn/en/thanh-pho-vang-celesta-gold-chinh-thuc-ra-mat-tai-nam-sai-gon"
-    },
-    {
-      date: "2026-10-29",
-      tag: "数据 / Data",
-      tagClass: "bad",
-      zh: "HoREA：胡志明前 9 个月供应结构失衡（10/28 报告）：高端与中高端公寓占住宅供应 73.6%、中端仅 7.1%，平价公寓基本消失；新案均价约 7,500 万盾/㎡，远高于平价门槛 3,500 万盾/㎡。分区：市中心与守添半岛新案 1.82–3.9 亿盾/㎡，东区与南区 9,880 万–1.43 亿盾/㎡。含义：供给结构向高端集中推高购房门槛，自住需求外溢至卫星城市；与 DXS-FERI「总量增、结构错配」判断一致。同期「保温」个案：南西贡日系项目 TT GENESIS 6,900 万盾/㎡起（低于区域新案均价），Trellia Vista 以优惠价与分期方案吸客，而多数新案已 9,000 万–1.3 亿盾/㎡。",
-      en: "HoREA: HCMC supply skewed to high-end in the first nine months (Oct 28 report): high-end and upper-mid apartments made up 73.6% of residential supply with mid-range at just 7.1% and affordable product effectively gone; new launches average about VND 75m/sq.m against an affordability threshold of VND 35m/sq.m. By area, new projects in the city centre and Thu Thiem run VND 182-390m/sq.m while eastern and southern districts sit at VND 98.8-143m/sq.m. Implication: the high-end tilt raises the entry bar and pushes owner-occupier demand to satellite cities, consistent with DXS-FERI's 'more supply, mismatched structure' call. Standouts still moving: the Japanese-backed TT GENESIS in South Saigon from VND 69m/sq.m (below the area average) and Trellia Vista with discounts and instalments, while most new launches are priced at VND 90-130m/sq.m.",
-      src: "https://fttland.com/tin-tuc/tin-nhanh-bds-viet-nam-20261029.html"
-    },
-    {
-      date: "2026-11-01",
-      tag: "政策 / Policy",
-      tagClass: "good",
-      zh: "11/1 起降成本组合落地：政府将平均零售电价下调 2%，汽油特别消费税自 11/1 起降至 0%（柴油环保税与增值税支持同步延长）。两项措施直接压低运输、建材与运营的能源成本，有助缓和年底通胀压力（9 月 CPI 同比 +4.89%、仍高于 SBV 4.5% 目标上限），对房地产开发成本与家庭可支配收入构成边际利好。配套：财政部正推进税号清理（逾 250 万家企业与个体户停业未注销税号）。",
-      en: "Cost-cutting package effective Nov 1: the government cut average retail electricity prices by 2% and reduced the special consumption tax on petrol to 0% from Nov 1, with diesel environmental-tax and VAT support extended in step. Both directly lower energy costs in transport, building materials and operations, easing year-end inflation pressure (September CPI was +4.89% YoY, still above the SBV's 4.5% ceiling) and providing a marginal boost to development costs and household disposable income. Separately, the finance ministry is pushing a tax-code cleanup with more than 2.5 million businesses and household firms having ceased operations without closing their codes.",
-      src: "https://aveluro.com/blog/vietnam-market-daily-report-2026-11-01"
-    },
-    {
-      date: "2026-11-01",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "Bất động sản 2026-2027: Không còn thời “mua gì cũng tăng”",
-      en: "Real estate market 2026-2027: The days of \"everything going up in price\" are over.",
-      src: "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeUwzWFVJSXBRLWxSMDJ3a3pNdzVKT0Fodm05ekoyeGpad0ItM3Y5VmdYZ25zVndOalVEM0VBaURGanFwR1o2VVBCanZsdktpNDJWVTVkLVh5Z1VFQ3Z0SzRsTHVXajdyVlpzdF9WRjVjT3lXWlEtWjJvbGlzRjRPd0dldkNueTZCVDRHR2g1UThQd1A2dl9tajFjeGl1bm5Bb3JGc0p2YUZVcHFENGhhaw?oc=5"
-    },
-    {
-      date: "2026-11-01",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "Đưa thị trường bất động sản về đúng giá trị thực",
-      en: "Đưa thị trường bất động sản về đúng giá trị thực",
-      src: "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaFBFT1hTbURiYmw3cXhOX1pwdTdhRGFYWU5EZmw3TlFfQlJxSV9qNDVEdXQ2ckFCYWpnSzJleEt3VXlMVXpsRDlzX3hVQmhVWU9vazdseGpzVjd2d0M5RFVwZXF1cWtoVTJRdGxieDJySlQ5bkNDM192VDd0dUQ1dg?oc=5"
-    },
-    {
-      date: "2026-11-01",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "Đổ xô bán tháo khi bất động sản rớt giá liên tục",
-      en: "Đổ xô bán tháo khi bất động sản rớt giá liên tục",
-      src: "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN0lBMmFyUHh0Qms0MTJ6cUMtSWdON2Z6bmZNcnVOUWxlMlZxZlNoZVBUZXlNclAzRjZiYW9teUNrQU9yOTJiQTdHekpvWlpVWExKd254VVhlZTVYampBYlozY0lSQTRTRVVnWXBOOWhsaFo3MVRvRjFKZkt3MmJFYXhaUlo2T2w3UTUzV0FqRVoyc29EemVqTE1hMGFjcTRvNUE?oc=5"
-    },
-    {
-      date: "2026-10-31",
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      zh: "Keppel nhận hai giải thưởng bất động sản",
-      en: "Keppel joins Vietnam International Financial Centre as inaugural member - Vietnam Investment Review",
-      src: "https://vnexpress.net/keppel-nhan-hai-giai-thuong-bat-dong-san-5138724.html"
-    },
-    {
-      date: "2026-11-01",
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      zh: "Bất động sản du lịch rục rịch trở lại",
-      en: "Bất động sản du lịch rục rịch trở lại",
-      src: "https://news.google.com/rss/articles/CBMie0FVX3lxTE5SMC1jS3lJUmd5TlhReGRJU3RFd1IwbV90TTItNzJESmdDSjZsOHgzMUdRLVk2R2pjSkR1Z0swbVA1Sk5JRm9JM2RIVFlPcTBtYmZkZWJCRjlOT1dNeGlwR3NIM1ltckROSk1wR0Fac3NYakRMeFVlcHc3QQ?oc=5"
-    },
-    {
-      date: "2026-10-31",
-      tag: "市政 / Infra",
-      tagClass: "good",
-      zh: "Động lực từ hạ tầng hàng không thúc đẩy thị trường bất động sản",
-      en: "Động lực từ hạ tầng hàng không thúc đẩy thị trường bất động sản",
-      src: "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTU04THpvMjJPMHNSc29OZUlrNlNTOTdvOXZhb3F1OHZock5aOGNtR2FXVm0zbGNYT1FmVGI4Z1RYV3R3ZUNxQ0MwQVVRajhXVXQybDdUdjVySG54MHRWa0NpWXdoeTJ5bFlwVUFNaW91QkYwMEJzNE9fMFVvQ1hhUHhTWGFFdE1EX0I3X2xhYWE4WFFhU2V1cHJzanBXaDZPcjJ4Q1Uway1ZdGJmV3cxd1laSk8tdw?oc=5"
-    },
-    {
-      date: "2026-11-01",
-      tag: "复盘 / Monthly",
-      tagClass: "mid",
-      zh: "月度复盘（2026-10-01 至 10-31）：①利率——10 月累计约 30 家银行下调 6 个月以上定存，国有四大行 12 月柜面 5.9%→5.4%、24 月 6%→5.5%，挂牌下限降至 GPBank 3.6%，Saigonbank 13 月 7.9% 仍最高；但加成促销令实际吸存仍达 8.3–9%，房贷未见跟进，购房贷 12–14%、浮动 15–16%（DXS-FERI 预计年底浮动维持 11–13%）。②汇率——VND 全月转强，银行美元卖出价由 26,020 降至 25,990，为 2025 年 4 月以来首次跌破 26,000，年内升值约 1.85%。③政策——第十六届国会第二次会议 10 月集中审议《土地法》《住房法》《房地产经营法》三部修订草案（经营法 10 章 61 条、住房法 13 章 130 条、土地法 13 章 112 条），拟 11/21 上午同时表决；《资产拍卖法》修订草案提交；第 147/2026/NĐ-CP 号法令落地以处置停滞项目。④市场——Q3 全国成交 92,004 笔（环比 -8%）、河内二手挂牌环比 -5% 且同比首次转负、胡志明住宅成交同比 -27%，Savills 胡志明去化仅 25%、CBRE 河内新推 -28%；9 个月全国成交 331,800 笔。⑤市政——滨城—芹椰高铁 10/30 全面提速（1 万工人）、地铁 2 号线 5 站开挖前准备、隆城机场定 12/24 商业运营、胡志明 14 个基建项目加速。",
-      en: "Monthly review (Oct 1-31, 2026): (1) Rates — about 30 banks cut 6-month-plus deposit boards during October; the Big-4 moved 12-month counter rates from 5.9% to 5.4% and 24-month from 6% to 5.5%, the floor fell to 3.6% at GPBank while Saigonbank's 13-month 7.9% remains the highest; bonus tiers still lift effective deposit yields to 8.3-9%. Mortgages did not follow: home loans at 12-14% with floating rates of 15-16% (DXS-FERI sees floating at 11-13% through year-end). (2) FX — the dong strengthened through the month, with bank dollar asks down from 26,020 to 25,990, the first break below 26,000 since April 2025 and a gain of about 1.85% year-to-date. (3) Policy — the second session of the 16th National Assembly worked through the amended Land Law, Housing Law and Real Estate Business Law (the business law at 10 chapters/61 articles, housing at 13/130, land at 13/112), with a single vote scheduled for the morning of Nov 21; the amended Property Auction Law was also tabled and Decree 147/2026/ND-CP took effect to unblock stalled projects. (4) Market — Q3 nationwide transactions were 92,004 (down 8% QoQ), Hanoi secondary asking prices fell 5% QoQ and turned negative year-on-year for the first time, HCMC home sales were down 27% YoY, Savills put HCMC absorption at just 25% and CBRE put Hanoi new launches down 28%; nine-month transactions reached 331,800. (5) Infrastructure — the Ben Thanh-Can Gio high-speed rail ramped up on Oct 30 with 10,000 workers, Metro Line 2 prepared five stations for excavation, Long Thanh airport was fixed for commercial operation on Dec 24 and HCMC fast-tracked 14 infrastructure projects.",
-      src: "https://vietnamnet.vn/en/uneven-real-estate-price-fluctuations-drive-investors-to-adapt-2567266.html"
-    },
-    {
-      date: "2026-10-31",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "汇率（10/31 周六收盘）：银行美元买卖价跌破 26,000，为 2025 年 4 月中旬以来首次。Vietcombank 买入 25,610/卖出 25,990（较早间 -30 盾），其他国有行 25,440–25,980，Sacombank、TPBank 等少数行卖出价仍贴 26,000；SBV 10/30 中央汇率 25,637（较上周末升约 10 盾）。银行汇率较年初低约 1.5%，越盾 10 个月后对美元转为升值；自由市场价差重回 200–300 盾（胡志明兑换点买 25,900/卖近 26,200）。机构：MBS 年底 26,800–27,000、UOB Q4 26,300。fxRate 随银行卖出价下调至 25,990，cnyVnd 交叉折算 3,645（VCB 挂牌 3,817.97 买入/3,940.35 卖出，不同源）。",
-      en: "FX (Oct 31 Saturday close): bank dollar quotes fell below 26,000 for the first time since mid-April 2025. Vietcombank bid 25,610 / asked 25,990 (down 30 dong from the morning), other state banks quoted 25,440-25,980 and only a few private banks (Sacombank, TPBank) kept asks near 26,000; the SBV central rate for Oct 30 was 25,637 (up about 10 dong on the week). Bank rates are about 1.5% lower than at the start of the year, so the dong has turned stronger over ten months, and the unofficial-market spread has widened back to 200-300 dong (HCMC desks bid 25,900 and ask close to 26,200). Forecasts: MBS 26,800-27,000 by year-end, UOB 26,300 for Q4. fxRate has been marked down to 25,990 on the bank selling rate, with cnyVnd at a 3,645 cross rate (Vietcombank boards 3,817.97 bid / 3,940.35 ask, a different basis).",
-      src: "https://news.qq.com/rain/a/20261031A050UN00"
-    },
-    {
-      date: "2026-10-31",
-      tag: "利率 / Rates",
-      tagClass: "mid",
-      zh: "降息传导复盘（10 月下旬）：银行业协会统计，至少 22 家银行承诺对生产经营与优先领域贷款利率下调 1.5–2pp，其中 15 家公布优惠信贷方案、总规模逾 451 万亿盾（约全系统贷款余额 2.2%），但集中在 6 个月以下短期流动资金，无消费、购房、购车方案。挂牌与实际落差明显：部分资金紧张银行挂牌 6.6–7% 后再叠加 1–3pp 优惠，实际吸存超 8.3%、个别逾 9%；房地产等受控领域仍 12–14%、浮动 15–16%。专家口径：存款利率下降不等于融资成本同步下降（存量存款仍按旧协议付息），国有行信贷额度早用尽、实际放款受阻，多家银行贷存比已超 110%（规定 95%）。",
-      en: "Rate-cut transmission review (late October): the banking association counts at least 22 banks committing to 1.5-2pp cuts on production and priority-sector lending, 15 of which launched preferential packages worth over VND 451tn (about 2.2% of system loans) — but concentrated in short-term working capital under six months, with nothing for consumer, home-purchase or car loans. The gap between boards and actual funding costs is wide: some deposit-hungry banks post 6.6-7% then add 1-3pp of bonuses, pushing effective deposit yields above 8.3% and in some cases past 9%, while property and other controlled sectors stay at 12-14% (floating 15-16%). Experts note lower deposit boards do not equal lower funding costs (existing deposits still pay old rates), state banks used up their credit quotas early, and several banks' loan-to-deposit ratios already exceed 110% against a 95% rule.",
-      src: "https://news.qq.com/rain/a/20261030A0B3FH00"
-    },
-    {
-      date: "2026-10-31",
-      tag: "利坏 / Negative",
-      tagClass: "bad",
-      zh: "HoREA 引用建设部 9 个月报告（10/31 传播）：全国成交逾 331,800 笔（公寓与联排 80,270 套、地块 251,600 宗）；Q3 约 92,000 笔、为 Q2 的 92%（环比 -8%），其中公寓与联排 22,800 套（环比 -14%）、地块 69,150 宗（-6%）。价格端 Q3 整体小幅下行、分化明显：公寓微降但大城市基准价仍高，联排/别墅局部小跌且流动性迟滞，二手地块下调压力最大；买家集中转向法务清晰、基建完工、可运营的自住产品。HoREA 主席黎黄洲警告购买力下滑将令房企资金沉淀、现金流不足，或传导至信贷机构；EZ Vietnam 称年内成交较年初骤降约 90%，市场多处近乎冻结，仅社房与已交付成熟社区二手尚有成交（多靠深度折价）。",
-      en: "HoREA, citing the Ministry of Construction's nine-month report (circulated Oct 31): nationwide transactions topped 331,800 (80,270 apartments and townhouses, 251,600 land plots); Q3 saw about 92,000 deals, 92% of Q2 (down 8% QoQ), of which 22,800 were apartments/townhouses (-14%) and 69,150 land plots (-6%). Prices edged down overall in Q3 with sharp divergence: apartments slipped slightly but benchmark levels stay high in the big cities, villas/townhouses fell modestly in some areas on thin liquidity, and secondary land plots face the heaviest downward pressure, while buyers shift to legally clean, infrastructure-complete, income-producing homes. HoREA chairman Le Hoang Chau warned that weaker purchasing power will trap developer capital, thin cash flow and spill over to lenders; EZ Vietnam says its own transactions are down about 90% since the start of the year, with the market near-frozen except social housing and secondary units in completed communities, mostly via deep discounts.",
-      src: "https://vietnamnet.vn/en/uneven-real-estate-price-fluctuations-drive-investors-to-adapt-2567266.html"
-    },
-    {
-      date: "2026-10-31",
-      tag: "政策 / Policy",
-      tagClass: "mid",
-      zh: "国会 10/31 全体会议：财政部长吴文俊与央行行长范德印就经济社会发展计划、资源动员与货币政策接受质询并答复。代表建议：①SBV 指导商业银行将对因市场因素遇困但资金用途合规、有可行恢复方案的企业的债务重组（延期还本、维持原债务分类）机制延长至 2027 年底；②扩大中小企业、租户与社房购房者的优惠信贷范围；③降低投标保函费、履约保证金与提前还款费，相应押金及时释放，细则 2027 Q1 前完成；④将汽油特别消费税降至 0%，并延长柴油环保税与增值税支持、与汽油同步；⑤对 2026-07-01 前签订的公共投资施工合同建立单价调整机制（材料、人工、燃油大涨致「越干越亏」）。",
-      en: "National Assembly plenary, Oct 31: Finance Minister Ngo Van Tuan and SBV Governor Pham Duc An took questions and responded on the socio-economic plan, resource mobilisation and monetary policy. Deputies proposed: (1) the SBV direct banks to extend to end-2027 the debt-restructuring mechanism (payment deferral with unchanged classification) for firms hit by market conditions but using funds properly and holding feasible recovery plans; (2) broadening preferential credit for SMEs, tenants and social-housing buyers; (3) cutting bid-guarantee and performance-bond fees and early-repayment charges, releasing matching deposits, with rules completed by Q1 2027; (4) cutting the special consumption tax on petrol to 0% and extending diesel environmental-tax and VAT support in step with petrol; (5) a unit-price adjustment mechanism for public-investment construction contracts signed before July 1, 2026, after sharp rises in materials, labour and fuel left contractors 'losing money the more they build'.",
-      src: "https://worldculturefestival.vn/en/de-xuat-giam-thue-tieu-thu-dac-biet-voi-xang-ve-0-keo-dai-ho-tro-thue-voi-dau-diesel"
-    },
-    {
-      date: "2026-10-31",
-      tag: "政策 / Policy",
-      tagClass: "mid",
-      zh: "停滞项目处置落地：国会第 29/2026/QH16 号决议（针对 2024 年《土地法》生效前组织与个人涉土地违法行为、以及长期停工项目）配套的第 147/2026/NĐ-CP 号法令已实施。地方进展：依据政治局第 77-KL/TW 号结论、国会第 170/2024/QH15 与 29/2026/QH16 号决议及该法令，全国 2,035 个长期停滞项目中 1,985 个已化解（97.5%）；岘港市列管 354 个项目与地块、已处理 206 个（58.2%），海防 249 个中化解 239 个。岘港市委要求「解决困难但不合法化既往违规」，从程序管理转向主动落地，并保护担当干部。",
-      en: "Unblocking stalled projects: Decree 147/2026/ND-CP, implementing NA Resolution 29/2026/QH16 on pre-2024 Land Law violations by organisations and individuals and on long-stalled projects, is now in force. Local progress: under Politburo Conclusion 77-KL/TW, NA Resolutions 170/2024/QH15 and 29/2026/QH16 and this decree, 1,985 of 2,035 long-stalled projects nationwide have been resolved (97.5%); Da Nang listed 354 projects and land plots and cleared 206 (58.2%), while Hai Phong resolved 239 of 249. Da Nang's party committee insists on 'fixing difficulties without legitimising past violations' and a shift from procedure management to delivery, with protection for officials who act.",
-      src: "https://en.nhandan.vn/resolving-bottlenecks-for-long-delayed-and-stagnant-projects-post168522.html"
-    },
-    {
-      date: "2026-10-31",
-      tag: "新盘 / Launch",
-      tagClass: "good",
-      zh: "河内社房开售（12 月）：市建设厅公布石室县（河鹏乡）新舍（Tan Xa）与东竹（Dong Truc）两个社房项目本期共 343 套，其中出售 307 套、出租 18 套、租购 18 套，公告售价 2,350 万盾/㎡（含 VAT、不含维修基金）。东竹 231 套（出售 206 套、37.56–77 ㎡，总投 3,252.26 亿盾，8 层含夹层+地库）、12/2–12/31 收件；新舍 112 套（出售 100 套、55.2–68.91 ㎡，2026-07-03 已开工）。最小 37.56 ㎡ 约 8.83 亿盾、最大 77 ㎡ 约 18.1 亿盾；出租约 8.9–10.08 万盾/㎡/月，租购（5 年、先付 50%）约 17.8–20.9 万盾/㎡/月；预计 2027-01 签约、2027 Q4 交付。建设厅提示只经官方公布渠道提交、勿走中介或违规收定金。",
-      en: "Hanoi social housing on sale (December): the city construction department announced 343 units in the Tan Xa and Dong Truc projects in Thach That (Ha Bang commune) — 307 for sale, 18 for rent and 18 lease-to-own — at a published VND 23.5m/sq.m incl. VAT, excl. maintenance. Dong Truc offers 231 units (206 for sale, 37.56-77 sq.m; VND 325.226bn total investment; 8 floors plus mezzanine and basement) with applications open Dec 2-31; Tan Xa offers 112 units (100 for sale, 55.2-68.91 sq.m; started July 3, 2026). The smallest 37.56 sq.m unit costs about VND 883m and the largest 77 sq.m about VND 1.81bn; rents run VND 89,000-100,800/sq.m/month and lease-to-own (5 years, 50% upfront) VND 178,000-209,475/sq.m/month, with contracts expected in January 2027 and handover in Q4 2027. The department warns buyers to apply only through official channels, not via brokers or illegal deposits.",
-      src: "https://www.vietnam.vn/en/nhan-ho-so-mua-231-can-nha-o-xa-hoi-dong-truc-tu-ngay-2-12"
-    },
-    {
-      date: "2026-10-31",
-      tag: "市政 / Infra",
-      tagClass: "good",
-      zh: "滨城—芹椰高铁全面提速（10/30）：VinSpeed 与总包联合体在 10/30 启动全线大规模施工，高峰投入约 1 万名工人、工程师与技术员。控制性工程：滨城地下站逾 565 m、开挖深约 34 m，与地铁 1 号线滨城站直连；西贡港区 13 m 直径盾构隧道逾 2 km，接 321.7 m 明挖段与 266 m U 型槽；芹椰主桥为钢桁斜拉桥、双 A 形塔、主跨 360 m，两侧引桥逾 4 km。全线约 54 km、设计时速 350 km/h，市中心至芹椰约 13 分钟；沿线 3 个预制场 15 个月产约 1,300 榀全跨预制箱梁，已配 32 m 模具与 900 吨级运架设备。进度：2026 Q4 完成征地、2028 Q4 完工、试运行后 2029 年商业运营。",
-      en: "Ben Thanh-Can Gio high-speed rail ramps up (Oct 30): VinSpeed and its main-contractor consortium launched full-line construction on Oct 30, peaking at about 10,000 workers, engineers and technicians. Key structures: the underground Ben Thanh station at over 565 m long and about 34 m deep, linked directly to Metro Line 1's Ben Thanh station; a 13 m-diameter TBM tunnel of more than 2 km under the Saigon Port area feeding a 321.7 m cut-and-cover section and a 266 m U-shaped open tunnel; and the cable-stayed Can Gio main bridge with steel truss girder, two A-shaped pylons and a 360 m main span plus over 4 km of approach viaducts. The roughly 54 km line is designed for 350 km/h, cutting city-centre to Can Gio to about 13 minutes; three casting yards will turn out about 1,300 full-span precast box girders over 15 months using 32 m moulds and 900-tonne handling gear. Schedule: land clearance in Q4 2026, completion in Q4 2028, commercial service in 2029 after trials.",
-      src: "https://web.archive.orgmailto:vietnamnetjsc.hcm@vietnamnet.vn/en/10-000-workers-mobilized-to-accelerate-ho-chi-minh-city-high-speed-rail-project-2569946.html"
-    },
-    {
-      date: "2026-10-31",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "河内 10 月 CPI（市统计局）：环比 +0.15%、同比 +5.03%，前 10 个月均值同比 +4.92%。交通类环比 +1.93%（汽油均涨 6.55%、柴油 +0.73%）、同比 +13.71%，前 10 个月 +7.56%（柴油 +41.17%、汽油 +13.54%、航空客运 +79.07%）；住房、电、水、燃料与建材同比 +7.07%，前 10 个月 +7.41%，其中租赁住房 +8.38%、建材 +15.75%、家庭用电 +3.51%、环卫服务 +46.96%、煤油 +43.18%。回落项：食品饮料环比 -0.23%（猪肉 -1.56%、蛋 -1.19%）、家电家具 -0.19%、信息通信 -0.43%（同比 -1.12%）。提示：租赁住房涨幅高于整体 CPI，影响租金回报与持有成本测算。",
-      en: "Hanoi October CPI (city statistics office): up 0.15% MoM and 5.03% YoY, with the ten-month average up 4.92% year-on-year. Transport rose 1.93% MoM (petrol +6.55%, diesel +0.73%) and 13.71% YoY, and 7.56% over ten months (diesel +41.17%, petrol +13.54%, air fares +79.07%); housing, electricity, water, fuel and construction materials were up 7.07% YoY and 7.41% over ten months, including rented housing +8.38%, materials +15.75%, household electricity +3.51%, sanitation services +46.96% and kerosene +43.18%. Decliners: food and beverages -0.23% MoM (pork -1.56%, eggs -1.19%), home appliances and furnishings -0.19%, information and communication -0.43% (down 1.12% YoY). Note: rented housing outpaced headline CPI, which feeds into rental-yield and holding-cost maths.",
-      src: "https://www.vietnam.vn/en/ha-noi-cpi-thang-10-tang-0-15"
-    },
-    {
-      date: "2026-10-31",
-      tag: "利好 / Positive",
-      tagClass: "good",
-      zh: "Bất động sản 31/10: Hà Nội mở bán 2 dự án nhà ở xã hội vào tháng 12 từ 898 triệu đồng/căn",
-      en: "Bất động sản 31/10: Hà Nội mở bán 2 dự án nhà ở xã hội vào tháng 12 từ 898 triệu đồng/căn",
-      src: "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMGVxR2N3UDlVOC1mVlhZOHZQREJCSGwza3J1ZmhDWDdnMEg2bTZKRmlGTkdxS2wtVnlPc3lCd3h2MmRYclI3S3N1ak9hZFZ4ejlZTVA4VkN1czV2TDBYaDE4ZHJqZDZrdnRsMG1CRHpOU2tTVDRmUEFUbE5JVG45OUNRRmN1Nm9QS21JQjlILTl0V212ell3c2NzbmE1MnFkUHZGQV9IS0VzQjBqS2JBOE9PcDdBQUY4enlYS2VJV2UyZURDdlQwVjJWVHJfZw?oc=5"
-    },
-    {
-      date: "2026-10-31",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "Thị trường bất động sản điều chỉnh, cơ hội cho người mua nhà",
-      en: "Thị trường bất động sản điều chỉnh, cơ hội cho người mua nhà",
-      src: "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY2JBcjRhTmFaZ0lQMW1fSDRGTXA1MWlvSHRVZXQtdVQ3ejZYUUNIbF94ZmIwZ1N2TGpfZkRHN3lZRXB4TXdzWC00MndURFBEVUk4dmduaW1LUy1YcTBMOWVEWWNrOTVDZGt6ekRsX0stLTRndHZPTUVDSU5xYjAyd2M3RWt4NFRldjV1eXlQSXF3cndINnphRVZmNmJ5NXVOMFB2NWlBRHI?oc=5"
-    },
-    {
-      date: "2026-10-31",
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      zh: "Hội thảo “Bất động sản du lịch trong chu kỳ mới”",
-      en: "Hội thảo “Bất động sản du lịch trong chu kỳ mới”",
-      src: "https://news.google.com/rss/articles/CBMieEFVX3lxTFBYT0dobVRwMVdoT2NiNlBwczVuRWNkRVRidElBcURWSkdQd1VPZm9PdGZHTzZVS0hGOGh4ekNXLUhWbldMVm5RVXk0UmdLZTVENlljZ0dtY1IwMDc2VFF0M1pMZENDcnh3bGp5R1U4SlJfWUdXWjRjbw?oc=5"
-    },
-    {
-      date: "2026-10-31",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "Dữ liệu nhà ở và thị trường bất động sản phải hướng tới dữ liệu mở",
-      en: "Dữ liệu nhà ở và thị trường bất động sản phải hướng tới dữ liệu mở",
-      src: "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM090a2ZnRHNNRi1EbjJ1SVllNzYwVHFGU25HeEx6ZGRwR3FmdEdWaU1CRGpZSzJMZE9MTUJ2ZjlFRGxmT2xGdk1kUHJzRUxIQ3JjMmpHSFFRUXRxWFlQeXlXbTFRNzRma2Q5RDlFVlVvT2dqN1RDb2hzc0VTakdZRnFfd19kSkJVWm5iQk1hSUtLVWt5UU9EZ3VrRTdMNmFtV2p2TDNaMEtXWDg?oc=5"
-    },
-    {
-      date: "2026-10-31",
-      tag: "政策 / Policy",
-      tagClass: "mid",
-      zh: "Thước đo mới quyết định giá trị bất động sản",
-      en: "Thước đo mới quyết định giá trị bất động sản",
-      src: "https://news.google.com/rss/articles/CBMigwFBVV95cUxNTEdzamItQmk4Q3hPLWs2R1Zya0RNQWhoYlBTWGY0YVhLY2dMSzhsSWNYeVhZd3Z4bUotR29JUU9FWXp4bDd0YldpV0hwVjFsMnNuazZPMmVhQmxOSDlnWlF6c3QzTFI5NzdtUTVPLThPeFBtRHhwMkJfR0xsRE83T3NaQQ?oc=5"
-    },
-    {
-      date: "2026-10-30",
-      tag: "利好 / Positive",
-      tagClass: "good",
-      zh: "Bất động sản công nghiệp giữ nhịp tăng trưởng",
-      en: "Bất động sản công nghiệp giữ nhịp tăng trưởng",
-      src: "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSlp4cHk3VlZZTzlSYUd1bFp6ZS1NanNPcVZQVldJdGgtVVdINE8zX1RHRU8zWmxScEFMTUt3Ulc1UVhXcVZhQjZNTVRDYVdiNm82YVVwQ2RlcDVnU0NHNkloM3ppOFlJR2phZDFtdW0xdWtUZ19kWk16LVZfX0F4TGNFYzN6MGVDM213YTliTjQ3bUxEUndQbmJpMNIBlwFBVV95cUxPQ2RFTGxkT3BKOVZVZ2szMjNkY2ZHalp0eVc4UWM3T1Z1dlpLMjE4MEFsMi00WGlESzFDeHhoMERhbHZMdzhlMjlNMk1SU05ROXk5Rmt3MllldnpLb2lKTnctSGNDemc5ckRrdnhZU1BLN0NjMlE1eXFSZzNHOFBpNnlJYUJZcEk4aGFTSjBlQ1F5ZnhoX0Nz?oc=5"
-    },
-    {
-      date: "2026-10-31",
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      zh: "Lãi đột biến tại nhiều doanh nghiệp bất động sản",
-      en: "Lãi đột biến tại nhiều doanh nghiệp bất động sản",
-      src: "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcUhNWGVYSGN1d3JnMVkycmQyc0RydFRpdkhWV0lWQVJ0dld0TUgtMnhreDNaY3dfSjVKQVJUblMwVWtCTUVvWnVxdUxVakRweTB2OEI4YmlIalotSGxHUGlERnRfM0JtUHBneUlNcUE2RUxBZENDM0hYaW5jMGdqWXNRM21QY2d1MlhCa2F2UDVzQQ?oc=5"
-    },
-    {
-      date: "2026-10-31",
-      tag: "利坏 / Negative",
-      tagClass: "bad",
-      zh: "Chờ \"bắt đáy\" bất động sản, vì sao người mua vẫn chưa xuống tiền?",
-      en: "Chờ \"bắt đáy\" bất động sản, vì sao người mua vẫn chưa xuống tiền?",
-      src: "https://news.google.com/rss/articles/CBMimgFBVV95cUxNenhQMEg0eFF4MndLakJHVlZ0SVhkUnVRRzFkd054bDhIbkZqbGY5R1JlU08zeVJ2enludHhtSnZ4akhXN2FlbjNKMTJHV2ZEeUM3MHRidzIzVVZmQk5NU181bWFuNTU3cFlFVTh3bGZUaFA2U0NKMUtzV0hHNjZDV18tZU1nbVJDVlZRbHNKUzlxY1p2bDRBdzJR?oc=5"
-    },
-    {
-      date: "2026-10-30",
-      tag: "利率 / Rates",
-      tagClass: "good",
-      zh: "利率（10/30）：10 月累计近 30 家银行下调定存挂牌（SBV 10/18 第 9608 号公文要求 6 个月以上至少降 0.5pp，10/21 第 9736 号要求全渠道实质下调并按报备系统考核，未达标可下调信贷增长指标），但企业融资成本仍处高位：DXS-FERI 预测最可行情景下 2026 年底浮动贷款利率仍维持 11–13%/年；BIDV Home 业务发展总监陈月琼花认为当前降息偏「支持生产」性质，待 2027 年公共投资与征地补偿资金放量、货币乘数回升、银行吸存流动性改善后才可能出现更广泛降息。业内提醒：挂牌利率下降不等于存量贷款成本下降，需关注优惠期后利率与调整公式。",
-      en: "Rates (Oct 30): nearly 30 banks have cut listed deposit rates in October (SBV Official Letter 9608 of Oct 18 required at least 0.5pp off 6-month-plus tenors, and Letter 9736 of Oct 21 demanded a real across-channel cut, monitored via reporting with credit-growth targets at risk). Corporate funding costs nevertheless stay high: DXS-FERI expects floating lending rates at 11-13% through end-2026 in its most likely scenario, and BIDV Home's Tran Nguyet Quynh Hoa argues the current cuts are mainly production-support in nature, with broader relief only after public-investment and land-compensation cash flows lift the money multiplier in 2027. Market note: lower listed rates do not automatically cut existing loan costs — check post-promo rates and repricing formulas.",
-      src: "https://news.qq.com/rain/a/20261030A0B3FH00"
-    },
-    {
-      date: "2026-10-30",
-      tag: "政策 / Policy",
-      tagClass: "mid",
-      zh: "10/30 上午国会全体会议审议《房地产经营法》修订草案：建设部长陈鸿明说明——草案第 18 条第 5 款明确收定金条件，第 5 条第 5 款禁止在房地产不具备经营条件时收取定金，投资商须完成包括施工至地基在内的全部程序；购房价 5% 尾款由银行担保、投资商须履行至验收交房发证；参与项目企业须满足 15% 自有资金条件，地方须严格审核。代表意见：武文进（海防）要求比对在售房源清单与获批规划、公开合格房源并预警违规项目，追缴违法收益、强制赔偿；阮文辉（兴安）要求堵住以「预留费/登记费」等名义变相集资；阮氏越娥（海防）要求合同转让强制登记核实以防一房多卖。数据库进度：截至 7/30 系统已开 12,200 个账户、记录 66,302 笔交易、816 个项目、18,106 份经纪执业证（其中 3,746 份经系统办理）。",
-      en: "Oct 30 morning plenary on the draft amended Real Estate Business Law: Construction Minister Tran Hong Minh said Article 18(5) sets deposit conditions and Article 5(5) bans deposits when the property is not yet eligible for trading, with investors required to complete all steps including construction to foundation level; the final 5% of the price is bank-guaranteed and must be honoured through acceptance, completion and title handover; developers must meet the 15% own-capital requirement, enforced by localities. Deputies asked for checks of for-sale unit lists against approved plans, publication of compliant units and warnings on violating ones, recovery of illegal gains and compensation (Vu Van Tien, Hai Phong); closing loopholes where reservation or registration fees disguise fundraising (Nguyen Van Huy, Hung Yen); and mandatory registration of contract transfers to prevent double-selling (Nguyen Thi Viet Nga, Hai Phong). Database: by July 30 the national system held 12,200 accounts, 66,302 transactions, 816 projects and 18,106 broker certificates (3,746 processed online).",
-      src: "https://www.vietnam.vn/en/dai-bieu-quoc-hoi-de-xuat-xu-ly-nghiem-chu-dau-tu-vi-pham-tang-co-che-bao-ve-nguoi-mua-nha"
-    },
-    {
-      date: "2026-10-30",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "10/30 下午国会讨论 2026 年经济社会发展计划执行情况与 2027 年计划：政府报告称 15 项主要指标预计 14 项达标或超额，但宏观管理与通胀控制压力仍大、存贷款利率仍处高位、中小企业获取土地与信贷仍困难；前 9 个月 GDP +9.01%（Q3 +9.95%）、CPI 均值 +4.52%、预算收入约 3.06 千万亿盾（+14%）、公共债务约 GDP 33–34%、赤字约 4.1%，生产经营与优先领域贷款利率已降 1.5–2pp。2027 年定为「加速突破年」，目标 GDP 增长 ≥10%、预算收入 +9.1%、公共投资拨付 100%。",
-      en: "Oct 30 afternoon: the National Assembly debated the 2026 socio-economic plan and the 2027 plan. The government expects 14 of 15 key targets met or exceeded, while flagging pressure on macro management and inflation, still-high deposit and lending rates, and SME difficulty in accessing land and credit. Nine-month GDP grew 9.01% (Q3 +9.95%), average CPI rose 4.52%, budget revenue reached about VND 3.06 quadrillion (+14%), public debt was around 33-34% of GDP with a deficit near 4.1%, and lending rates for production and priority sectors were cut 1.5-2pp. 2027 is billed as a year of acceleration, targeting GDP growth of at least 10%, revenue +9.1% and 100% public-investment disbursement.",
-      src: "https://en.vietnamplus.vn/vietnam-targets-growth-of-at-least-10-in-2027-while-safeguarding-macroeconomic-stability-post354551.vnp"
-    },
-    {
-      date: "2026-10-30",
-      tag: "新盘 / Launch",
-      tagClass: "good",
-      zh: "10/30 新盘：Win City（胡志明市西部、环城 3 号公路与陈文桥街交叉口附近）启用高架销售中心 Victory Gallery，35 家战略分销商约 1,200 名销售到场。项目占地 13.18 公顷、分 3 区、18 栋塔楼、近 6,000 套，首推公寓 3,290 万盾/㎡起（约 1,300 美元/㎡），首付 10%（约 1.6 亿盾），可选付款期延至近 4 年、交房前仅付 15%，或 100% 利息补贴；A 区 Prime Majestic 定位高端，含 42 层 Win Mark 商业综合体。",
-      en: "Oct 30 launch: Win City (western HCMC, near the Ring Road 3 and Tran Van Kho bridge junction) opened its elevated Victory Gallery showroom with about 1,200 agents from 35 strategic distributors. The 13.18 ha project has three zones, 18 towers and nearly 6,000 apartments; first-release units start at VND 32.9 million/sqm (about USD 1,300/sqm) with a 10% down payment (roughly VND 160 million), payment stretched to nearly four years, 15% paid before handover, or a 100% interest subsidy. Zone A, Prime Majestic, is positioned as the high-end segment with a 42-storey Win Mark retail tower.",
-      src: "https://www.vietnam.vn/zh-cn/the-win-city-ra-mat-victory-gallery-gallery-tren-cao-doc-ban-tai-tay-tphcm"
-    },
-    {
-      date: "2026-10-30",
-      tag: "新盘 / Launch",
-      tagClass: "good",
-      zh: "10/28 河内新盘：Epic Holdings 发布高端住宅品牌并推出「Timeless Collection」首个项目 Tara Maison（美亭，国家体育场对面、慈廉混合用地）：占地 23,810 ㎡、建筑密度 26%、地上 27 层/地下 3 层、294 套，预计 2028 Q4 交付；投资方 ACE My Dinh，总包拟由 Sol E&C 与 Ricons 承担。开盘时间与价格尚未公布，待官方公示。",
-      en: "Oct 28 Hanoi launch: Epic Holdings unveiled its high-end residential brand and the first Timeless Collection project, Tara Maison (My Dinh, opposite the national stadium in the Tu Liem mixed-use area): 23,810 sqm site, 26% density, 27 floors above ground and 3 basements, 294 apartments, handover expected in Q4 2028. Investor is ACE My Dinh, with Sol E&C and Ricons tipped as main contractors. No opening date or pricing has been announced yet.",
-      src: "https://www.vietnam.vn/zh-cn/epic-holdings-gia-nhap-cuoc-dua-bat-dong-san-hang-sang-tai-ha-noi"
-    },
-    {
-      date: "2026-10-30",
-      tag: "市政 / Infrastructure",
-      tagClass: "good",
-      zh: "10/30 市政：①ACV 通知同奈市人委会，隆城机场计划自 2026-12-24 0 时起商业运营；②胡志明市第十一届市议会第六次（专题）会议通过决议，允许在越南国际金融中心（VIFC）发行市政债与项目债，为中长期基建开辟融资渠道；③市交通厅 10/29 通报：年底前 20 个交通项目需石料 191 万 m³、建筑砂 55 万 m³、平整砂 185 万 m³、填方土 370 万 m³，砂产能仅满足建筑砂 50%、平整砂 38%，缺口拟用地铁 2 号线挖方土补充填方。",
-      en: "Oct 30 infrastructure: (1) ACV told the Dong Nai city government that Long Thanh airport is scheduled to begin commercial operations at 00:00 on Dec 24, 2026; (2) the HCMC People's Council, at its sixth (special) session, approved issuing municipal and project bonds at the Vietnam International Financial Centre (VIFC), opening a medium- and long-term funding channel for key infrastructure; (3) the city transport department said 20 road projects need 1.91 million m3 of stone, 550,000 m3 of construction sand, 1.85 million m3 of levelling sand and 3.7 million m3 of fill before year-end, with sand output covering only 50% of construction-sand and 38% of levelling-sand demand — Metro Line 2 excavation spoil is to make up fill shortfalls.",
-      src: "https://www.vietnam.vn/en/20-du-an-giao-thong-tp-hcm-can-hang-trieu-m3-vat-lieu-thieu-nhat-la-gi"
-    },
-    {
-      date: "2026-10-30",
-      tag: "利好 / Positive",
-      tagClass: "good",
-      zh: "10/30 社房：①富寿省按第 303/NQ-CP 号决议（2026–2030 年 40,000 套，含社房 33,000 套、租赁房 7,000 套）锁定 8 个社房项目于 2026 Q4 开工，合计近 6,000 套、总投资逾 95,000 亿盾（含翠云 1,570 套/30,070 亿盾、文富 3 区 1,040 套/18,260 亿盾）；②胡志明市人委会计划将扩建黎明春工业区 109.91 公顷转为社房用地，缩短工人通勤距离。",
-      en: "Oct 30 social housing: (1) Phu Tho province, under Resolution 303/NQ-CP (40,000 units for 2026-2030, including 33,000 social and 7,000 rental homes), has lined up eight projects to break ground in Q4 2026 totalling nearly 6,000 units and over VND 9,500 billion, including Thuy Van at 1,570 units (VND 3,007 billion) and Van Phu zone 3 at 1,040 units (VND 1,826 billion); (2) the HCMC People's Committee plans to convert 109.91 ha of the expanded Le Minh Xuan industrial park into social housing land, cutting workers' commutes.",
-      src: "https://www.vietnam.vn/en/phu-tho-tang-toc-khoi-cong-gan-6-000-can-nha-o-xa-hoi-trong-quy-iv"
-    },
-    {
-      date: "2026-10-30",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "汇率（10/30）：SBV 参考汇率 25,637（较 10/29 降 7 盾），±5% 区间 24,355–26,919（另有稿记下限 24,335）。早 8:25 Vietcombank 买入 25,640/卖出 26,020（各 -20）、BIDV 25,635/26,015（-15，另有稿记 25,625/26,005）、Agribank 25,640/26,020、TPBank 25,653/26,033；美元指数自两周高位回落至 102.17。美联储 10/28 维持 3.75%–4.00%（10:2），主席 Warsh 未就后续加息给出明确信号，但 9 月 PCE 加速、CME 12 月加息概率仍约 80%；ECB 10/29 维持不变、BOJ 10/30 预计按兵不动。fxRate 随银行卖出价下调至 26,020。",
-      en: "FX (Oct 30): the SBV set the reference rate at 25,637, down 7 dong from Oct 29, with the +/-5% band at 24,355-26,919 (one report cites 24,335). At 08:25 Vietcombank quoted 25,640 bid / 26,020 ask (-20 each), BIDV 25,635/26,015 (-15; a second report shows 25,625/26,005), Agribank 25,640/26,020 and TPBank 25,653/26,033, while the dollar index eased from a two-week high to 102.17. The Fed held at 3.75%-4.00% on Oct 28 by a 10-2 vote; Chair Warsh gave no clear steer on further hikes, but faster September PCE inflation keeps CME odds of a December hike near 80%. The ECB stood pat on Oct 29 and the BOJ was expected to hold on Oct 30. fxRate has been marked down to 26,020 on the bank selling rate.",
-      src: "https://en.vietnamplus.vn/reference-exchange-rate-down-7-vnd-on-october-30-post354552.vnp"
-    },
-    {
-      date: "2026-10-30",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "Giá bất động sản sẽ đi về đâu?",
-      en: "Giá bất động sản sẽ đi về đâu?",
-      src: "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ZVGczMk0yVU9oTXlZeFdlMWZtWHZFZ3Q2WmQ3VlJDSWc3akhVOVlPSVluVEU3Z3U5NElpWVNtdmphcGlWRHgxbENpd3RoX0pfZ0syb3NEMVJpa3B5bjFZNTBLYWVwYVM4LUg4aHhIRklzNmx1OXFv?oc=5"
-    },
-    {
-      date: "2026-10-30",
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      zh: "Quản lý chặt kinh doanh bất động sản, bảo vệ người mua nhà",
-      en: "Quản lý chặt kinh doanh bất động sản, bảo vệ người mua nhà",
-      src: "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTmczRmNZWEtlaW45R0R4ODd0akdVTkpaa0lSYkpQWnVyam1aQnpCeHY0NFc1Yk51R00xQk43Z3ZFVGJ1aU93VFM0VHZLeVlyNmtfdmNoRjV2dlJKaG1VaHpxT2FZbVFBaWM2d3JLd0JjeEtCdmxicVAyUkU0N0RJakxqY01JcmZHS1pxZVpTOE9yVHlGWEtUZ1dmdmlOZkdNQ0Fqa1V3?oc=5"
-    },
-    {
-      date: "2026-10-29",
-      tag: "数据 / Data",
-      tagClass: "mid",
-      zh: "Thị trường bất động sản sắp nhiều biến động: Cơ hội nào cho người mua nhà?",
-      en: "Thị trường bất động sản sắp nhiều biến động: Cơ hội nào cho người mua nhà?",
-      src: "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPazY0dXhoS0RSWGwwbXQzbkVuOU1xeDQyWkhNanZmNHR5UlNPRzF5YjZDRkdhclpRNHRfZHFaTFFQbmhPV0dLdl8yWkJNbWNWSUVOZFlvcWYxcGZuOExOUWhTblFHbkRfcmFjYTJQb3FNbk1BQ0pNdHpRVG5jcHR5OEMwY3NnVDRySk1vNEQxVzdqM3dKT3NoY0ZScjZMckEyZEwyaVhVVlFDQQ?oc=5"
-    },
-    {
-      date: "2026-10-30",
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      zh: "“Vòng quay vốn” mới cho doanh nghiệp bất động sản",
-      en: "“Vòng quay vốn” mới cho doanh nghiệp bất động sản",
-      src: "https://news.google.com/rss/articles/CBMiigFBVV95cUxPb1dadjdWTVJ1bGV6VWtYUWN6dUdSSWVkVHhHb2dWb3N1aF9BMG9MTkdpUHdhenRyWXI2bGtxckJFZE5HTmVvZmxLZEo0Q3ZrNldSU1ByQkw2S0JoaHNUeDc4dEFIeGs5VlNfQkl3Q1g3UWxsaWlHRmxZRGk5aFIyYmNIaDIyOUlIREE?oc=5"
-    },
-    {
-      date: "2026-10-30",
-      tag: "新盘 / Launch",
-      tagClass: "good",
-      zh: "Khơi thông nguồn lực từ các dự án bất động sản",
-      en: "Khơi thông nguồn lực từ các dự án bất động sản",
-      src: "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTDBFZmlJT2h2cVlXbmR6SDluOU1RLTczZ2pFOWZDaVN6SWV2QTg4dzVkTUVaa2puN0pwRmtleW00WTNXRzdWTVJ2ZldJamhrcUVpYXR4WDJ5MWZZRC1nd0FnRTF1emoyenYxclotcWxOTHAwWUxHNEI1SWtINFVOczNHVGRvR2hST3c?oc=5"
-    },
-    {
-      date: "2026-10-30",
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      zh: "Minh bạch thông tin bất động sản để bảo vệ người mua nhà",
-      en: "Minh bạch thông tin bất động sản để bảo vệ người mua nhà",
-      src: "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYWtpTWN5SDRVRWhkMDRWbTFJOUI2Q0xIOXo1SFdjeWZTTF9vSy0tclFaSUMwRTFQSmpMWVkxWDVDTjB6RHRaSjhRcGVOMEZBeVUxd0w5Q3Q4VVRsNnpIX2JJbDdUaEdBcWVxTVRITHJxcGpPT2RCTTlUYWRxRy1qMDFQMkZjX1FUaWUwVXZ1c29vVXh4UkJEcVM3a3l2d0ZaMjdrOA?oc=5"
-    },
-    {
-      date: "2026-10-30",
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      zh: "Thế 'lưỡng nan' của doanh nghiệp bất động sản",
-      en: "Thế 'lưỡng nan' của doanh nghiệp bất động sản",
-      src: "https://news.google.com/rss/articles/CBMijwFBVV95cUxQelhMVUw3RWpoNkpON1BmbGR3OU13aDBMalRhbmZjM2tQa3hiamU4WWlJelRobDd3QXRSOUY0UWRpSkt3NUYwc3dxaVNqWVByWGJ1MV85LUdneUtJYVRsVHNfYWMyU2dlSS1LWFNwalh4eDJfeUU5cUdvYmlVRGxBdl93cm0yVkhFZnVlenExUQ?oc=5"
-    },
-    {
-      date: "2026-10-30",
-      tag: "利坏 / Negative",
-      tagClass: "bad",
-      zh: "Siết quản lý kinh doanh bất động sản để chặn rủi ro cho người mua nhà",
-      en: "Siết quản lý kinh doanh bất động sản để chặn rủi ro cho người mua nhà",
-      src: "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcGtBRlJqbTZmbi0weUxRN1AtVTl0OWV1WkpzTk5wSk9YWXFXTzE5NXZjckpXUHFNSVY2ZVNvbHRqcXMtemtiQkVJZlJtb2VNOTlhaHg1cVhKZXZJSzRrYTJJUndMYmhmV1ZkSF9VOFBUckp4UTA5NjI2Wm9uVDRlTVVUMlV6VG81MWllMzZtMGFHcXJpTHlPVTBpeW83ZWRZOUt5OWhCNnFzdE95dVI2VA?oc=5"
-    },
-    {
-      date: "2026-10-29",
-      tag: "利率 / Rates",
-      tagClass: "good",
-      zh: "定存 10/29：MSB、VietABank、GPBank 同日降 0.5 个百分点（6–36 月），10 月累计已有 29 家银行下调。MSB 线上（到期付息）1–5 月 4.75%、6–11 月 5.8%、12 月 6.3%（该行最高）、13–24 月 6.1%、36 月 5.6%；专属利率：≤50 亿盾且首次开户单账户，6 月 6.5%、12/15/24 月 7.0%；VIP 存款 ≥5,000 亿盾 12/13 月 9.0%。VietABank 线上 1–2 月 4.7%、3–5 月 4.75%、6–11 月 5.5%、12–13 月 5.6%、15–18 月 5.7%、24–36 月 5.8%（柜面 6–18 月 5.3–5.5%、24–36 月最高 5.6%）。GPBank 线上 1–2 月 3.6%、3–5 月 3.7%、6–8 月 4.75%、9 月 4.85%、12–36 月 5.05%（柜面 12–36 月最高 4.6%）。注：此前本表把 GPBank 与 NCB/Vikki 并列为 9.1–9.35% 线上促销，与本次挂牌不符，已按 10/29 挂牌口径更正。",
-      en: "Deposit rates Oct 29: MSB, VietABank and GPBank each cut 0.5pp on 6-36 month terms, taking the October total to 29 banks. MSB online (interest at maturity): 4.75% for 1-5m, 5.8% for 6-11m, 6.3% for 12m (its high), 6.1% for 13-24m, 5.6% for 36m; special rates of 6.5% (6m) and 7.0% (12/15/24m) for first-time single-account savers up to VND 5bn, and 9.0% for VIP balances from VND 500bn at 12-13m. VietABank online: 4.7% (1-2m), 4.75% (3-5m), 5.5% (6-11m), 5.6% (12-13m), 5.7% (15-18m), 5.8% (24-36m); counter 5.3-5.5% at 6-18m and up to 5.6% at 24-36m. GPBank online: 3.6% (1-2m), 3.7% (3-5m), 4.75% (6-8m), 4.85% (9m), 5.05% (12-36m); counter up to 4.6%. Note: this file previously grouped GPBank with NCB/Vikki as 9.1-9.35% online promos, which does not match the Oct 29 board and has been corrected.",
-      src: "https://www.vietnam.vn/en/lai-suat-ngan-hang-ngay-29-10-2026-ba-ngan-hang-giam-0-5-diem-phan-tram-ky-han-6-36-thang"
-    }
   ],
 
   /* ---------- 热议话题 / Trending Topics（backend 每日 01:00 自动刷新） ---------- */
+  /* ---------- 热议话题 / Trending Topics（backend 每日 01:00 自动刷新） ---------- */
   hotTopics: [
-    {
-      date: "2026-11-01",
-      rank: 1,
-      heat: 100,
-      tag: "数据 / Data",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "2026-2027 年房地产：不再存在\"买什么都涨\"的时代",
-      titleEn: "Real Estate 2026-2027: The Era of Universal Price Hikes is Over",
-      zh: "2026 至 2027 年房地产市场将告别普涨时代，投资逻辑发生根本转变。盲目买入不再能确保收益，市场回归理性，投资者需关注资产实际价值与长期潜力，避免投机风险。",
-      en: "The real estate market from 2026 to 2027 will end the era of universal price hikes. Investment logic is fundamentally shifting; blind buying no longer guarantees returns as the market returns to rationality.",
-      vi: "Bất động sản 2026-2027: Không còn thời “mua gì cũng tăng”",
-      srcName: "Báo Thanh tra",
-      src: "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeUwzWFVJSXBRLWxSMDJ3a3pNdzVKT0Fodm05ekoyeGpad0ItM3Y5VmdYZ25zVndOalVEM0VBaURGanFwR1o2VVBCanZsdktpNDJWVTVkLVh5Z1VFQ3Z0SzRsTHVXajdyVlpzdF9WRjVjT3lXWlEtWjJvbGlzRjRPd0dldkNueTZCVDRHR2g1UThQd1A2dl9tajFjeGl1bm5Bb3JGc0p2YUZVcHFENGhhaw?oc=5",
-      coverage: 5,
-      related: [
-        {
-          n: "Báo và Phát thanh Truyền hình Hà Nội",
-          u: "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY2JBcjRhTmFaZ0lQMW1fSDRGTXA1MWlvSHRVZXQtdVQ3ejZYUUNIbF94ZmIwZ1N2TGpfZkRHN3lZRXB4TXdzWC00MndURFBEVUk4dmduaW1LUy1YcTBMOWVEWWNrOTVDZGt6ekRsX0stLTRndHZPTUVDSU5xYjAyd2M3RWt4NFRldjV1eXlQSXF3cndINnphRVZmNmJ5NXVOMFB2NWlBRHI?oc=5"
-        },
-        {
-          n: "Báo Gia Lai điện tử",
-          u: "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM090a2ZnRHNNRi1EbjJ1SVllNzYwVHFGU25HeEx6ZGRwR3FmdEdWaU1CRGpZSzJMZE9MTUJ2ZjlFRGxmT2xGdk1kUHJzRUxIQ3JjMmpHSFFRUXRxWFlQeXlXbTFRNzRma2Q5RDlFVlVvT2dqN1RDb2hzc0VTakdZRnFfd19kSkJVWm5iQk1hSUtLVWt5UU9EZ3VrRTdMNmFtV2p2TDNaMEtXWDg?oc=5"
-        },
-        {
-          n: "VTC News",
-          u: "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPazY0dXhoS0RSWGwwbXQzbkVuOU1xeDQyWkhNanZmNHR5UlNPRzF5YjZDRkdhclpRNHRfZHFaTFFQbmhPV0dLdl8yWkJNbWNWSUVOZFlvcWYxcGZuOExOUWhTblFHbkRfcmFjYTJQb3FNbk1BQ0pNdHpRVG5jcHR5OEMwY3NnVDRySk1vNEQxVzdqM3dKT3NoY0ZScjZMckEyZEwyaVhVVlFDQQ?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-10-31",
-      rank: 2,
-      heat: 91,
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "多家房企利润暴增，来源受质疑",
-      titleEn: "Profit Surges at Several Property Firms, Sources Questioned",
-      zh: "多家上市房企近期利润大幅增长，媒体关注其来源：多来自项目交付结转、资产处置或重估收益，而非主营销售回暖，可持续性存疑。",
-      en: "Several listed property developers reported sharp profit jumps; media question whether the gains come from handover revenue recognition, asset disposals or revaluation rather than a genuine sales recovery.",
-      vi: "Lãi đột biến tại nhiều doanh nghiệp bất động sản",
-      srcName: "CafeF",
-      src: "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcUhNWGVYSGN1d3JnMVkycmQyc0RydFRpdkhWV0lWQVJ0dld0TUgtMnhreDNaY3dfSjVKQVJUblMwVWtCTUVvWnVxdUxVakRweTB2OEI4YmlIalotSGxHUGlERnRfM0JtUHBneUlNcUE2RUxBZENDM0hYaW5jMGdqWXNRM21QY2d1MlhCa2F2UDVzQQ?oc=5",
-      coverage: 4,
-      related: [
-        {
-          n: "Báo Thanh Niên",
-          u: "https://news.google.com/rss/articles/CBMijwFBVV95cUxQelhMVUw3RWpoNkpON1BmbGR3OU13aDBMalRhbmZjM2tQa3hiamU4WWlJelRobDd3QXRSOUY0UWRpSkt3NUYwc3dxaVNqWVByWGJ1MV85LUdneUtJYVRsVHNfYWMyU2dlSS1LWFNwalh4eDJfeUU5cUdvYmlVRGxBdl93cm0yVkhFZnVlenExUQ?oc=5"
-        },
-        {
-          n: "Báo Nhân Dân điện tử",
-          u: "https://news.google.com/rss/articles/CBMiigFBVV95cUxPb1dadjdWTVJ1bGV6VWtYUWN6dUdSSWVkVHhHb2dWb3N1aF9BMG9MTkdpUHdhenRyWXI2bGtxckJFZE5HTmVvZmxLZEo0Q3ZrNldSU1ByQkw2S0JoaHNUeDc4dEFIeGs5VlNfQkl3Q1g3UWxsaWlHRmxZRGk5aFIyYmNIaDIyOUlIREE?oc=5"
-        },
-        {
-          n: "CafeLand",
-          u: "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMXByNnRtYU5RS194RzBxOEVmdWptOS05S3o1NnZzMmxWS3hxUFAwX3hIdmp6U2xkbG5KdVg0T2F0ekNtUXBfdU5YTXFleUphWEpZRC1uaEZvYVpTR0NPYmNIdHJjcmc4dzZ2YVlndU1mVUFKZEZCVGJGekpTcXJxZ2xyaFk0VFlXcU4tdnpxWDhuQnotVENXZzkwRkxOdDhrcVBCb2d0dmtkN1p3WEw4Nw?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-10-30",
-      rank: 3,
-      heat: 100,
-      tag: "新盘 / Launch",
-      tagClass: "good",
-      raw: false,
-      titleZh: "胡志明市 64 栋旧楼列入拆除重建范围",
-      titleEn: "64 Old Buildings in Ho Chi Minh City Scheduled for Demolition and Reconstruction",
-      zh: "胡志明市有 64 栋老旧公寓被列入拆除重建计划，旨在改善居住环境并提升城市功能。此举将推动相关区域土地价值重估，同时为居民提供新的住房选择与社区设施升级机会。",
-      en: "Sixty-four old apartment buildings in Ho Chi Minh City are scheduled for demolition and reconstruction to improve living conditions and urban functionality. This will drive land value reassessment and offer new housing options.",
-      vi: "64 chung cư cũ tại TP. HCM vào diện tháo dỡ, xây dựng lại",
-      srcName: "VietnamFinance",
-      src: "https://news.google.com/rss/articles/CBMimgFBVV95cUxNanJCNnhBeW5MQmZvUlJKR0s0NzlTYnNTOTVQbS1TRVFtanVFcTI1OEJ0ckNITTlDWUhXRmtFYnB1eGRoWFlVYURUai1wLV8zZTJ0Y3cwdUJucnlTRG1XM0sySU0zcHFOd3h4LVB1XzZGZFcwaHpjMk5iMjViQTVlLS1CMUhsS0JBTWlfNzFadXlFLTlCcDhiU3BR?oc=5",
-      coverage: 8,
-      related: [
-        {
-          n: "Báo Thanh Niên",
-          u: "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbEZYUXpieGtxemx5TjlaTXBQQUVqM3VsNDJ2LW1tT3lYdFFpbU9pYnVMUktmX1hoVTF0SUtOVEJwMUNpRVZza05JY19STlluSEEtU2pHWDFsMnIzOWhvcklmVm94V1FfckVjcFo5c2xMMlpQZ1FLbUFVU1dKRXI1bDE4N0JoYlRzQkUwdXc0RXg1Z3BueERKWHhPQzhzZDM4WmNNZVRfVlItRDE5SE51Zw?oc=5"
-        },
-        {
-          n: "Người Đô Thị",
-          u: "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPU29qNmFnR0lLTlRmaTZSQk1xa3Bpek1hMjFsSXR1M0dKYWJNZmVEckxEYl9iaGswTEowUlEtWWdEU21iRFNGRXVhZzRBS3YtVm9mSnUxdkpCTVgydXROS2xnTlhTS1dNOXZKV2hVbktlcXdlczNROHRCcG0yU2Fuc3h3YXhQa1VPZmlNeThzWXI4WmUxaFRYUDJsOHdVc3BzcUNiVHB2ZXdUdw?oc=5"
-        },
-        {
-          n: "Tạp chí Tài chính Doanh nghiệp",
-          u: "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcEFuTjhFSWxyMHB3aDhpM2FJc2hkOHZDYjZGRElacWVpYXYtaHBwSGY4ck1Td0ZRZkx6ZDhKdmdJQ2VaM2VPSkh2eTVjWjU1cFVyamcxWDJjcW9tTGxzWEtVallKelh3Sm1tUlo4UUUtWi1fWndSRzR4TzRiQTJVSkphRWN1eEJaMld1bmo3RUt0TldhNFdNbk1zSHM5d3Q1bTMw?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-10-30",
-      rank: 4,
-      heat: 91,
-      tag: "数据 / Data",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "专家建议发展高兰旅游房地产项目",
-      titleEn: "Experts Propose Developing Tourism Real Estate in Gia Lai",
-      zh: "专家建议利用高兰自然资源优势，重点发展生态旅游与度假地产。通过完善基础设施与提升服务质量，吸引国内外游客，推动当地经济多元化增长并创造就业机会。",
-      en: "Experts suggest leveraging Gia Lai's natural resources to focus on eco-tourism and resort real estate. By improving infrastructure and service quality, the region can attract tourists and drive diversified economic growth.",
-      vi: "Chuyên gia hiến kế phát triển bất động sản du lịch tại Gia Lai",
-      srcName: "Laodong.vn",
-      src: "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNy1EcmxJYlNQZGtBNXk3VmUzQ2tDRmwxTjRWSi1Qb25kRXFRV3RIVmhsZ2tMc3hybGplTXpGUEVYdDNuNG5wQjJiYmwyWXBwc1hkWHlkTDI4ekVmYTBiQmJud0o0cF9PMC13OUJXSjBuZzRzMDB5bWQ1eEI0NHBWQ2hPT2ZTb3ItUWZ0RmVDSzExRkgxc0ktYUQ0R09RbjM3OGNQWWZDeGNPUQ?oc=5",
-      coverage: 4,
-      related: [
-        {
-          n: "Vietnam.vn",
-          u: "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdHhqeU54VjFCYmtTZ1dZNkNEOThSMkd2NHBMbG1wcE1vRDRrdXpJaVlha2wwRnNNWUtYemdXTWczT04xMmN6b2FtSy02cW9sV0ZORGI5eXExMElzQ0xFYVAtTTQzaGZiVER6Z2dsOXM5bEVMWlRlMmlBMVpqOWxOSDJkckRwSk5pc09kLTNxS2FMay1hc01Ebw?oc=5"
-        },
-        {
-          n: "VnExpress",
-          u: "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb2VFS1k2aTlLQW11WnBIMVFmNWY1T1ljLXdwS1RJVVlVT1ZRS202bHkyVXU5ZE5SZDEycVcxMzZyQWtXZmlDUTZkSnh1NTFaelFUOFdDLThDTHlyNUZOZzFOaEc4MFlZYUtFNWRaSjBiMGhpS2M0dHlnTDVXci1Ga19MZmpBNWNKVEQtR3RKYUxLU3QyVzRQd3Jrcw?oc=5"
-        },
-        {
-          n: "Báo Xây dựng",
-          u: "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQ2lPQUJ5OVZab2ZMVnBmMGl5Mlpha0VTTTNvYW5xQ2ZEWGVtSmw1OTE2Vy1uOFdXUkVJWUpUUzgyU09KTE5UWWR0Z1VSa0dSeEQzeW9ybXBseVhYUjI3YWpJakd6VU9haGIyVXBCZVdiSGpKaWh2Q3NPTXBXbngyWmVhWmJfMTVER2ZGa1RVNWpxd3h0SkZYQXBUc0liRFlYTENHZEczMGUwbFQ2SlpiV0xZSDVzcEh4bGY0dFJjUk4?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-10-31",
-      rank: 5,
-      heat: 80,
-      tag: "政策 / Policy",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "新标准决定房地产价值评估",
-      titleEn: "New Metrics Determine Real Estate Valuation",
-      zh: "房地产估值不再仅依赖地段，而是综合考量租金回报率、运营效率及市场需求。这一新标准促使开发商更注重资产质量与长期收益能力，推动行业向精细化运营模式转型发展。",
-      en: "Real estate valuation now considers rental yields, operational efficiency, and market demand beyond just location. This new standard pushes developers to focus on asset quality and long-term returns, driving industry transformation.",
-      vi: "Thước đo mới quyết định giá trị bất động sản",
-      srcName: "theleader.vn",
-      src: "https://news.google.com/rss/articles/CBMigwFBVV95cUxNTEdzamItQmk4Q3hPLWs2R1Zya0RNQWhoYlBTWGY0YVhLY2dMSzhsSWNYeVhZd3Z4bUotR29JUU9FWXp4bDd0YldpV0hwVjFsMnNuazZPMmVhQmxOSDlnWlF6c3QzTFI5NzdtUTVPLThPeFBtRHhwMkJfR0xsRE83T3NaQQ?oc=5",
-      coverage: 3,
-      related: [
-        {
-          n: "VnExpress",
-          u: "https://news.google.com/rss/articles/CBMijAFBVV95cUxPeW5hU2puLUhlUXdsXzhEekJTbGV0RjNqM2Y4Si1VZF84enRQNTNlSzAyaUloRV9zaDBlR2RuRDBjRGwwdlVxS3hxcDFfc2E5NHY3THZDaGxCc1BXQVpIdW1DTF9aR3BxQWVvS2tXT0JPUXk0dTMwN2FMNjcwc3JRRXRJTl92Zl9BNTJvdg?oc=5"
-        },
-        {
-          n: "Tin tức 24h",
-          u: "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSmpvZzkzSWtrTGFwYnUwdTlCbXNIaG51VTd5NFVqc0RvYTRNM3hLczh4aGVvbDNtWmdrR1NuQnZhRWRqMTlRenpPZGZmcHNwNVYxZ2pkNnNtSHRzTjZXVThVT0VTTnUwcTllQjFMYk9OSVBjUXdVVkhaNEhqZlBXRmlJVzYwdDVoc3NQMmN0ekVMVjlEZGlYVjlWQTdKajdUSjNCcmJPMV85OVhVTXdramZPalJZa0tMZ3ZWYmZock41dkpFWVhKWVh5cjJhcUZx?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-11-01",
-      rank: 6,
-      heat: 80,
-      tag: "数据 / Data",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "让房地产市场回归真实价值",
-      titleEn: "Returning the Real Estate Market to True Value",
-      zh: "政策旨在纠正市场泡沫，促使房价反映实际供需关系与居民购买力。通过加强监管与透明化交易信息，引导投资者理性决策，确保市场健康稳定发展并保护消费者权益不受损害。",
-      en: "Policies aim to correct market bubbles, ensuring prices reflect actual supply-demand and purchasing power. Strengthened regulation and transparent information guide rational investment decisions for healthy market development.",
-      vi: "Đưa thị trường bất động sản về đúng giá trị thực",
-      srcName: "Báo Đại Đoàn Kết",
-      src: "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaFBFT1hTbURiYmw3cXhOX1pwdTdhRGFYWU5EZmw3TlFfQlJxSV9qNDVEdXQ2ckFCYWpnSzJleEt3VXlMVXpsRDlzX3hVQmhVWU9vazdseGpzVjd2d0M5RFVwZXF1cWtoVTJRdGxieDJySlQ5bkNDM192VDd0dUQ1dg?oc=5",
-      coverage: 3,
-      related: [
-        {
-          n: "Doanh nghiệp và Tiếp thị",
-          u: "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTU04THpvMjJPMHNSc29OZUlrNlNTOTdvOXZhb3F1OHZock5aOGNtR2FXVm0zbGNYT1FmVGI4Z1RYV3R3ZUNxQ0MwQVVRajhXVXQybDdUdjVySG54MHRWa0NpWXdoeTJ5bFlwVUFNaW91QkYwMEJzNE9fMFVvQ1hhUHhTWGFFdE1EX0I3X2xhYWE4WFFhU2V1cHJzanBXaDZPcjJ4Q1Uway1ZdGJmV3cxd1laSk8tdw?oc=5"
-        },
-        {
-          n: "Báo Tin tức và Dân tộc",
-          u: "https://news.google.com/rss/articles/CBMipgFBVV95cUxOS0cxQ1pCbUNwU2VVQVAwTGpqLTBYeHB4bXE4N3dsWkpmMThnX0dRSEJHLVhjWWxjcDZyUjN6MHFyTmtqY0lGdnF6T3V5d0Q4UFdBbjhUSC10UUV0aWduMi1Ic2Z6S3Atb1p2QVVHbE41Nm4xOFUzM0Z0bVMzbUwxdmNpNUNBdnFJMUFTUlpvSkg5c1NTU1hDYXpBUTl6bHN3TFFwVkh3?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-10-28",
-      rank: 7,
-      heat: 80,
-      tag: "政策 / Policy",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "修订版《房地产经营法》草案多项新规出台",
-      titleEn: "New Provisions in the Draft Amended Real Estate Business Law",
-      zh: "修订草案引入严格准入机制与全过程监管，强化对违规行为的处罚力度。同时优化审批流程并明确各方权责，旨在规范市场秩序、提升行业透明度并有效保护购房者合法权益不受侵害。",
-      en: "The draft introduces strict access mechanisms and full-process supervision with heavier penalties for violations. It optimizes approval processes, clarifies responsibilities, aims to regulate market order, enhance transparency, and protect buyers' rights.",
-      vi: "Nhiều điểm mới trong dự thảo Luật Kinh doanh bất động sản sửa đổi",
-      srcName: "Laodong.vn",
-      src: "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMTUyX01hZ1AzWUZmM2gwQ3d6elFsanFNbVQycnAyeF9fVVRjVXlYQlVIR3VBMXpENVQtZjNPU0M1Um5NX0NKd2YxUlNlNnAwb1lGMkMyQ1FMbl8tRlVaMDdkbU4zZHYxSFJyMHA0ODNSVHpwOFNIeDk0YTgyWWsxRlRXQ1pJQWJtUkZzN3dkMmVnUFpEa21Oczc1dnYwUWVTMGJvRm5YMjU5bUhPUXc?oc=5",
-      coverage: 3,
-      related: [
-        {
-          n: "VTVgo",
-          u: "https://news.google.com/rss/articles/CBMiQEFVX3lxTE5ldGFWdW9FMHVyZUVneVhZVDRWRERybnI1aGxhRG55SGU5amJ5MFBwYmIzSHdPWVdzM0hIb3FlLU0?oc=5"
-        },
-        {
-          n: "Tạp chí điện tử Thương Trường",
-          u: "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNZllQZ2QxUE85YnhhWGdPXzIyLXQ0ekhKQ2FZVUpZUld3cF9ZTjBTT0R0NjJURU5TOGRBQ1lrSEZ1anhkZ21QRzd6VzFjS3VEWVFLYmNxSVdIMkxBQUNzZWtVRVhUMHkxb0xSZFdnRERyQlVGZDR2T0J2elY0UXdzUXFHZVhzb0s1V2Iya09lcjhMSk8wNzZTUDdNZzItMDBVS1EtQXFsb0xwbVpXcFFEczNSeG1Hd09uVWcxNU4tbVVWUWpoNnFrMQ?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-10-30",
-      rank: 8,
-      heat: 71,
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "严管房地产经营，保护购房者权益",
-      titleEn: "Strict Management of Real Estate Operations to Protect Homebuyers",
-      zh: "政府将加强房地产销售环节监管，严厉打击虚假宣传与合同欺诈行为。通过建立信用黑名单制度与完善投诉处理机制，切实提升交易安全水平并增强公众对市场的信心与信任度。",
-      en: "The government will strengthen sales supervision, cracking down on false advertising and contract fraud. By establishing credit blacklists and improving complaint mechanisms, it enhances transaction safety and public trust in the market.",
-      vi: "Quản lý chặt kinh doanh bất động sản, bảo vệ người mua nhà",
-      srcName: "Báo và Phát thanh Truyền hình Hà Nội",
-      src: "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTmczRmNZWEtlaW45R0R4ODd0akdVTkpaa0lSYkpQWnVyam1aQnpCeHY0NFc1Yk51R00xQk43Z3ZFVGJ1aU93VFM0VHZLeVlyNmtfdmNoRjV2dlJKaG1VaHpxT2FZbVFBaWM2d3JLd0JjeEtCdmxicVAyUkU0N0RJakxqY01JcmZHS1pxZVpTOE9yVHlGWEtUZ1dmdmlOZkdNQ0Fqa1V3?oc=5",
-      coverage: 2,
-      related: [
-        {
-          n: "Báo và Phát thanh Truyền hình Hà Nội",
-          u: "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYWtpTWN5SDRVRWhkMDRWbTFJOUI2Q0xIOXo1SFdjeWZTTF9vSy0tclFaSUMwRTFQSmpMWVkxWDVDTjB6RHRaSjhRcGVOMEZBeVUxd0w5Q3Q4VVRsNnpIX2JJbDdUaEdBcWVxTVRITHJxcGpPT2RCTTlUYWRxRy1qMDFQMkZjX1FUaWUwVXZ1c29vVXh4UkJEcVM3a3l2d0ZaMjdrOA?oc=5"
-        },
-        {
-          n: "baochinhphu.vn",
-          u: "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSnFSemxxUjZ2TUt1ZkN2aHB5QThpdy1tWllxOV8wb2VrUjFWelY1T2dFakY5bW9QNTVTUmpPSENuY1RQYUZfV1R3YzZwbFpfNExyNHpDSXAzVlV0WUQwdURDMkNnS1ZTRXRfNkxyTkwyZTdvWmc5SXJSc3UyZFZSU1l1VGRCSi1TNjZxSUNTaWV1MVBnX3lmUlBpQzZVMndVeWJURGY2Q0FVU3hJMjFaWFJn?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-11-01",
-      rank: 9,
-      heat: 100,
-      tag: "利坏 / Negative",
-      tagClass: "bad",
-      raw: false,
-      titleZh: "胡志明市 The Sóng 公寓发现吸毒点，23 人被起诉",
-      titleEn: "Drug Use Spot Found at The Sóng Apartment in Ho Chi Minh City; 23 Suspects Arrested",
-      zh: "警方在胡志明市 The Sóng 公寓查获一处吸毒窝点并抓获 23 名嫌疑人。此举彰显政府对社区安全与居民健康的重视，将依法严惩此类违法行为以维护社会秩序稳定和谐安宁环境。",
-      en: "Police discovered a drug use spot at The Sóng Apartment in Ho Chi Minh City and arrested 23 suspects. This highlights the government's focus on community safety and resident health, enforcing strict penalties to maintain social order.",
-      vi: "Phát hiện điểm sử dụng ma túy tại chung cư The Sóng ở TPHCM, khởi tố 23 đối tượng",
-      srcName: "Laodong.vn",
-      src: "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVDhiUHFqWGtGcnZhRWdaUldBejJFaGFIUlQ1ZzJ5VFEtMWx0NjFma1hDMXF5c0hpTzVnMWFoVkJtb2pSRlBaaUhFUHlZRlBtWC15dkVZNDl4RmYzbFoxajgzaUdEQWdVOFJ2OXE0aUFrV042MjJUVHlmQWtqQnRXUi1VN0RQbU9yZEZ5VGVCb2Y1RlNLaS1jZVJPVnM0V2stOWZIcmM2UGpZR19BR0NoV3hweU9INjhZ?oc=5",
-      coverage: 6,
-      related: [
-        {
-          n: "Vietnam+ (VietnamPlus)",
-          u: "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYy1mVFJIc3hYbDlsN3h5ZU4tWWFDc2dtSm5YV0F0anhyLURra20tZWxUSUVZbmk4UlBmMU45am9HTGI2alVJRzBheDU2YmFiSlFGVE4wamRzSGI2U2NBV3lzNFgtTjlSa3RpRDFJUEpramNLa0xwYXBwSDY0bG9TcjkzN2s4X25hTVdPcnhSS0N1bXEtWGwyekhfWU0wVWFhQXVz?oc=5"
-        },
-        {
-          n: "Báo Công Lý",
-          u: "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaEp0Y2ZmbE1PTVRmb25ZcUdJUndOb3VqLUt1MUJkcnJGOEEzNGhjaXp1U2ZxZEZja1lzaXBDQnVEQVpkaHVmT1FyZ3NRTnhvakNybllrUTcxYmw1RGRyUzRDNHlmSTVHNXVpaGYwWFBzNGk3WmR0bnI2Y0hsQWJmTGFPczlCSW84ejREVEllTzdzSU9tYUtrSXVKbjEtdDdhd1VyU1ZyMzhBRkI5RTNV?oc=5"
-        },
-        {
-          n: "Công an Nhân dân",
-          u: "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWm1PVlQ0c3pGWkZCa1FTNm5jaGthZTVyMk4xb0tGcFdIeGV5ZjJfYlVibnl4dHVjWVpLbXhNaXg1b0RnaEpKek1aOW53SlBnQm1pckFwSTVUZUpMVDNnUHJHT093SHlLNFFNMWc3cHJ6MG9FZ1NBY0N3RDJhR05VV21waVU5c1dlUGRxRU5MaDl6emd0SUE?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-10-30",
-      rank: 10,
-      heat: 71,
-      tag: "数据 / Data",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "旅游房地产：价值源于高效运营",
-      titleEn: "Tourism Real Estate: Value Must Stem from Operational Efficiency",
-      zh: "旅游地产的核心竞争力在于持续高效的运营管理而非单纯依赖地理位置。只有提升入住率与服务质量，才能实现资产增值并满足游客多样化需求，从而在激烈市场竞争中保持长期盈利能力。",
-      en: "The core competitiveness of tourism real estate lies in continuous efficient operations rather than just location. Only by improving occupancy rates and service quality can assets appreciate and meet diverse tourist demands for long-term profitability.",
-      vi: "Bất động sản du lịch: Giá trị phải đến từ hiệu quả khai thác",
-      srcName: "VOV.VN",
-      src: "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS25ZZ2E5Mjh1SDltQmNQRklZbDJpUHU3RjFzc0FudXdlZ050Q19qNWZIMzJOejF6X2NEeGU4QXNoWVN1YWxUZG5Sa0FmRFh4enVmcExwV2lpRmpScDlCbXZiY2pla0VJRkhsMnBaLTFYTzhQSG1fX1MwSTZuVDZ1Q1hFTlIwZGk1RG9GbW5uZXRmQ1BqVUF3S3Jjek1NM3c?oc=5",
-      coverage: 2,
-      related: [
-        {
-          n: "VOV.VN",
-          u: "https://news.google.com/rss/articles/CBMilgFBVV95cUxPV3dPbkNjZDAybk1hQlFXV3NFUWpodXQ4UXRTR3RPdThTQXJaWVBfVUY3bVVhM2pETTNZQ0dJaHY1VTl3cGVVRTJHTkJoZGFXVWpROWR2Z2RyRlBCQ3daczlRMklJLUJDY0JvYWlEbHNXc3ZFREhXMVJhTDJmYXY3cmRkcTBQMnB6OE5iVnBncUw4SV9lbWc?oc=5"
-        },
-        {
-          n: "Báo Pháp Luật Việt Nam",
-          u: "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUXRPeGRaeWRWQTVVM1hHNGJYNXU3Q0plVnVSZnljbF9BSjREaXdGajJlZzNUR2FWU2J2Z1ZNeGpLWWhoVGcxWXItYnpkc0pxeFc2dWsxOWU2LVc3SjdKNlQ2aDdNZlFpLWI5VERkSnZrS2phWEQ2MjVNdmcwajlpY0NFNG1zNWNEd3hKSWVsWkFIVkNXZ19qb1lmdmoxQ3lzQjktVHB2WURESTBY?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-11-01",
-      rank: 11,
-      heat: 69,
-      tag: "中性 / Neutral",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "当前投资度假地产需注意哪些事项？",
-      titleEn: "What to Consider When Investing in Resort Real Estate Now?",
-      zh: "投资者需审慎评估项目运营团队能力、周边配套设施完善度及政策稳定性。避免盲目跟风，应深入分析市场需求与回报周期，确保资金安全并选择具备长期增长潜力的优质度假地产项目进行投资布局。",
-      en: "Investors must carefully evaluate operational team capabilities, surrounding facilities, and policy stability. Avoid blind following; instead, analyze market demand and return cycles to ensure capital safety and select high-potential resort projects.",
-      vi: "Đầu tư bất động sản nghỉ dưỡng lúc này cần lưu ý gì?",
-      srcName: "VOV.VN",
-      src: "https://news.google.com/rss/articles/CBMilAFBVV95cUxQT0RBZDBBSmV1UEFxb0FqNzViR0dkYllmVmNaQV9uM0dpSjVldzRkN3g1UzQ3Sl96NG5OUXJuU1I1T3F6QWtUU0xKZ21RVWNPdXFRb29QaHZ5eEcxUzdrTVJ1aWdaWHpCZTZLM1RDcGNJNW1jOFZITHZYUTh3bHlUYXRVZHhFMWhnNVlndXhiRC1vMllz?oc=5",
-      coverage: 2,
-      related: [
-        {
-          n: "Nhadautu.vn",
-          u: "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVUNHQ1FvZjZBRlVQYzk3ejNTekhZTlFHTDF4a3p0NW5Ecmw0SGNiMWx1MWZKNEk2NkRnX0F5SGh3UWJqU05fWmpIQ0NSUlpQSlkxSW5PVk5CVmZuWF9qbTdITkFwQUhQRDdjbUhhMEpvLTRDbGlhMUNCei1tV3VGeTlKbDVBQmxZS2Ita1JxNjU?oc=5"
-        }
-      ]
-    },
-    {
-      date: "2026-11-01",
-      rank: 12,
-      heat: 91,
-      tag: "数据 / Data",
-      tagClass: "mid",
-      raw: false,
-      titleZh: "海防市计划拍卖 208 宗收回后的公有房产土地",
-      titleEn: "Hai Phong Plans to Auction 208 Recovered Public Land and Property Points",
-      zh: "海防市拟公开拍卖 208 宗已收回的公有房产与土地使用权，以盘活存量资产并增加财政收入。此举有助于优化资源配置、提升土地利用效率，同时为城市发展提供必要的资金支持与空间保障。",
-      en: "Hai Phong plans to auction 208 recovered public land and property points to revitalize assets and boost revenue. This optimizes resource allocation, improves land use efficiency, and provides necessary funding and spatial support for urban development.",
-      vi: "Hải Phòng dự kiến đấu giá 208 điểm nhà đất công sản sau thu hồi",
-      srcName: "VnEconomy",
-      src: "https://news.google.com/rss/articles/CBMikgFBVV95cUxQb2lJV2FPV1VSSkFuNHlnaFdIcmN5RElaZDBTZ1J0eXlfTHc2UkJtQ1JKRHF3M0FMeE5PVi1wOE1lV3JYRnotN3c3dlo1S1o0WmtVVktidUxsTU1DOWtodndQTnZCenVOVEpnWkh6XzVERmU5UVdIZnI4YkRya09wZDllR01HM1lVcDNVdUktWFJBQQ?oc=5",
-      coverage: 4,
-      related: [
-        {
-          n: "Báo Thanh Niên",
-          u: "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZlRkWmNsUU1jMDhWd2dDYm03Wk1GeUktd3BwUGh3aGRoX1BMYkNIRlFrZjZBOXNjU0hIMWx2N2JVSy1peFdYT3ROR05hdmJ2TTAwa3lPR3pvQmtvdzQtU0Ztd3NISUpsdVdIcWxNRERXcmdvb2tDeVcwUF9YZ0dXLS1zTHBZVnpJR1Fvc08wS1RZWXJCYTVMMnh0d1pySXRFWS05Nw?oc=5"
-        },
-        {
-          n: "Báo Dân trí",
-          u: "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUnMtT0R5WjJidEk5dXR2d09BWG1jNzhENkpaUWFIRllkWFdvQlViWTc1TGt4RGQyZmgxbFdVNnFsbzl0XzNMbS1BNGVxVDhxbmtPc0VvdEQ3Um9YQ2YtZVd2Z3dzMGNxM3hOYTNxSGxSWXNXa3FxdnVfY0RCZ2ZYRDkyWkwyT2FGeUNoZkhBaGNremtFZ3NFU1JfUEl0ckMxbG0wbWhkazRNUEFBUHJFT3dBb3FyNXM4?oc=5"
-        },
-        {
-          n: "Vietnam.vn",
-          u: "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY21IVUtBQWQwYkF6ajRKRkdTY2c3azNfa3RMdzlock16d1BOZGZpcmdGSVpOeUdnNU9wLWFMUDBqY20yQWhxTjljT2ZLUkxhV0s0cXdDZzJIN3lqaG1lU3h1ZjdoTnVvUFdyZ2N4cHhPWll3NVdsakRfeXJUVFZ4dGE5NWszeXBMOGQ1Zw?oc=5"
-        }
-      ]
-    }
+    { date: "2026-11-02", rank: 1, heat: 91, tag: "中性 / Neutral", tagClass: "mid", raw: false,
+      titleZh: "工业地产企业业绩显著增长", titleEn: "Industrial Real Estate Firms Show Strong Growth",
+      zh: "2026 年 11 月 2 日，工业地产企业业绩显著增长，多家企业出现利润爆发式上升，行业正寻找新的发展方向。", en: "On Nov 2, 2026, industrial real estate firms show strong growth with sudden profit surges, as the sector seeks new directions.", vi: "14:57 02/11/2026 Bất động sản",
+      srcName: "Thời Báo Ngân Hàng", src: "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOVg3TmdiMU1qaHhHVHFSekozRWtSeG10NWlFYkxlZVlJc29ZZF84VVdkcjdIa3dyNkJZcUxlNkhscHJuODlWTEg4Wk5mZmF6YzdFTUx3bHlBSXBuNFNXTFlabGp0X2Ztd2FoZC1heVM5RVQyQ2o1enpHNV9nN29aVWc4Wkl3VjMtcVBabTNn?oc=5",
+      coverage: 4, related: [{ n: "Báo Tin tức và Dân tộc", u: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWUtNMnEyekZnRHE0THhfNVhSZGJ0b1FZb0tCWXZFNWJjNWZvU2YwQUJ6aEVmek9JZzZScS1CSURseVZvQ1oxazZjN3cyaTUtUjZaNmdBM3BOangzUW1KMmlCTVA1QkhsQ244MF8xVlpOeFlIZWxPZlZ5aTRoWGxxR0d5ODlhV1VwZDlR?oc=5" }, { n: "Tin nhanh chứng khoán", u: "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTzZuTzQwMXY1YUhlbXdvb1dpSmNkY1BtOUNBTkt5SzBkcXZlcWlzaFM1N1pjQzhTQ1NES0cyNWxNRWVXbHJCRDVrTVdTcURsSHNTSHhSMlBEQ1g1ZE5zc0I0TVFxUjlyN040VnpGX28xSUJCTjA4LUZCRzVaS1hoR1lQZDk3aFFmSEtPRVNQcmtKbjVmYmJCWDJ6TTNrV1VhZ1HSAZ4BQVVfeXFMTVUtazVrenotTWZvclZHMUpjNkotWVZfWjRaRktacVdiWm9XVE13VUJaZGctR1JjTzcwSWpCbnVtQS1KUHBvcjBLTUtUMlpVMlZFYWRkb2d0NlI0aGdiQ2FuU1lqLUNBQzdxUTNWUzVQUlZmZ0tsUnZqdjgtTW1McGc2emNucEU1UGNCSXQxeEZhMVExNHhDY2N2SFNNZ1E?oc=5" }, { n: "CafeF", u: "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcUhNWGVYSGN1d3JnMVkycmQyc0RydFRpdkhWV0lWQVJ0dld0TUgtMnhreDNaY3dfSjVKQVJUblMwVWtCTUVvWnVxdUxVakRweTB2OEI4YmlIalotSGxHUGlERnRfM0JtUHBneUlNcUE2RUxBZENDM0hYaW5jMGdqWXNRM21QY2d1MlhCa2F2UDVzQQ?oc=5" }] },
+    { date: "2026-11-01", rank: 2, heat: 100, tag: "利坏 / Negative", tagClass: "bad", raw: false,
+      titleZh: "警方逮捕与公寓吸毒案相关的 23 人", titleEn: "Police Arrest 23 Linked to Apartment Drug Case",
+      zh: "从 The Sóng 公寓四名吸毒者入手，警方逮捕了 23 名相关人员。该事件涉及在胡志明市和岘港的非法活动及司法程序。", en: "Police arrested 23 people linked to drug use at The Sóng apartment, starting from four users. The case involves illegal activities in Ho Chi Minh City and Da Nang.", vi: "Từ 4 người sử dụng ma túy ở chung cư The Sóng, công an bắt 23 người liên quan",
+      srcName: "Tuổi Trẻ", src: "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWmZwUUNwX0hPN2FRUnkyYUlNQ3N5NWo4V1hxX2wtVnpnX1Y4RHlDLVZWMm5xYXRyd21hR2NKN1c4dFN0Zkd6c0Q5WXgzZFpzU0pTM0F6Uy1ZM3J6OU9wRzdSMjdJOEFsZXJ1NXp4eHVJNmVmVXJqcVoxSHFFNmVjQy02MkZGWlNfSlk1dXRSNFBTYVEtZjFmeEY3TjRxNWd4VHIyZ3lLSU5tQ3BnQ0FFSklieTFWd09UVkE?oc=5",
+      coverage: 7, related: [{ n: "CafeF", u: "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV3c0cHBLSTI4b25jZ2hxcjluZVJ6MEd0aWVEUmlGZFpmd0hZdzVWZTd6LXdrMjgzUGZCam1fVXJwYXFMUU04NFFDSUpRR25mSFE4cmVrY1dUQXVVR3lOQkxZNlFVbVFwRUtzZHRJR3RrYVNWU3VIQnVpWGlCVzdHc1lCcWpGc21rZEhRSVExeDIxWHU5SkhvX1gteG80QnhWaFdIcGFtaw?oc=5" }, { n: "Khoa học và Đời sống", u: "https://news.google.com/rss/articles/CBMinAFBVV95cUxNa0M4b0hUY2hRYnlCN19WaHZOUkc0U29xcmkwNHVXMG9Eb0ZYRzhLdzA3WWNoQ282bklTZXRrM09KdXJ0MXAzb0pjVWtNMmtLdU9lXzR0RTFVdWRMdW0wWnJ3cUdxN1k0WXVucTQ3Nk5WcEFkeG1DNFI4MFhzNVZaLVpuQ19IVnRFd1hhbjl2SENMSkpleVZfMk1mNWk?oc=5" }, { n: "Báo Dân Việt", u: "https://news.google.com/rss/articles/CBMizwFBVV95cUxPUGJqMjFOckppLUR3MVZnazY1ZjJLSlI5OW1hbHBGTXg0TnIwbGMxaFdHUzY5NU1JTlJZTHJpSW9PSnJOUElDQXdJZ21Da182X0lITWJlMzdUS2NoeXRKWWNuMnZfN2dVTTY3T2NJOEZ4YnczNkVlbWFyVkl6cVdYVlZZQzV5dk9kX3Bvc2R3aS1KMzJPQlFRUTQwOGVreHJpTWo2SG9PcUhnX0xESmJ6Z05RRkxZLWJDSWRPcFpoUUlSbkNfbzgwbkZMbDNOYms?oc=5" }] },
+    { date: "2026-11-02", rank: 3, heat: 80, tag: "中性 / Neutral", tagClass: "mid", raw: false,
+      titleZh: "河内市面临房地产数据缺失问题", titleEn: "Hanoi Faces Lack of Real Estate Data",
+      zh: "河内市面临房地产数据缺失问题，专家呼吁建立开放数据体系以反映市场真实价值并推动透明化。", en: "Hanoi faces a lack of real estate data. Experts call for open data systems to reflect true market value and promote transparency.", vi: "Hà Nội thiếu dữ liệu bất động sản",
+      srcName: "theleader.vn", src: "https://news.google.com/rss/articles/CBMidEFVX3lxTE5MLXZja0pWY2xMVTNMeGpUMkJIbW9YTzlHck4yUHdlWUFtSEFJRkpLSkkzMGplZDJPaWFIajRiM2JwSks2T0d6c2d2Nl9sVXBBYy1pc2xYV2xhREszajMtbkZfajlDXzFPZXRLaWZBR290RmRj?oc=5",
+      coverage: 3, related: [{ n: "Báo Gia Lai điện tử", u: "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM090a2ZnRHNNRi1EbjJ1SVllNzYwVHFGU25HeEx6ZGRwR3FmdEdWaU1CRGpZSzJMZE9MTUJ2ZjlFRGxmT2xGdk1kUHJzRUxIQ3JjMmpHSFFRUXRxWFlQeXlXbTFRNzRma2Q5RDlFVlVvT2dqN1RDb2hzc0VTakdZRnFfd19kSkJVWm5iQk1hSUtLVWt5UU9EZ3VrRTdMNmFtV2p2TDNaMEtXWDg?oc=5" }, { n: "Báo Đại Đoàn Kết", u: "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaFBFT1hTbURiYmw3cXhOX1pwdTdhRGFYWU5EZmw3TlFfQlJxSV9qNDVEdXQ2ckFCYWpnSzJleEt3VXlMVXpsRDlzX3hVQmhVWU9vazdseGpzVjd2d0M5RFVwZXF1cWtoVTJRdGxieDJySlQ5bkNDM192VDd0dUQ1dg?oc=5" }] },
+    { date: "2026-11-02", rank: 4, heat: 80, tag: "新盘 / Launch", tagClass: "good", raw: false,
+      titleZh: "2026 年房地产项目转让浪潮", titleEn: "2026 Real Estate Project Transfer Wave",
+      zh: "2026 年出现房地产项目转让浪潮，市场价值在产业链中发生转移，新的价值流动模式正在形成。", en: "A wave of real estate project transfers occurs in 2026, with market value shifting along the chain as new flow patterns form.", vi: "Làn sóng chuyển nhượng dự án bất động sản trong năm 2026",
+      srcName: "Vietstock", src: "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZnY3NXJRbWJBVDhjYUt2U2xFRDNYZUlOTjY4YllZN3N6MS0wTzlJZzNyR1F6Vzd3ZlBYNG1uMlJKRFdDZ05NUTZiTk9VRHBYM05BakdWeTZ6UlptbEFCSV95T2VqYU9OLTBKYXF1cEFYZ213RzVjRTN4SHhpTFhxZkNKTnZvekROcXI2SW16THhldEFaRFZBdGJnb0pNMEVRWmxxVg?oc=5",
+      coverage: 3, related: [{ n: "Tạp chí Doanh nghiệp & Đầu tư", u: "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRnUxRGgxTGwxX1A2MTh6WHFKamo2bW9fc1QxQlpocWlkYkI2blZaaHdkcE5BQ0tWUm9VOVd2OGNocy1WdDRYQ05YOXhzNTcyR2JmLWRaUENqbDlvOVZDVlNRZkZlbmV2MzFNcGtyRzBkSm5IYWw1eHdFMVlRUjlWcEg2cnpqdWJQZENPdjRvVmlHelNHZFFaNXI1ZEg?oc=5" }, { n: "Báo Nông nghiệp và Môi trường", u: "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUnEyQXFkLUdqRXpRcDRWaGVIZGtVZGJ1VmRpWEFpQVRWVmFNSFpzSEIyX0hZZl9QZ1dDRVpxWFZEQk5OdmFXSGxBcUtrNTBtR1dXMHNCMy1kM1JWZExCVmthVHIySm1VeXJ3MTFLTERvWUFOQ050cXp5ckVfTGF5YkFPYkhHWHJXeWhtRE96N2hqdUcwU1hrcnRsdE1kTHE3?oc=5" }] },
+    { date: "2026-10-31", rank: 5, heat: 80, tag: "数据 / Data", tagClass: "mid", raw: false,
+      titleZh: "SkyWorld 和 Nam Long 推动“真实价值”房地产战略", titleEn: "SkyWorld and Nam Long Push 'True Value' Real Estate Strategy",
+      zh: "SkyWorld 和 Nam Long 推动“真实价值”房地产战略，利用 ESG 理念提升项目质量并建立长期可持续的基础。", en: "SkyWorld and Nam Long push a 'true value' real estate strategy, using ESG concepts to improve project quality and build long-term sustainability.", vi: "Chiến lược bất động sản giá trị thực của SkyWorld",
+      srcName: "VnExpress · Bất động sản", src: "https://vnexpress.net/chien-luoc-bat-dong-san-gia-tri-thuc-cua-skyworld-5134330.html",
+      coverage: 3, related: [{ n: "batdongsan.baoxaydung.vn", u: "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcnRIaHlLek9nYU1ncE1YdUh2YmJUSGZiWmp2T1JnaFRkRUIweFg3RHd1ZDhfcWkxRkRUd0RJcEhPSkpJR2lBY0FhU2FuQTRxSW5CazJncndtcjUtM21hbjNtS3BiTURQQWxSQ0t5OTR4Z3BvS244SGRkU2VmV2s4ZEdoSHNiR29PcEdlMFFqRHRtVFVMMjduSmxBZVQxeUpKRGlHNFIzVEhlZjFld29sYkdqempOaW8?oc=5" }, { n: "Báo Thanh Niên", u: "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcmhIaU1BODBydmpLakt4YUFpM1Jfd1hNWUtvMEtQdE5TSERHV1RESTdPSmJkX2h5MFFxeF8yUHRBQzl3VDBySUhpdzM5WUVtNnBCYm1RT2xtMncyMGhHWHJCUDZXWEVkNE92SlVIZjZRTnUxY1Nzd0EwOW1SZzVqa0daTEg3bjJSWjdJYndXQ3VnbXRlaHlCSUVkRGNUZXNCZDBfVUxOV2x2YVA2V3Z5Zw?oc=5" }] },
+    { date: "2026-11-01", rank: 6, heat: 64, tag: "数据 / Data", tagClass: "mid", raw: false,
+      titleZh: "2026-2027 年房地产市场告别“买啥都涨”时代", titleEn: "2026-2027 Real Estate Market Ends 'Everything Rises' Era",
+      zh: "2026-2027 年房地产市场告别“买啥都涨”时代，工业地产虽保持增长但整体投机氛围已不复存在。", en: "The 2026-2027 real estate market ends the 'everything rises' era. While industrial property grows, overall speculation is gone.", vi: "Bất động sản 2026-2027: Không còn thời “mua gì cũng tăng”",
+      srcName: "Báo Thanh tra", src: "https://news.google.com/rss/articles/CBMisAFBVV95cUxOeUwzWFVJSXBRLWxSMDJ3a3pNdzVKT0Fodm05ekoyeGpad0ItM3Y5VmdYZ25zVndOalVEM0VBaURGanFwR1o2VVBCanZsdktpNDJWVTVkLVh5Z1VFQ3Z0SzRsTHVXajdyVlpzdF9WRjVjT3lXWlEtWjJvbGlzRjRPd0dldkNueTZCVDRHR2g1UThQd1A2dl9tajFjeGl1bm5Bb3JGc0p2YUZVcHFENGhhaw?oc=5",
+      coverage: 2, related: [{ n: "Tin nhanh chứng khoán", u: "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSlp4cHk3VlZZTzlSYUd1bFp6ZS1NanNPcVZQVldJdGgtVVdINE8zX1RHRU8zWmxScEFMTUt3Ulc1UVhXcVZhQjZNTVRDYVdiNm82YVVwQ2RlcDVnU0NHNkloM3ppOFlJR2phZDFtdW0xdWtUZ19kWk16LVZfX0F4TGNFYzN6MGVDM213YTliTjQ3bUxEUndQbmJpMNIBlwFBVV95cUxPQ2RFTGxkT3BKOVZVZ2szMjNkY2ZHalp0eVc4UWM3T1Z1dlpLMjE4MEFsMi00WGlESzFDeHhoMERhbHZMdzhlMjlNMk1SU05ROXk5Rmt3MllldnpLb2lKTnctSGNDemc5ckRrdnhZU1BLN0NjMlE1eXFSZzNHOFBpNnlJYUJZcEk4aGFTSjBlQ1F5ZnhoX0Nz?oc=5" }] },
+    { date: "2026-11-02", rank: 7, heat: 80, tag: "数据 / Data", tagClass: "mid", raw: false,
+      titleZh: "房地产企业拉高全市场平均利润水平", titleEn: "Real Estate Firms Raise Average Market Profits",
+      zh: "房地产企业拉高全市场平均利润水平，但部分中介企业在南方地区却面临利润下滑的严峻挑战。", en: "Real estate firms raise average market profits, but some brokerage firms in the South face severe profit decline challenges.", vi: "Doanh nghiệp bất động sản kéo tăng mặt bằng lợi nhuận toàn thị trường",
+      srcName: "baodautu", src: "https://news.google.com/rss/articles/CBMipAFBVV95cUxQS0d5UXZFMXQ0R0s2U1hWT0xNMUs1Wno5aExUSmNySGh5QVNSRFNIT3FlVWZmZkJGczNteWRuS1lrWXhRZmVJWEVoY2Zkang2V1Vtc0Z5Rmp5R29ZM1ZmWWhmcjBSTGRHbGJHQXFjNksxRzJ6el9Ed0xGTFFLbTV1VGRLZ2xHRlZEVndxZmY5MWxhVVJVczhnMERIUy1BbFJ0R2oxUQ?oc=5",
+      coverage: 3, related: [{ n: "Znews", u: "https://news.google.com/rss/articles/CBMijwFBVV95cUxPR25nN1Q4aVNyeUg1ODBXekJWR3hfZzBFMkxiMXFQcDhzOVctVFdCb1RQQzlZY1k4aDF3MzBaSWo1ejdLOHZQbzVvVm9HQkJhY2RhUlpsdVNtNU9PX0cyS0VMSE5VUlhfZjE5VlVrWUwxTHV2bkhyM1VBMlljUHltSDJiR3Jkam5oSmowdkVPMA?oc=5" }, { n: "Báo VietNamNet", u: "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSFc0cnVmMnRLSzRTX1M4VjBJcERWdDRNaUVDdkVwbXFZaE1PZllIN0lUaWlVOURlaHVaTEF1Y1FUSDBJZ3pDVkwydkh2US1DaTRhVkNTNU03TzR3M3FiNkZEc1dsdk4ta0hqaGFMN1FYamZCeFM2VlN6OEVBUHBLcTdjcG1fSGtIZ0N1Q3BCR3VsZVVka2JwOEE5YXFYdjA?oc=5" }] },
+    { date: "2026-11-02", rank: 8, heat: 80, tag: "中性 / Neutral", tagClass: "mid", raw: false,
+      titleZh: "PNJ 旗下数百亿资产正被抵押给某银行", titleEn: "PNJ's Hundreds of Billions in Assets Mortgaged to a Bank",
+      zh: "PNJ 旗下数百亿资产正被抵押给某银行，引发外界对其资金流向及银行信贷规模的关注与猜测。", en: "PNJ's hundreds of billions in assets are mortgaged to a bank, raising concerns about fund flows and credit scale.", vi: "Loạt bất động sản trăm tỷ của PNJ đang thế chấp tại một ngân hàng?",
+      srcName: "nguoiquansat.vn", src: "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRWI0Q3ZVUVJUR1NRRXZ0TUE4NHBKb3dJclhnUHRodFktRWhiWUJUdnBDd1hRZk1lTEh2S2NxQnNaTWp1MjhEVXNuaG4wYkJBWWNvaG5LekxkRG1qTkVWblBSQTUzd1VzWE9vemVEc3RBOXl5X1NxVUFfd21xVURxaTRtTEoxNEJ3UHdrdEExb1JHTllTVFNRck15RUJSQ25YRXZV?oc=5",
+      coverage: 3, related: [{ n: "Báo Hànộimới", u: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdDFhQ1pzbk40ZVVLbXFfODJBamR4WWlycHdmc3A1NmhiaW43RW91UmRBZ3FxWVNJLXJaX0drQmY0RGZiT3dpM3lpRThIV1RsUk9BeE9qY1BDTlBTemt0WWMzdklxTmlIMTlfeXcxbVg1MGJoeHltTml0TjFDMVd5eGtsSl8wdWQzeWVn?oc=5" }, { n: "Cộng đồng Kinh doanh Việt Nam", u: "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQLUJpeWFUTVdFY3BMYW5oYTMtdGFaRW1aU3pRRFlIOFBhdTJ0XzJYREFHcUhZcGxoVjNlc3pLcTJycVpxSk9mMTU0ejBPU01xaGRGWXhPM2RYd1piUEV3enlfcHZHTW1ZS2RxX1gtMUpkdmUycVVaVy0xeERLSVE2M0pUS0ZWSmo0bU00ZzhSNGhXNGhyaGtYTzVGc3JzMnEtN2tVRWtWY3Y1a2hfOEs4TG5yQUljUHBEdjhNSlJ1N2ZTc3NXNXlCTEl0ZEZlMDRfclp3?oc=5" }] },
+    { date: "2026-11-02", rank: 9, heat: 69, tag: "数据 / Data", tagClass: "mid", raw: false,
+      titleZh: "张美兰名下超 1120 亿元房产拍卖消息", titleEn: "Auctions of Zhang Meilan's Over 112 Billion Yuan Properties",
+      zh: "正在服刑的张美兰女士收到关于其名下超过 1120 亿元房地产拍卖的新消息，案件进展备受关注。", en: "Zhang Meilan, currently serving a sentence, receives news about auctions of her over 112 billion yuan properties, drawing attention.", vi: "Đấu giá loạt bất động sản hơn 1.120 tỷ đồng liên quan bà Trương Mỹ Lan",
+      srcName: "Báo Dân trí", src: "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSjd4UkFtZ1pDTk1VYWdqRGhETG9aUDFodS1aX3dfaVRWakczREs4YXF1MFliUE56UnhhdmNtbk5KOGdTbDJpSGRHREJVZHlXVnhWeV9DdktnNENzMHlvV3JtcFRPdnl6MGFFTlJDOUFDSGZHT2JESXZEU21semZpdzVLd1JoclFIYlprUHVLdW9KV3NiZ1pEeC1aTGZ1bHhFMzFQT3JoZTJ5Y3pHVm9QLURKczAwd3NYd3dlVHpJRU0?oc=5",
+      coverage: 2, related: [{ n: "nguoiquansat.vn", u: "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVHNCRzA0TDQ5bGVUXzJHV1ZDaENCbXIta0JQYWl0YlJxXzdheDBBdHBnZ1M5aDhHQ0RVTXZzcVNvaXBlTzJqY3QzRmpMdFdDQzFOOW9mYzN0aHM4dDkxVzBDaWdiQkxRTC11amp2Zm9pR2p6dWhIX0VWcHA2a2pKT2RRYVhRZ0R6Ukt2WXM4bVBhMlpCT1ZQS25HY08wUHdGNnYwbHliOFJrX0hJcjh5TThFaDBndlhNVTRLcg?oc=5" }] },
+    { date: "2026-11-02", rank: 10, heat: 69, tag: "数据 / Data", tagClass: "mid", raw: false,
+      titleZh: "电子身份代码提升房地产透明度", titleEn: "Electronic ID Codes Boost Real Estate Transparency",
+      zh: "电子身份代码将提升房地产市场透明度，加强市场管理并遏制违规行为。", en: "Electronic ID codes will boost real estate market transparency, strengthen management, and curb violations.", vi: "Mã định danh điện tử tăng minh bạch thị trường bất động sản",
+      srcName: "CafeLand", src: "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeFpGNzluRXdZTDlnRm84VTNmdXNVNkVtN3R2Qk5nWmRkNjB1Y19ZOXFqNkVTVy1qZnRvcFZTRFBuV2NmM2RrUXhKVllnSGJYTGg1S2V5ejRER0Jidk1YUGc1WWFhaFJjSWVQQ1VIcldkNG9TQ1hoN2g2dlg1MS1oazNIMURFZGZ3STdKcHRMQ3UyNHhWTS1zV1NEOU1OYVUx?oc=5",
+      coverage: 2, related: [{ n: "Tạp chí Người xây dựng", u: "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTWVmcFlwTDBTeFFHVGdhN0lCQVBra29QU0FaVzFqVV9GcnVhbGtUUWlkSTktNG9UR2lMX0VmUFZfeDdtempJR19iaXd5b0dTakRxUzRBVUNicGVMdDNaZkpKWkxONnYwTGQ1N2IzNF9QVWtkbWdrd0dod0xPNnh5Xzk4YWlUZ3R4TUtYZmJhTHJyZThzdWQ5ZEt4dTdoamVCRGdNbVRhNFl2eEIyUkxCTQ?oc=5" }] },
+    { date: "2026-11-01", rank: 11, heat: 69, tag: "数据 / Data", tagClass: "mid", raw: false,
+      titleZh: "8000 亿规模房企现金仅够买一辆车", titleEn: "800 Billion Firm Has Cash for Only One Car",
+      zh: "一家规模达 8000 亿元的房地产企业现金仅够购买一辆 VinFast VF3，凸显资金链紧张与流动性危机。", en: "An 800 billion VND real estate firm has cash for only one VinFast VF3, highlighting tight liquidity and crisis.", vi: "Doanh nghiệp bất động sản quy mô 8.000 tỷ nhưng tiền mặt chỉ đủ mua một chiếc VinFast VF3",
+      srcName: "nguoiquansat.vn", src: "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWmxRXzJJLVBseVp1T3Y3eTlmb296bVBueS1WY1RoWExDSlotRXphM2dsM2dSY0dUR0M2N1BCWE9zYjdoeW5DalFKYUs2MTNQR1NmV0otWUI0YTNCSUozMTFQMzIwOVNPUXVJaENkUVp1QlBzTDRoSU9CdHdHRHJ1bVp6MnlNbE1reGFKQmtZTlRGM0NMUUtfTXRDSXZDcWcxb1p2NHBtWWU4WmZpMnFod0ttWGF5ME9lSmNPdEMzamlpbjQ?oc=5",
+      coverage: 2, related: [{ n: "Doanh Nhân Trẻ", u: "https://news.google.com/rss/articles/CBMizgFBVV95cUxOYUV0Tjdvb1d6VHFab3VZdkVOVlFOOVRVczI0SHBQXzVtbjB4QUptMWtIZUxDMzR4M2g3QXo2Z3hORVJTVWs1amI3enhIM3p1UHdJLVY3YnlMbXFEYW9VYm03U1VMV2swQ01lN2hPVElIRVFCWUgzSlBVbS1fNzBNRGY4Y0w3d01lQ1JFRjBtZjlFMmVOQzNmNlhka1JxaFVKUmZtSlB0SlE3ZEVkdGdja3lLM3FlRnljV09aeHJkRlhRRFJfRWVrMGZ0SG9ZZw?oc=5" }] },
+    { date: "2026-11-02", rank: 12, heat: 69, tag: "利坏 / Negative", tagClass: "bad", raw: false,
+      titleZh: "因 K 系数导致土地成本上升", titleEn: "Rising Land Costs Due to K Coefficient",
+      zh: "因 K 系数导致土地成本大幅上升，房地产企业担心难以像过去那样大规模囤积土地。", en: "Due to rising land costs from the K coefficient, real estate firms fear they cannot accumulate land as before.", vi: "Doanh nghiệp bất động sản lo chi phí đất đai tăng mạnh vì hệ số K",
+      srcName: "Tạp chí điện tử Thương Trường", src: "https://news.google.com/rss/articles/CBMirwFBVV95cUxQa0lvSk1DQ3JqY19LX05Lbi1RWVFEMG5yb3dYaWFOM2NIRENKeWVNV1dMdUE2eTlJM1A2bGpCS1ZwVFZMWEZVQnhQcm9ZcWwxMWRWUy1FTXREOXZBZGZUalFiTEtNRUdYOVE5aFQ2bEhPQVdwb21FaHdtZDZVVlRTeTE0OW1zSzQzV25XWlZxaVF4SG12amJvRFNuNUdxaVBxVmN0UV9GLUNDQnh3SWVR?oc=5",
+      coverage: 2, related: [{ n: "CafeBiz", u: "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNi1RVWxGdEY1ajFNcXFQWW5rOGJ6NDZERWhwZWV6eDAyblZFc25WckFDNGpMUk9JanpoQVlKUUxnT1BCMVRqZmdYZDkxdVU3dmZpOWV1bll2NnBPN1NkVjRMeEF1cGNoN2ZXWGRNcThzWkRpbkJiWHl6V0Voek44R2JTVl9LXzJra29iWnQ4MTRtMmFIYlFNdlZuN19QaXBYN2pUYnhoWU1wLVpxamNsUU5R?oc=5" }] },
   ],
 
   /* ---------- 胡志明分区年度新盘（加管理费/宽带/链接/付款） ---------- */
@@ -4435,12 +3812,12 @@ window.RE_DATA = {
       {
         termZh: "6–12 个月",
         termEn: "6–12 months",
-        rate: "挂牌 2.9–7.9%（10/29 口径，10 月累计 29 家银行下调）：GPBank 线上 1–2 月 3.6%（低端代表）、12–36 月 5.05%；国有四大行 6/9 月 3.0%（柜面）、12 月 5.4%、24 月 5.5%（线上 6/9/12 月 6.6%/6.6%/6.8%）；MSB 10/29 降 0.5pp 后线上 6–11 月 5.8%、12 月 6.3%、13–24 月 6.1%、36 月 5.6%（专属：≤50 亿盾首次单账户 12/15/24 月 7.0%、VIP ≥5,000 亿盾 12/13 月 9.0%）；VietABank 6–11 月 5.5%、12–13 月 5.6%、15–18 月 5.7%、24–36 月 5.8%；7% 及以上——VCBNeo/MBV 6–18 月 7.0%、VIB 12 月 7.0%、PGBank 12 月 7.0%、Sacombank 12 月 7.0%（24–36 月 7.3%）、VPBank 18 月 7.4%、Saigonbank 13 月 7.9%（全表最高）；Techcombank 6–11 月 6.05%、12 月 6.25%、18 月 5.35%（10/28 较 10/22 再降 0.2–0.4pp）、LPBank 6.5%/6.7%、BVBank 6.7%/6.9%、VPBank 6.6%/6.7%、SeABank 4.15–4.75%、PVcomBank 4.8–5.8%、HDBank 5.0%、SCB 2.9–3.7%。加成促销：MB 周末 6 月期 ≥1 亿盾 8.2%（10/31 前）、Techcombank 首笔 12 月 +1.5pp 后 7.75%（会员最高 8.25%）；Cake by VPBank 首存 +2.2pp 促销 10/31 到期；10/31 复盘：10 月累计约 30 家下调 6 个月以上定存，但挂牌 6.6–7% 叠加 1–3pp 加成后实际吸存仍达 8.3–9%，挂牌价与实付价差未收敛；11/1 追踪：11 月初各银行挂牌定存普降约 0.5pp（CafeF 11/1，响应 SBV 要求 6 个月以上至少降 0.5pp），12 月期多数降至 7% 以下，存单（CD）利率同步小幅下调；10 月底银行体系存款较此前增逾 100 万亿盾，吸存与降贷成本之间的平衡压力上升"
+        rate: "挂牌 2.9–7.9%（10/29 口径，10 月累计 29 家银行下调）：GPBank 线上 1–2 月 3.6%（低端代表）、12–36 月 5.05%；国有四大行 6/9 月 3.0%（柜面）、12 月 5.4%、24 月 5.5%（线上 6/9/12 月 6.6%/6.6%/6.8%）；MSB 10/29 降 0.5pp 后线上 6–11 月 5.8%、12 月 6.3%、13–24 月 6.1%、36 月 5.6%（专属：≤50 亿盾首次单账户 12/15/24 月 7.0%、VIP ≥5,000 亿盾 12/13 月 9.0%）；VietABank 6–11 月 5.5%、12–13 月 5.6%、15–18 月 5.7%、24–36 月 5.8%；7% 及以上——VCBNeo/MBV 6–18 月 7.0%、VIB 12 月 7.0%、PGBank 12 月 7.0%、Sacombank 12 月 7.0%（24–36 月 7.3%）、VPBank 18 月 7.4%、Saigonbank 13 月 7.9%（全表最高）；Techcombank 6–11 月 6.05%、12 月 6.25%、18 月 5.35%（10/28 较 10/22 再降 0.2–0.4pp）、LPBank 6.5%/6.7%、BVBank 6.7%/6.9%、VPBank 6.6%/6.7%、SeABank 4.15–4.75%、PVcomBank 4.8–5.8%、HDBank 5.0%、SCB 2.9–3.7%。加成促销：MB 周末 6 月期 ≥1 亿盾 8.2%（10/31 前）、Techcombank 首笔 12 月 +1.5pp 后 7.75%（会员最高 8.25%）；Cake by VPBank 首存 +2.2pp 促销 10/31 到期；10/31 复盘：10 月累计约 30 家下调 6 个月以上定存，但挂牌 6.6–7% 叠加 1–3pp 加成后实际吸存仍达 8.3–9%，挂牌价与实付价差未收敛；11/1 追踪：11 月初各银行挂牌定存普降约 0.5pp（CafeF 11/1，响应 SBV 要求 6 个月以上至少降 0.5pp），12 月期多数降至 7% 以下，存单（CD）利率同步小幅下调；10 月底银行体系存款较此前增逾 100 万亿盾，吸存与降贷成本之间的平衡压力上升；11/2 更新：降息银行累计约 30 家（明细见资讯 11/03 条）——Eximbank 11/2 降 0.5pp 至 6–11 月 4.2%、12 月 4.5%，Techcombank/Sacombank/MSB 各 -0.5pp，NCB ≤-0.6pp、SeABank 18–36 月 ≤-0.7pp；BIDV 自 11 月柜面 -0.5pp（个人最高 5.4%、线上 6.8%、企业 12–60 月 4%）"
       },
       {
         termZh: "1 年期（12 个月）",
         termEn: "1 year (12 months)",
-        rate: "国有柜面 5.4%（VCB/BIDV/Agri，10/20 起；24 月 5.5%）· 国有线上 6.8%（Agri/MB/VCB/Vietin，10/28 表）· MSB 6.3%（10/29 起，较前降 0.5pp；专属首客 7.0%、VIP 9.0%）· VietABank 5.6%（10/29）· GPBank 5.05%（10/29）· MBV/VCBNeo/VIB/PGBank/Sacombank 7.0% · Saigonbank 6.7%（13 月 7.9%）· VPBank 6.7% · Techcombank 6.25%（10/28 起，较 10/22 降 0.4pp）· LPBank 6.7% · SeABank 4.5%/PVcomBank 5.1% · 加成后实际：MB 6 月 8.2%、Techcombank 12 月 7.75–8.25% · 11/1 起随 11 月初普降再降约 0.5pp，12 月期多数落入 7% 以下区间（各行逐家新牌价待核实）"
+        rate: "国有柜面 5.4%（VCB/BIDV/Agri，10/20 起；24 月 5.5%）· 国有线上 6.8%（Agri/MB/VCB/Vietin，10/28 表）· MSB 6.3%（10/29 起，较前降 0.5pp；专属首客 7.0%、VIP 9.0%）· VietABank 5.6%（10/29）· GPBank 5.05%（10/29）· MBV/VCBNeo/VIB/PGBank/Sacombank 7.0% · Saigonbank 6.7%（13 月 7.9%）· VPBank 6.7% · Techcombank 6.25%（10/28 起，较 10/22 降 0.4pp）· LPBank 6.7% · SeABank 4.5%/PVcomBank 5.1% · 加成后实际：MB 6 月 8.2%、Techcombank 12 月 7.75–8.25% · 11/1 起随 11 月初普降再降约 0.5pp，12 月期多数落入 7% 以下区间；11/2 逐家落地：Eximbank 12 月 4.5%、BIDV 个人柜面最高 5.4%（线上 6.8%）、NCB/SeABank 再降 0.6–0.7pp，全市场 12 月期仍以 5.4–7.0% 为主"
       },
       {
         termZh: "2 年期（12–24 个月）",
@@ -4490,6 +3867,12 @@ window.RE_DATA = {
     localNoteZh: "越南房贷普遍为「优惠期固定利率 + 之后浮动」结构：1 年期固定（BIDV 等）约 5.5%，5 年期固定（ACB 首套包）约 5.5%，优惠期结束后统一浮动至 12–16%（2026 Q4 口径、均值 14–16%）。定息期越短、越要留意浮动跳升风险。10/18 SBV 已要求优先领域贷款利率下调 1.5–2 个百分点，10/19 行长会议后 Agribank（最多 2pp）、BIDV（10/15 起 6–7%）、Sacombank（企业贷 8.5%）等已落地，但均属短期经营类、非按揭。10/20 存款端降息落地（VCB/Agri 6 月以上降 0.5pp、VietinBank 早降午回、BIDV 未动，至当日下午 16 家银行已挂新牌价、12 月期多数跌破 7%），但房贷浮动利率仍未跟进，实际月供压力未减。10/24 进展：多家银行已公布贷款利率下调 1.5–3pp（Agribank、BIDV、VietinBank、MB、LPBank、SHB、ACB、TPBank、SeABank、OCB、Nam A Bank、BVBank），但以经营类为主；SBV 口径新发放+存量贷款平均 8.4–10.9%（环比 +0.2pp、较 2025 年底 +1.7~1.9pp），房贷浮动仍 12–16%。10/28 追记：挂牌定存整体未动，但 Techcombank 线上 12 月再降至 6.25%、MB 以周末与周年券把 6 月实际付息推至 8.2%，存款端成本并未实质缓解；房贷浮动利率仍 12–16%，未见跟进下调。10/30 追记：10 月累计近 30 家银行下调定存挂牌，但 DXS-FERI 判断至 2026 年底浮动贷款利率仍维持 11–13%，企业融资成本未实质下降；BIDV Home 认为更广泛降息需待 2027 年公共投资与征地补偿资金放量。10/31 追记：至 10 月底银行美元卖出价跌破 26,000，VND 转强缓解输入型通胀与外汇压力；但存款端降幅被加成促销抵销（实际吸存 8.3–9%），房地产与购房类贷款仍 12–14%、浮动 15–16%，年内月供压力未见改善。",
     localNoteEn: "Vietnamese mortgages are typically 'fixed teaser + floating thereafter': 1-yr fixed (BIDV etc.) ≈5.5%, 5-yr fixed (ACB first-home) ≈5.5%, then all float to 12–16% (Q4 2026, avg 14–16%). The shorter the fixed term, the bigger the float-jump risk. On Oct 18 the SBV ordered 1.5–2pp cuts for priority-sector lending; after the Oct 19 governor's meeting Agribank (up to 2pp), BIDV (6–7% from Oct 15) and Sacombank (corporate at 8.5%) have moved, but all on short-term business credit rather than home loans, so whether and how far mortgage rates follow is still open.Oct 28: deposit boards were broadly flat, but Techcombank cut its online 12-month rate again to 6.25% while MB used weekend and anniversary vouchers to pay 8.2% at 6 months — funding costs have not really eased, and floating mortgage rates remain 12-16% with no follow-through cut.",
     deposits: [
+      {
+        bank: "约 30 家降定存（11/2 口径）",
+        rate: "6–12 个月普遍 -0.5pp，最高 -0.7pp · 12 月期主流 5.4–7.0%",
+        noteZh: "11/2 新增落地：Eximbank 下调 6–12 个月 0.5pp（6–11 月 4.2%、12 月 4.5%）；Techcombank、Sacombank、MSB 各降 0.5pp；NCB 6 个月以上最多降 0.6pp；SeABank 18–36 个月最多降 0.7pp；BIDV 自 11 月起柜面 6 个月以上降 0.5pp，个人定存最高 5.4%、线上最高 6.8%、企业 12–60 月 4%。至此公开宣布下调至少一个期限的银行约 30 家（Agribank、BIDV、VCB、Vietin、LPBank、VietBank、BVBank、Bac A Bank、BaoViet Bank、OCB、HDBank、KienlongBank、Nam A、NCB、Sacombank、TPBank、VPBank、ABBank、MBV、PVcomBank、SHB、MB、SeABank、Techcombank、PGBank、Saigonbank、GPBank、MSB、VietABank、Eximbank）。配套信贷：Techcombank 40 万亿盾、Sacombank 20 万亿盾（个人，降 1.5–2pp）、MSB 10 万亿盾（企业，7.5% 起）、Agribank/VCB/VietinBank 最高降 2pp。提示：挂牌与实际付息仍双轨，存款成本下降尚未传导至房贷利率（仍 12–16%）。",
+        noteEn: "New on Nov 2: Eximbank cut 0.5pp on 6-12 months (4.2% for 6-11m, 4.5% for 12m); Techcombank, Sacombank and MSB each cut 0.5pp; NCB up to 0.6pp beyond six months; SeABank up to 0.7pp on 18-36 months; BIDV cut counter rates 0.5pp from November — individuals max 5.4%, online max 6.8%, corporates 4% for 12-60 months. About 30 banks have now announced a cut on at least one tenor: Agribank, BIDV, VCB, VietinBank, LPBank, VietBank, BVBank, Bac A Bank, BaoViet Bank, OCB, HDBank, KienlongBank, Nam A, NCB, Sacombank, TPBank, VPBank, ABBank, MBV, PVcomBank, SHB, MB, SeABank, Techcombank, PGBank, Saigonbank, GPBank, MSB, VietABank and Eximbank. Matching credit programmes: Techcombank VND 40tn, Sacombank VND 20tn for individuals (1.5-2pp), MSB VND 10tn for corporates (from 7.5%), and up to 2pp at Agribank, VCB and VietinBank. Caveat: board and paid rates remain two tracks, and cheaper deposits have yet to reach mortgage pricing (still 12-16%)."
+      },
       {
         bank: "全系统 11 月初普降（11/1 口径）",
         rate: "6 个月以上挂牌定存普遍下调约 0.5pp · 12 月期多数降至 7% 以下 · 存单（CD）同步小幅下调",
