@@ -56,9 +56,9 @@
         title: "胡志明 · 河内：6 年体量与价格对比",
         desc: "对比一手均价与新房供应量。2026 Q2 河内价格首次反超胡志明。",
         priceChart: "一手均价（USD/㎡）", supplyChart: "新房供应量（套）", shareChart: "两城供应占比（%）",
-        milestoneTitle: "2026 Q2 里程碑", sourceLinksTitle: "支持数据链接",
-        note1: "胡志明 $4,088 vs 河内 $4,356：价差首次转正，河内靠高端供应拉高均价。",
-        note2: "胡志明供应受土地约束走低；河内 2026 全年预计 ~3.9 万套创纪录，但去化率仅 48%。",
+        milestoneTitle: "2026 Q3 里程碑", sourceLinksTitle: "支持数据链接",
+        note1: "胡志明 $4,210 vs 河内 $4,349：河内连续两季高于胡志明，但 Q3 环比 -0.15% 转跌，胡志明环比 +3%。",
+        note2: "胡志明供应受土地约束走低；河内 2026 全年预计 ~3.9 万套创纪录，Q3 去化率降至约 38%。",
         note3: "合并口径注意：2025 年起「大胡志明」含平阳/巴地-头顿，CBRE 口径 $2,890 与旧口径不可直接比较。"
       },
       policy: { title: "政府文件 · 法规追踪（含官方链接）", desc: "追踪法律/法令/执行时间，可点击官方链接查证原文。", date: "发布", effective: "生效", category: "类型", titleCol: "文件", keyPoint: "核心要点", status: "状态", official: "官方链接" },
@@ -205,9 +205,9 @@
         title: "HCMC vs Hanoi: 6-Year Volume & Price",
         desc: "Primary prices and supply. In Q2 2026 Hanoi overtook HCMC for the first time.",
         priceChart: "Primary Price (USD/sqm)", supplyChart: "New Supply (units)", shareChart: "Supply Share (%)",
-        milestoneTitle: "Q2 2026 Milestone", sourceLinksTitle: "Supporting Sources",
-        note1: "HCMC $4,088 vs Hanoi $4,356: gap flipped positive — Hanoi pulled up by luxury supply.",
-        note2: "HCMC supply is land-constrained; Hanoi's record ~39k units in 2026 meets only 48% absorption.",
+        milestoneTitle: "Q3 2026 Milestone", sourceLinksTitle: "Supporting Sources",
+        note1: "HCMC $4,210 vs Hanoi $4,349: Hanoi stays ahead for a second quarter but slipped -0.15% QoQ while HCMC rose +3%.",
+        note2: "HCMC supply is land-constrained; Hanoi's record ~39k units in 2026 met only ~38% absorption in Q3.",
         note3: "Mind the merger: since 2025 'enlarged HCMC' includes Binh Duong & Ba Ria-Vung Tau (CBRE $2,890 is not comparable to the old footprint)."
       },
       policy: { title: "Government Documents & Regulation Tracker (official links)", desc: "Laws, decrees and effective dates — click official links to verify the source text.", date: "Issued", effective: "Effective", category: "Type", titleCol: "Document", keyPoint: "Key point", status: "Status", official: "Official" },
@@ -354,9 +354,9 @@
         title: "TP.HCM vs Hà Nội: 6 năm quy mô & giá",
         desc: "So sánh giá sơ cấp và nguồn cung. Q2/2026 Hà Nội lần đầu vượt TP.HCM.",
         priceChart: "Giá sơ cấp (USD/m²)", supplyChart: "Nguồn cung mới (căn)", shareChart: "Tỷ trọng cung (%)",
-        milestoneTitle: "Cột mốc Q2/2026", sourceLinksTitle: "Nguồn dữ liệu tham chiếu",
-        note1: "TP.HCM 4.088 USD vs Hà Nội 4.356 USD: chênh lệch lần đầu dương — Hà Nội được đẩy lên bởi nguồn cung cao cấp.",
-        note2: "Nguồn cung TP.HCM hạn chế do quỹ đất; Hà Nội dự kiến ~39.000 căn năm 2026 nhưng tỷ lệ hấp thụ chỉ 48%.",
+        milestoneTitle: "Cột mốc Q3/2026", sourceLinksTitle: "Nguồn dữ liệu tham chiếu",
+        note1: "TP.HCM 4.210 USD vs Hà Nội 4.349 USD: Hà Nội vẫn dẫn quý thứ hai nhưng giảm 0,15% so quý trước, TP.HCM tăng 3%.",
+        note2: "Nguồn cung TP.HCM hạn chế do quỹ đất; Hà Nội dự kiến ~39.000 căn năm 2026, quý 3 chỉ hấp thụ khoảng 38%.",
         note3: "Lưu ý sáp nhập: từ 2025 'TP.HCM mở rộng' gồm Bình Dương & Bà Rịa-Vũng Tàu (CBRE 2.890 USD không so sánh trực tiếp với địa giới cũ)."
       },
       policy: { title: "Văn bản Chính phủ · Theo dõi quy định (có link chính thức)", desc: "Theo dõi luật/nghị định/ngày hiệu lực — nhấp link chính thức để đối chiếu.", date: "Ban hành", effective: "Hiệu lực", category: "Loại", titleCol: "Văn bản", keyPoint: "Điểm chính", status: "Trạng thái", official: "Link chính thức" },
@@ -585,9 +585,9 @@
     document.getElementById('macro-notes').innerHTML = ['note1','note2','note3','note2026'].map(k => '<li>' + t('macro.' + k) + '</li>').join('');
     document.getElementById('macro-links').innerHTML = sourceLinksHtml(['gso', 'imf']);
     document.getElementById('cities-notes').innerHTML = ['note1','note2','note3'].map(k => '<li>' + t('cities.' + k) + '</li>').join('');
-    const q2 = D.cities.q2_2026;
+    const q3 = D.cities.q3_2026;
     document.getElementById('cities-milestone').innerHTML =
-      (lang === 'zh' ? q2.noteZh : q2.noteEn) + ' <a href="' + q2.sourceUrl + '" target="_blank" rel="noopener">原文链接 →</a>';
+      (lang === 'zh' ? q3.noteZh : q3.noteEn) + ' <a href="' + q3.sourceUrl + '" target="_blank" rel="noopener">原文链接 →</a>';
     document.getElementById('cities-links').innerHTML = sourceLinksHtml(['knightfrank', 'cbre', 'savills']);
     document.getElementById('fx-note').innerHTML = (lang === 'zh' ? D.fx.noteZh : D.fx.noteEn) +
       '<div class="src-note">' + t('fx.sourceNote') + ' · <a href="' + D.fx.sourceUrl + '" target="_blank" rel="noopener">sbv.gov.vn →</a></div>';
