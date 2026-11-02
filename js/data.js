@@ -11,7 +11,7 @@ window.RE_DATA = {
   /* ---------- 元信息 / Meta ---------- */
   meta: {
     lastUpdated: "2026-11-02",
-    lastUpdatedAt: "2026-11-02 23:25",
+    lastUpdatedAt: "2026-11-02 23:50",
     dataAsOfZh: "房价数据截至 2026 年 Q3（Knight Frank/CBRE/Savills），汇率截至 2026 年 11 月",
     dataAsOfEn: "Price data as of Q3 2026 (Knight Frank/CBRE/Savills); FX as of Nov 2026",
     fxRate: 25990,
@@ -518,6 +518,22 @@ window.RE_DATA = {
 
   /* ---------- 动态消息 / News Feed（利好/利坏/政策/市政） ---------- */
   newsFeed: [
+    {
+      date: "2026-11-02",
+      tag: "市政 / Infrastructure",
+      tagClass: "good",
+      zh: "胡志明市人民议会第六次会议（10/30）通过 47 项决议，其中 17 项用于落实《城市发展法》，并批准《胡志明市 2025–2050 年总体规划及百年愿景》：城市按多极多中心巨型都市模式发展，设 5 个动力极与 5 个卫星中心，配合公共交通系统向外围拓展居住空间。土地端，市人委会向议会提交 147 宗地约 854 公顷的试点商品房用地清单（依国会第 171/2024/QH15 号决议），其中原市域 94 宗、原巴地—头顿 19 宗、原平阳 34 宗；议会同时通过地方政府债、项目债、都市债与绿色债发行机制。注意：基建与城市债资金不等同于商品房开发信贷，供给放量节奏仍取决于规划落地与拆迁进度。",
+      en: "HCMC People's Council (6th session, Oct 30) passed 47 resolutions, 17 of them to implement the Urban Development Law, and approved the HCMC 2025-2050 master plan with a 100-year vision: a multi-polar, multi-centred megacity with 5 growth poles and 5 satellite centres, pushing housing outward along public transport corridors. On land, the city submitted a list of 147 plots totalling about 854 ha for pilot commercial housing under NA Resolution 171/2024/QH15 (94 in the former city area, 19 in former Ba Ria-Vung Tau, 34 in former Binh Duong); the council also approved mechanisms for local government bonds, project bonds, urban bonds and green bonds. Note: infrastructure and municipal bond funding is not the same as commercial housing credit — supply timing still depends on planning implementation and site clearance.",
+      src: "https://cn.sggp.org.vn/%E6%97%B6%E6%94%BF"
+    },
+    {
+      date: "2026-11-02",
+      tag: "数据 / Data",
+      tagClass: "mid",
+      zh: "房价收入比（PIR）争议再起：11/2 越媒引述 2026 年公布的一项研究称越南家庭 PIR 达 30.2（即不计其他开支、全部收入用于购房需 30 年以上），数据取自在线数据库 Numbeo，口径与 GSO 人均收入/官方房价指数不同源，暂标注待核实，勿与本页房价表直接对比。同篇引 VIREED 院长陈春量：一个家庭自有 10 亿盾、再贷逾 10 亿买 70㎡、售价 21 亿盾的公寓，月收入仅 2,500–3,000 万盾时月供与生活开支压力过大；并重申 Savills Q3 口径——河内一手报价 1.07 亿盾/㎡（环比小降）、二手 7,500 万盾/㎡。政策指向仍是扩大社房与租赁住房供给、并加强国家对地价的调节。",
+      en: "Affordability debate resurfaces: on Nov 2 Vietnamese media cited a 2026-published study putting Vietnam's price-to-income ratio at 30.2 (over 30 years of full income to buy a home), sourced from the Numbeo online database — a different basis from GSO income data or official price indices, so marked unverified and not comparable with this page's price tables. The same piece quotes VIREED director Tran Xuan Luong: a family with VND 1bn savings borrowing over VND 1bn for a 70 sqm flat priced at VND 2.1bn would be overstretched on a VND 25-30m monthly income; it restates Savills Q3 figures — Hanoi primary asking VND 107m/sqm (slightly down QoQ), secondary VND 75m/sqm. Policy direction remains expanding social and rental housing supply plus stronger state regulation of land prices.",
+      src: "https://news.qq.com/rain/a/20261102A055C600"
+    },
     {
       date: "2026-11-02",
       tag: "政策 / Policy",
