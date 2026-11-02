@@ -369,6 +369,21 @@ h1 { font-size: 26px; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.
 .chip-jv { background: rgba(139,92,246,0.16); color: #8b5cf6; }
 .chip-sales { background: rgba(229,72,77,0.14); color: var(--accent); font-weight: 600; }
 
+/* ---- V5: 开盘至今租金涨幅 ---- */
+.rt-sub { font-size: 12px; font-weight: 400; }
+.rt-growth { font-weight: 700; color: var(--accent); }
+.rt-growth.up { font-variant-numeric: tabular-nums; }
+.rt-yoy { display: flex; flex-direction: column; gap: 8px; margin: 12px 0 14px; }
+.rt-yoy-title { font-size: 12.5px; font-weight: 600; color: var(--text-2); }
+.rt-yoy-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 12px; }
+.rt-yoy-name { min-width: 200px; color: var(--text-2); }
+.rt-chip { padding: 2px 8px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text-2); font-variant-numeric: tabular-nums; }
+.rt-chip b { color: var(--text); margin-right: 3px; }
+.rt-events { display: flex; flex-direction: column; gap: 6px; margin: 12px 0 10px; }
+.rt-event { display: flex; gap: 10px; font-size: 12.5px; line-height: 1.55; }
+.rt-year { flex: 0 0 44px; font-weight: 700; color: var(--text-2); font-variant-numeric: tabular-nums; }
+@media (max-width: 700px) { .rt-yoy-name { min-width: 100%; } }
+
 /* ---- V4: 地铁图例 ---- */
 .metro-legend { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
 .ml-item { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }

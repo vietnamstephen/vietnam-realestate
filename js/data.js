@@ -11,7 +11,7 @@ window.RE_DATA = {
   /* ---------- 元信息 / Meta ---------- */
   meta: {
     lastUpdated: "2026-11-02",
-    lastUpdatedAt: "2026-11-02 21:40",
+    lastUpdatedAt: "2026-11-02 23:25",
     dataAsOfZh: "房价数据截至 2026 年 Q3（Knight Frank/CBRE/Savills），汇率截至 2026 年 11 月",
     dataAsOfEn: "Price data as of Q3 2026 (Knight Frank/CBRE/Savills); FX as of Nov 2026",
     fxRate: 25990,
@@ -59,69 +59,13 @@ window.RE_DATA = {
 
   /* ---------- 宏观 / Macro（含2026预估） ---------- */
   macro: {
-    years: [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    gdpUsd: [
-      346.3,
-      370.1,
-      411,
-      433,
-      459.4,
-      494,
-      527
-    ],
-    gdpGrowth: [
-      2.9,
-      2.6,
-      8,
-      5.1,
-      7.1,
-      8,
-      7
-    ],
-    gdpPerCapita: [
-      3549,
-      3757,
-      4133,
-      4316,
-      4536,
-      4829,
-      5115
-    ],
-    incomePerCapita: [
-      4250,
-      4205,
-      4673,
-      4962,
-      5415,
-      5850,
-      6300
-    ],
-    incomeUrban: [
-      5590,
-      5388,
-      5945,
-      6260,
-      6890,
-      7450,
-      8000
-    ],
-    avgWage: [
-      6.5,
-      6.6,
-      6.9,
-      7.1,
-      7.7,
-      8.3,
-      8.9
-    ],
+    years: [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    gdpUsd: [346.3, 370.1, 411, 433, 459.4, 494, 527],
+    gdpGrowth: [2.9, 2.6, 8, 5.1, 7.1, 8, 7],
+    gdpPerCapita: [3549, 3757, 4133, 4316, 4536, 4829, 5115],
+    incomePerCapita: [4250, 4205, 4673, 4962, 5415, 5850, 6300],
+    incomeUrban: [5590, 5388, 5945, 6260, 6890, 7450, 8000],
+    avgWage: [6.5, 6.6, 6.9, 7.1, 7.7, 8.3, 8.9],
     note2026: "2026 年为预估值（表内 7.0% 沿用早期 IMF 口径，未随最新机构上修调整）。官方已公布前三季度实际：Q1 +8.15%、Q2 +8.81%、Q3 +9.95%，前三季度累计 +9.01%（GSO/财政部统计局 10/3，2011 年以来同期最高），全年若达政府 10% 目标，Q4 须 ≥12.5%。机构最新口径：UOB 10 月上调至 9.2%（原 8.5%，预计 Q4 约 +9.7%）、ADB 7.8%、世界银行 10/6 上调至 7.4%（2027–2028 均 7.3%，全年通胀预计均值 4.2%）。前三季度 CPI 均值 +4.52%。10/16 副总理 Pham Gia Tuc 报告：前三季度经济 +9.01%，Q4 须扩张 12.5% 方可达全年双位数目标，通胀压力与贸易逆差仍是挑战；越共中央委员会（10/16）定 2027 年 GDP 增速目标 ≥10%。河内 Q3 增速 10.02%（首次两位数、高于全国 9.95%）、前三季度 +8.85%。10/16 国会主席 Tran Thanh Man 亦称 2027 年须为「加速与突破之年」、GDP 目标 ≥10%，并强调区域分化明显——前三季度 34 个省直辖市中仅 12 个增速超 10%。",
     cityEconomy: {
       asOf: "2025（官方口径）",
@@ -154,112 +98,24 @@ window.RE_DATA = {
     }
   },
   index: {
-    years: [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    priceIndex: [
-      100,
-      112.2,
-      121.1,
-      146.3,
-      168.5,
-      187.8,
-      220.9
-    ],
-    gdpPerCapitaIndex: [
-      100,
-      105.9,
-      116.5,
-      121.6,
-      127.8,
-      136.1,
-      144.1
-    ],
-    incomeIndex: [
-      100,
-      98.9,
-      110,
-      116.8,
-      127.4,
-      137.6,
-      148.2
-    ]
+    years: [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    priceIndex: [100, 112.2, 121.1, 146.3, 168.5, 187.8, 220.9],
+    gdpPerCapitaIndex: [100, 105.9, 116.5, 121.6, 127.8, 136.1, 144.1],
+    incomeIndex: [100, 98.9, 110, 116.8, 127.4, 137.6, 148.2]
   },
 
   /* ---------- 城市对比 / Cities（含2026：河内首次反超） ---------- */
   cities: {
-    years: [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
+    years: [2020, 2021, 2022, 2023, 2024, 2025, 2026],
     hcmc: {
-      priceUsd: [
-        2700,
-        3000,
-        3300,
-        3400,
-        3700,
-        3800,
-        4210
-      ],
-      supply: [
-        16000,
-        15000,
-        19000,
-        12000,
-        5000,
-        6000,
-        9000
-      ],
-      priceVnd: [
-        66,
-        74,
-        81,
-        83,
-        91,
-        93,
-        109
-      ]
+      priceUsd: [2700, 3000, 3300, 3400, 3700, 3800, 4210],
+      supply: [16000, 15000, 19000, 12000, 5000, 6000, 9000],
+      priceVnd: [66, 74, 81, 83, 91, 93, 109]
     },
     hanoi: {
-      priceUsd: [
-        1500,
-        1700,
-        1800,
-        2500,
-        3000,
-        3524,
-        4349
-      ],
-      supply: [
-        15500,
-        9800,
-        13500,
-        9200,
-        27500,
-        20000,
-        19000
-      ],
-      priceVnd: [
-        37,
-        42,
-        44,
-        61,
-        75,
-        86,
-        113
-      ]
+      priceUsd: [1500, 1700, 1800, 2500, 3000, 3524, 4349],
+      supply: [15500, 9800, 13500, 9200, 27500, 20000, 19000],
+      priceVnd: [37, 42, 44, 61, 75, 86, 113]
     },
     q2_2026: {
       hcmcUsd: 4088,
@@ -277,18 +133,8 @@ window.RE_DATA = {
     },
     quarterly: {
       hcmc: {
-        "2024": [
-          3600,
-          3700,
-          3700,
-          3700
-        ],
-        "2025": [
-          3750,
-          3800,
-          3850,
-          3870
-        ],
+        "2024": [3600, 3700, 3700, 3700],
+        "2025": [3750, 3800, 3850, 3870],
         "2026": [
           4080,
           4088,
@@ -297,18 +143,8 @@ window.RE_DATA = {
         ]
       },
       hanoi: {
-        "2024": [
-          2900,
-          3000,
-          3000,
-          3200
-        ],
-        "2025": [
-          3200,
-          3400,
-          3600,
-          3800
-        ],
+        "2024": [2900, 3000, 3000, 3200],
+        "2025": [3200, 3400, 3600, 3800],
         "2026": [
           4000,
           4356,
@@ -319,18 +155,8 @@ window.RE_DATA = {
     },
     quarterlySecondary: {
       hcmc: {
-        "2024": [
-          2500,
-          2550,
-          2600,
-          2650
-        ],
-        "2025": [
-          2700,
-          2800,
-          2850,
-          2900
-        ],
+        "2024": [2500, 2550, 2600, 2650],
+        "2025": [2700, 2800, 2850, 2900],
         "2026": [
           3000,
           3050,
@@ -339,18 +165,8 @@ window.RE_DATA = {
         ]
       },
       hanoi: {
-        "2024": [
-          2350,
-          2500,
-          2600,
-          2750
-        ],
-        "2025": [
-          2850,
-          3000,
-          3100,
-          3150
-        ],
+        "2024": [2350, 2500, 2600, 2750],
+        "2025": [2850, 3000, 3100, 3150],
         "2026": [
           3200,
           3100,
@@ -370,141 +186,18 @@ window.RE_DATA = {
 
   /* ---------- 汇率 / FX ---------- */
   fx: {
-    years: [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    usdVndAnnual: [
-      23190,
-      23150,
-      23580,
-      24150,
-      24750,
-      25850,
-      26500
-    ],
-    cnyVndAnnual: [
-      3361,
-      3590,
-      3504,
-      3411,
-      3442,
-      3610,
-      3716
-    ],
-    usdCnyRate: [
-      6.9,
-      6.45,
-      6.73,
-      7.08,
-      7.19,
-      7.16,
-      7.13
-    ],
+    years: [2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    usdVndAnnual: [23190, 23150, 23580, 24150, 24750, 25850, 26500],
+    cnyVndAnnual: [3361, 3590, 3504, 3411, 3442, 3610, 3716],
+    usdCnyRate: [6.9, 6.45, 6.73, 7.08, 7.19, 7.16, 7.13],
     monthlyUsdVnd: {
-      "2020": [
-        23180,
-        23190,
-        23200,
-        23250,
-        23280,
-        23270,
-        23260,
-        23240,
-        23220,
-        23200,
-        23150,
-        23100
-      ],
-      "2021": [
-        23050,
-        23100,
-        23120,
-        23100,
-        23120,
-        23080,
-        23090,
-        23100,
-        23120,
-        23140,
-        23150,
-        23170
-      ],
-      "2022": [
-        22900,
-        22950,
-        23000,
-        23050,
-        23100,
-        23300,
-        23700,
-        23900,
-        24300,
-        24890,
-        24750,
-        24700
-      ],
-      "2023": [
-        23600,
-        23650,
-        23700,
-        23750,
-        23850,
-        23900,
-        23950,
-        24050,
-        24150,
-        24250,
-        24350,
-        24450
-      ],
-      "2024": [
-        24500,
-        24550,
-        24700,
-        24800,
-        24900,
-        25000,
-        25050,
-        25150,
-        25200,
-        25250,
-        25350,
-        25450
-      ],
-      "2025": [
-        25500,
-        25550,
-        25600,
-        25900,
-        26100,
-        26200,
-        26250,
-        26300,
-        26300,
-        26350,
-        26400,
-        26450
-      ],
-      "2026": [
-        26480,
-        26500,
-        26520,
-        26540,
-        26560,
-        26580,
-        26600,
-        26610,
-        26630,
-        25990,
-        26650,
-        26090
-      ]
+      "2020": [23180, 23190, 23200, 23250, 23280, 23270, 23260, 23240, 23220, 23200, 23150, 23100],
+      "2021": [23050, 23100, 23120, 23100, 23120, 23080, 23090, 23100, 23120, 23140, 23150, 23170],
+      "2022": [22900, 22950, 23000, 23050, 23100, 23300, 23700, 23900, 24300, 24890, 24750, 24700],
+      "2023": [23600, 23650, 23700, 23750, 23850, 23900, 23950, 24050, 24150, 24250, 24350, 24450],
+      "2024": [24500, 24550, 24700, 24800, 24900, 25000, 25050, 25150, 25200, 25250, 25350, 25450],
+      "2025": [25500, 25550, 25600, 25900, 26100, 26200, 26250, 26300, 26300, 26350, 26400, 26450],
+      "2026": [26480, 26500, 26520, 26540, 26560, 26580, 26600, 26610, 26630, 25990, 26650, 26090]
     },
     latest: {
       usdVnd: 25990,
@@ -3030,30 +2723,21 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "51–58 ㎡",
             areaEn: "51–58 sqm",
-            rentVnd: [
-              30,
-              42
-            ]
+            rentVnd: [30, 42]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "78–100 ㎡",
             areaEn: "78–100 sqm",
-            rentVnd: [
-              45,
-              75
-            ]
+            rentVnd: [45, 75]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "106–143 ㎡",
             areaEn: "106–143 sqm",
-            rentVnd: [
-              70,
-              110
-            ]
+            rentVnd: [70, 110]
           }
         ]
       },
@@ -3071,30 +2755,21 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "50–60 ㎡",
             areaEn: "50–60 sqm",
-            rentVnd: [
-              24,
-              35
-            ]
+            rentVnd: [24, 35]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "78–100 ㎡",
             areaEn: "78–100 sqm",
-            rentVnd: [
-              35,
-              50
-            ]
+            rentVnd: [35, 50]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "120–160 ㎡",
             areaEn: "120–160 sqm",
-            rentVnd: [
-              45,
-              68
-            ]
+            rentVnd: [45, 68]
           }
         ]
       },
@@ -3112,20 +2787,14 @@ window.RE_DATA = {
             typeEn: "2BR",
             areaZh: "90–120 ㎡",
             areaEn: "90–120 sqm",
-            rentVnd: [
-              40,
-              62
-            ]
+            rentVnd: [40, 62]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "140–200 ㎡",
             areaEn: "140–200 sqm",
-            rentVnd: [
-              55,
-              88
-            ]
+            rentVnd: [55, 88]
           }
         ]
       },
@@ -3143,20 +2812,14 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "60–75 ㎡",
             areaEn: "60–75 sqm",
-            rentVnd: [
-              22,
-              32
-            ]
+            rentVnd: [22, 32]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "90–115 ㎡",
             areaEn: "90–115 sqm",
-            rentVnd: [
-              35,
-              55
-            ]
+            rentVnd: [35, 55]
           }
         ]
       },
@@ -3174,10 +2837,7 @@ window.RE_DATA = {
             typeEn: "2BR",
             areaZh: "70–95 ㎡",
             areaEn: "70–95 sqm",
-            rentVnd: [
-              25,
-              38
-            ]
+            rentVnd: [25, 38]
           }
         ]
       },
@@ -3195,30 +2855,21 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "51–56 ㎡",
             areaEn: "51–56 sqm",
-            rentVnd: [
-              15,
-              20
-            ]
+            rentVnd: [15, 20]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "76–81 ㎡",
             areaEn: "76–81 sqm",
-            rentVnd: [
-              21,
-              30
-            ]
+            rentVnd: [21, 30]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "100–130 ㎡",
             areaEn: "100–130 sqm",
-            rentVnd: [
-              28,
-              42
-            ]
+            rentVnd: [28, 42]
           }
         ]
       },
@@ -3236,20 +2887,14 @@ window.RE_DATA = {
             typeEn: "2BR",
             areaZh: "80–100 ㎡",
             areaEn: "80–100 sqm",
-            rentVnd: [
-              24,
-              33
-            ]
+            rentVnd: [24, 33]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "120–160 ㎡",
             areaEn: "120–160 sqm",
-            rentVnd: [
-              32,
-              45
-            ]
+            rentVnd: [32, 45]
           }
         ]
       },
@@ -3267,10 +2912,7 @@ window.RE_DATA = {
             typeEn: "2BR",
             areaZh: "65–90 ㎡",
             areaEn: "65–90 sqm",
-            rentVnd: [
-              16,
-              22
-            ]
+            rentVnd: [16, 22]
           }
         ]
       },
@@ -3288,30 +2930,21 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "45–50 ㎡",
             areaEn: "45–50 sqm",
-            rentVnd: [
-              10,
-              13
-            ]
+            rentVnd: [10, 13]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "60–75 ㎡",
             areaEn: "60–75 sqm",
-            rentVnd: [
-              13,
-              19
-            ]
+            rentVnd: [13, 19]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "90–110 ㎡",
             areaEn: "90–110 sqm",
-            rentVnd: [
-              18,
-              26
-            ]
+            rentVnd: [18, 26]
           }
         ]
       },
@@ -3329,20 +2962,14 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "45–55 ㎡",
             areaEn: "45–55 sqm",
-            rentVnd: [
-              10,
-              14
-            ]
+            rentVnd: [10, 14]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "65–85 ㎡",
             areaEn: "65–85 sqm",
-            rentVnd: [
-              14,
-              20
-            ]
+            rentVnd: [14, 20]
           }
         ]
       },
@@ -3360,20 +2987,14 @@ window.RE_DATA = {
             typeEn: "2BR",
             areaZh: "90–120 ㎡",
             areaEn: "90–120 sqm",
-            rentVnd: [
-              30,
-              45
-            ]
+            rentVnd: [30, 45]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "140–200 ㎡",
             areaEn: "140–200 sqm",
-            rentVnd: [
-              45,
-              70
-            ]
+            rentVnd: [45, 70]
           }
         ]
       },
@@ -3391,20 +3012,14 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "50–60 ㎡",
             areaEn: "50–60 sqm",
-            rentVnd: [
-              14,
-              19
-            ]
+            rentVnd: [14, 19]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "75–95 ㎡",
             areaEn: "75–95 sqm",
-            rentVnd: [
-              20,
-              28
-            ]
+            rentVnd: [20, 28]
           }
         ]
       },
@@ -3422,40 +3037,28 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "≈60 ㎡",
             areaEn: "≈60 sqm",
-            rentVnd: [
-              25,
-              32
-            ]
+            rentVnd: [25, 32]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "≈90 ㎡",
             areaEn: "≈90 sqm",
-            rentVnd: [
-              38,
-              48
-            ]
+            rentVnd: [38, 48]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "≈120 ㎡",
             areaEn: "≈120 sqm",
-            rentVnd: [
-              52,
-              65
-            ]
+            rentVnd: [52, 65]
           },
           {
             typeZh: "4 房",
             typeEn: "4BR",
             areaZh: "≈170 ㎡",
             areaEn: "≈170 sqm",
-            rentVnd: [
-              75,
-              90
-            ]
+            rentVnd: [75, 90]
           }
         ]
       },
@@ -3473,30 +3076,21 @@ window.RE_DATA = {
             typeEn: "1BR",
             areaZh: "≈45 ㎡",
             areaEn: "≈45 sqm",
-            rentVnd: [
-              10,
-              14
-            ]
+            rentVnd: [10, 14]
           },
           {
             typeZh: "2 房",
             typeEn: "2BR",
             areaZh: "≈64 ㎡",
             areaEn: "≈64 sqm",
-            rentVnd: [
-              16,
-              22
-            ]
+            rentVnd: [16, 22]
           },
           {
             typeZh: "3 房",
             typeEn: "3BR",
             areaZh: "≈75 ㎡",
             areaEn: "≈75 sqm",
-            rentVnd: [
-              24,
-              32
-            ]
+            rentVnd: [24, 32]
           }
         ]
       }
@@ -5514,71 +5108,11 @@ window.RE_DATA = {
 
   /* ---------- 十年房价追踪（2016–2026） ---------- */
   price10y: {
-    years: [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    fxUsdVnd: [
-      22275,
-      22700,
-      22825,
-      23175,
-      23190,
-      23150,
-      23580,
-      24150,
-      24750,
-      25850,
-      26480
-    ],
-    nationalVndM: [
-      20,
-      22,
-      24,
-      26,
-      28,
-      31,
-      35,
-      40,
-      48,
-      60,
-      72
-    ],
-    hcmcUsd: [
-      1430,
-      1558,
-      1714,
-      1900,
-      2700,
-      3000,
-      3300,
-      3400,
-      3700,
-      3800,
-      4088
-    ],
-    hanoiUsd: [
-      1180,
-      1287,
-      1304,
-      1380,
-      1500,
-      1700,
-      1800,
-      2500,
-      3000,
-      3524,
-      4356
-    ],
+    years: [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+    fxUsdVnd: [22275, 22700, 22825, 23175, 23190, 23150, 23580, 24150, 24750, 25850, 26480],
+    nationalVndM: [20, 22, 24, 26, 28, 31, 35, 40, 48, 60, 72],
+    hcmcUsd: [1430, 1558, 1714, 1900, 2700, 3000, 3300, 3400, 3700, 3800, 4088],
+    hanoiUsd: [1180, 1287, 1304, 1380, 1500, 1700, 1800, 2500, 3000, 3524, 4356],
     caliberZh: "口径说明：2016–2019 采用 CBRE/Savills 年度报告的「新盘平均要价」；2020 年起采用 Knight Frank/CBRE 季度一手均价年化——2020 年出现口径结构性上移（胡志明 +42%），跨段比较须谨慎。全国列为「含省级/二线市场的估算值」（建设部与 GSO 口径插值），用于看趋势，不用于交易定价。2026 年胡志明取 Knight Frank Q2 年化 $4,088（Q3 已升至 $4,210）。",
     caliberEn: "Caliber: 2016-19 use CBRE/Savills reported average primary asking prices; from 2020 Knight Frank/CBRE quarterly primary averages annualised — a structural step-up occurs at 2020 (HCMC +42%), so cross-segment comparison needs care. The national column is an estimate incl. provincial/secondary markets (MOC & GSO interpolation) for trend only, not for pricing. 2026 HCMC uses Knight Frank Q2 annualised $4,088 (Q3 rose to $4,210).",
     insightZh: "十年三个拐点：① 2015–2019 缓慢上行（胡志明 +10%/年，河内几乎横盘，河内 2018 年仅 +1%）；② 2020–2023 供应断档 + 债券危机，胡志明从 $1,900 冲到 $3,400，河内 2023 年因供应崩塌单年跳涨；③ 2024–2026 河内反超——2023 年初河内还比胡志明低 23%，2026 Q2 一手均价 $4,356 vs $4,088 首次反超，但 2026 Q2 起流动性回落、二手率先转跌，属于「价格高位的分化调整」而非趋势反转。",
@@ -5735,97 +5269,13 @@ window.RE_DATA = {
     verdictZh: "对海外买家的实际差异：越南的门槛在「资格端」几乎为零（签证即可买），代价是 50 年产权 + 项目配额 + 基本拿不到按揭；中国的门槛在「资格端」很高（限购/社保/自住一套），但一旦买到，70 年自动续期 + 完整不动产权 + 可申请按揭，产权确定性更强。资产配置上：越南更适合「现金流型 · 租金回报 + 中期持有」，中国更适合「资格具备后的长期持有」。",
     verdictEn: "Practical difference for overseas buyers: Vietnam's barrier sits at eligibility (a visa suffices) — paid for with 50-yr tenure, project quotas and near-zero financing; China's barrier is high at eligibility (purchase limits/social insurance/one self-occupied home) but once bought you get auto-renewing 70-yr land rights, full title and mortgage access. Allocation view: Vietnam suits 'yield + medium-term hold'; China suits 'long hold once qualified'.",
     timeline: {
-      years: [
-        2016,
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      fdiRegistered: [
-        24.5,
-        36,
-        35.5,
-        38,
-        28.5,
-        31.2,
-        27.7,
-        39.4,
-        38.2,
-        38.5,
-        39.2
-      ],
-      fdiDisbursed: [
-        15.8,
-        17.5,
-        19.1,
-        20.4,
-        20,
-        19.7,
-        22.4,
-        23.2,
-        25.4,
-        27.6,
-        29
-      ],
-      fxUsdVnd: [
-        22275,
-        22700,
-        22825,
-        23175,
-        23190,
-        23150,
-        23580,
-        24150,
-        24750,
-        25850,
-        26480
-      ],
-      hcmcUsd: [
-        1430,
-        1558,
-        1714,
-        1900,
-        2700,
-        3000,
-        3300,
-        3400,
-        3700,
-        3800,
-        4088
-      ],
-      hanoiUsd: [
-        1180,
-        1287,
-        1304,
-        1380,
-        1500,
-        1700,
-        1800,
-        2500,
-        3000,
-        3524,
-        4356
-      ],
-      tariffPct: [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        20,
-        12.5
-      ],
+      years: [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+      fdiRegistered: [24.5, 36, 35.5, 38, 28.5, 31.2, 27.7, 39.4, 38.2, 38.5, 39.2],
+      fdiDisbursed: [15.8, 17.5, 19.1, 20.4, 20, 19.7, 22.4, 23.2, 25.4, 27.6, 29],
+      fxUsdVnd: [22275, 22700, 22825, 23175, 23190, 23150, 23580, 24150, 24750, 25850, 26480],
+      hcmcUsd: [1430, 1558, 1714, 1900, 2700, 3000, 3300, 3400, 3700, 3800, 4088],
+      hanoiUsd: [1180, 1287, 1304, 1380, 1500, 1700, 1800, 2500, 3000, 3524, 4356],
+      tariffPct: [0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 12.5],
       noteZh: "四线联动读法：① <b>FDI 到位</b>（柱）逐年抬升，2025 年 $27.6bn 创历史新高 → 产业工人与外派住房需求；② <b>USD/VND</b>（右轴）十年累计贬约 19%，2022 与 2025 两个跳贬窗口恰好对应外资观望与利率上行；③ <b>政策引导</b>＝2015 开放 → 2022 债券收紧 → 2024-08 三部法 → 2025 保障房机制；④ <b>国际关税</b>＝2025-04 威胁 46% → 2025-07 框架 20%（转口 40%）→ 2026-02 IEEPA 被推翻回落 10% → 2026-07-24 Section 301 定档 12.5%。关税反复改变的是制造业扩产节奏，进而传导到园区周边住宅与外派租赁需求。",
       noteEn: "How to read the four lines: ① <b>Disbursed FDI</b> (bars) grinds higher, a record US$27.6bn in 2025, feeding worker & expat housing demand; ② <b>USD/VND</b> (right axis) lost ~19% over ten years, with the 2022 and 2025 step-devaluations matching windows of foreign hesitation and rising rates; ③ <b>Policy</b> = 2015 opening → 2022 bond squeeze → Aug 2024 three laws → 2025 social-housing mechanisms; ④ <b>Tariffs</b> = Apr 2025 threatened 46% → Jul 2025 framework 20% (40% transshipment) → Feb 2026 IEEPA struck down, back to 10% → Jul 24, 2026 Section 301 at 12.5%. Tariff churn shifts manufacturing expansion cadence, which transmits to housing around industrial parks and expat leasing demand.",
       yearly: {
@@ -5971,32 +5421,8 @@ window.RE_DATA = {
       "2026-10",
       "2026-11"
     ],
-    fixed: [
-      9.5,
-      9.5,
-      9.6,
-      9.6,
-      9.7,
-      9.75,
-      9.85,
-      10,
-      10.1,
-      10.3,
-      10.3
-    ],
-    floating: [
-      13,
-      13,
-      13.1,
-      13.4,
-      13.7,
-      14,
-      13.9,
-      14,
-      14.1,
-      14.3,
-      14.4
-    ],
+    fixed: [9.5, 9.5, 9.6, 9.6, 9.7, 9.75, 9.85, 10, 10.1, 10.3, 10.3],
+    floating: [13, 13, 13.1, 13.4, 13.7, 14, 13.9, 14, 14.1, 14.3, 14.4],
     fixedLabelZh: "优惠期固定利率（首年，%/年）",
     fixedLabelEn: "Teaser fixed rate (1st year, %/yr)",
     floatLabelZh: "优惠期后浮动利率（%/年）",
@@ -6085,5 +5511,223 @@ window.RE_DATA = {
     ],
     noteZh: "口径说明：以上为建设部 / 胡志明市人民委员会 / 主流媒体的公开统计，统计时点与「困难」定义各口径略有差异，跨源数字不可直接相加。",
     noteEn: "Note: figures come from the Ministry of Construction, the HCMC People's Committee and mainstream media; counting dates and the definition of \"stalled\" differ slightly across sources, so numbers are not directly additive."
+  },
+  rentTrend: {
+    asOfZh: "租金指数截至 2026 Q3（2026-11 整理）· 月租现值为本页租金行情表 2026-10 口径",
+    asOfEn: "Rent index through Q3 2026 (compiled Nov 2026); current monthly rents per this page rental table (Oct 2026 basis)",
+    years: [2021, 2022, 2023, 2024, 2025, 2026],
+    unitZh: "美元/㎡·月（净使用面积 · 外籍高端片区）",
+    unitEn: "USD/sqm/month (net usable area · prime expat clusters)",
+    series: [
+      {
+        key: "d1",
+        nameZh: "胡志明 · 第1区 CBD 核心",
+        nameEn: "HCMC · District 1 CBD",
+        nameVi: "TP.HCM · Quận 1 lõi CBD",
+        values: [26.5, 28, 29.8, 32, 34.2, 35.8],
+        est: false,
+        color: "red"
+      },
+      {
+        key: "thuThiem",
+        nameZh: "胡志明 · 守添滨水",
+        nameEn: "HCMC · Thu Thiem waterfront",
+        nameVi: "TP.HCM · Thủ Thiêm ven sông",
+        values: [23, 24.8, 26.5, 28.5, 30.8, 32.4],
+        est: false,
+        color: "blue"
+      },
+      {
+        key: "thaoDien",
+        nameZh: "胡志明 · 草田/安富",
+        nameEn: "HCMC · Thao Dien / An Phu",
+        nameVi: "TP.HCM · Thảo Điền / An Phú",
+        values: [17.8, 18.6, 19.5, 20.8, 22, 22.8],
+        est: false,
+        color: "teal"
+      },
+      {
+        key: "d7",
+        nameZh: "胡志明 · 第7区 富美兴",
+        nameEn: "HCMC · District 7 Phu My Hung",
+        nameVi: "TP.HCM · Quận 7 Phú Mỹ Hưng",
+        values: [13.5, 14.1, 14.8, 15.6, 16.4, 17],
+        est: false,
+        color: "green"
+      },
+      {
+        key: "hcmcAvg",
+        nameZh: "胡志明 · 高端片区均值",
+        nameEn: "HCMC · prime average",
+        nameVi: "TP.HCM · trung bình cao cấp",
+        values: [20.05, 21.2, 22.47, 23.95, 25.47, 26.55],
+        est: false,
+        color: "gold"
+      },
+      {
+        key: "hanoi",
+        nameZh: "河内 · 高端片区均值（估算）",
+        nameEn: "Hanoi · prime average (est.)",
+        nameVi: "Hà Nội · trung bình cao cấp (ước)",
+        values: [15.9, 16.7, 17.5, 18.9, 20, 20.8],
+        est: true,
+        color: "orange"
+      }
+    ],
+    events: [
+      {
+        year: 2021,
+        textZh: "疫情年：外籍撤离、短租停摆，胡志明服务式公寓租金同比 -2%（Savills Q1 口径），本序列自该年低点起算。",
+        textEn: "Pandemic year: expat exodus and no short-stay demand; HCMC serviced rents -2% YoY (Savills Q1), the low base of this series.",
+        textVi: "Năm dịch: người nước ngoài rời đi, HCMC cho thuê giảm 2% (Savills Q1) — mức nền của chuỗi."
+      },
+      {
+        year: 2022,
+        textZh: "边境重开、外籍回流，胡志明高端片区同比 +5.7%。",
+        textEn: "Borders reopened and expats returned; HCMC prime +5.7% YoY.",
+        textVi: "Mở cửa lại, TP.HCM cao cấp +5,7%."
+      },
+      {
+        year: 2023,
+        textZh: "制造业与写字楼外资持续进入，租金 +6.0%；同期房价涨幅远超租金，毛回报率由约 4.0% 降至 3.4~3.8%。",
+        textEn: "FDI into manufacturing and offices continued; rents +6.0% while sale prices far outran rents, compressing gross yields from ~4.0% to 3.4–3.8%.",
+        textVi: "Vốn FDI tiếp tục vào, giá thuê +6,0%; lợi suất gộp giảm từ ~4,0% xuống 3,4–3,8%."
+      },
+      {
+        year: 2024,
+        textZh: "交付集中入市，租金 +6.6%；河内房价暴涨带动业主租金预期上行。",
+        textEn: "A wave of handovers hit the market; rents +6.6%, and Hanoi price surge lifted landlord expectations.",
+        textVi: "Nhiều dự án bàn giao, giá thuê +6,6%; giá bán Hà Nội tăng mạnh kéo kỳ vọng tiền thuê lên."
+      },
+      {
+        year: 2025,
+        textZh: "公寓售价两年翻倍、购房门槛抬升，租住需求扩大；胡志明租金 +6.3%，全国毛回报率约 3.85%。",
+        textEn: "Apartment prices doubled in two years, pushing households into renting; HCMC rents +6.3%, national gross yield ~3.85%.",
+        textVi: "Giá căn hộ tăng gấp đôi trong 2 năm; TP.HCM +6,3%, lợi suất gộp ~3,85%."
+      },
+      {
+        year: 2026,
+        textZh: "1 号线通车带来 TOD 溢价（站点 500 m 内 +12~18%）；胡志明高端片区同比 +4.2%，河内服务式公寓租金同比略降，两城分化。",
+        textEn: "Metro Line 1 created a TOD premium (+12–18% within 500 m of stations); HCMC prime +4.2% YoY while Hanoi serviced rents eased slightly YoY — the two cities diverge.",
+        textVi: "Metro số 1 tạo phí TOD (+12–18% trong 500 m); TP.HCM +4,2%, Hà Nội đi ngang/giảm nhẹ — hai thành phố phân hóa."
+      }
+    ],
+    basisZh: "算法：现月租取自本页「租金行情」表同盘同房型；开盘年租金 = 现月租 ÷（该片区 2026 指数 ÷ 开盘年指数），即用片区租金指数反推，只看涨幅不看绝对值。指数口径：胡志明 2021–2026 为 LeaseInVietnam 外籍高端片区实证序列（美元/㎡·月，净使用面积，2400+ 笔成交）；河内 2026 由 LeaseInVietnam Q3 各郡实测区间中值锚定，2021–2025 按官方/机构披露同比回推，整条为估算（图中虚线）。三点提醒：① 指数起点为 2021，2019–2020 开盘的盘按 2021 起算，涨幅标「≥」属下限；② 开盘年多为预售启动年，未交付期并无实际租金，反推值仅供看趋势方向；③ 租金涨幅显著低于同期房价涨幅，故毛回报率逐年走低。",
+    basisEn: "Method: current rent is taken from this page rental table for the same project and unit type; launch-year rent = current rent / (submarket 2026 index / launch-year index) — a back-cast via the submarket rent index, so only growth matters, not absolute level. Index basis: HCMC 2021–2026 is the LeaseInVietnam empirical prime-cluster series (USD/sqm/month, net usable area, 2,400+ leases); Hanoi 2026 is anchored to LeaseInVietnam Q3 district bands, with 2021–2025 back-cast from disclosed YoY changes — the whole Hanoi line is an estimate (dashed). Three caveats: (1) the index starts in 2021, so projects launched in 2019–2020 are measured from 2021 and flagged as a lower bound; (2) launch year is usually the pre-sale start, when no rent is actually collected — treat back-cast values as directional only; (3) rents grow far slower than prices, which is why gross yields keep falling.",
+    basisVi: "Phương pháp: tiền thuê hiện tại lấy từ bảng giá thuê cùng dự án/loại căn; tiền thuê năm mở bán = tiền thuê hiện tại ÷ (chỉ số 2026 / chỉ số năm mở bán). Chỉ số TP.HCM 2021–2026 theo LeaseInVietnam (USD/m²/tháng, 2.400+ hợp đồng); Hà Nội 2026 neo theo LeaseInVietnam Q3, các năm trước ước tính (nét đứt). Lưu ý: chỉ số bắt đầu từ 2021 nên dự án mở bán 2019–2020 tính từ 2021 (mức tối thiểu); năm mở bán thường là năm bán hàng trước khi bàn giao; giá thuê tăng chậm hơn giá bán nên lợi suất gộp giảm dần.",
+    projects: [
+      {
+        nameEn: "Grand Marina Saigon",
+        launchYear: 2022,
+        launchLabel: "2022 Q2",
+        indexKey: "d1",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Vinhomes Golden River",
+        launchYear: 2021,
+        launchLabel: "2021",
+        indexKey: "d1",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "The Metropole Thu Thiem",
+        launchYear: 2023,
+        launchLabel: "2023",
+        indexKey: "thuThiem",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Empire City",
+        launchYear: 2023,
+        launchLabel: "2023（Cove）",
+        indexKey: "thuThiem",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Lumiere Riverside",
+        launchYear: 2022,
+        launchLabel: "2022",
+        indexKey: "thaoDien",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "The Global City",
+        launchYear: 2025,
+        launchLabel: "2025",
+        indexKey: "thaoDien",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Midtown Phu My Hung",
+        launchYear: 2022,
+        launchLabel: "2022",
+        indexKey: "d7",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Sunrise Riverside",
+        launchYear: 2021,
+        launchLabel: "2021",
+        indexKey: "d7",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Vinhomes Grand Park",
+        launchYear: 2023,
+        launchLabel: "2023",
+        indexKey: "hcmcAvg",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Masteri Centre Point",
+        launchYear: 2022,
+        launchLabel: "2022",
+        indexKey: "hcmcAvg",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Triton Crown",
+        launchYear: 2026,
+        launchLabel: "2026-10-18",
+        indexKey: "d7",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Golden Westlake",
+        launchYear: 2019,
+        launchLabel: "2019",
+        indexKey: "hanoi",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Vinhomes Metropolis",
+        launchYear: 2020,
+        launchLabel: "2020",
+        indexKey: "hanoi",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      },
+      {
+        nameEn: "Masteri West Heights",
+        launchYear: 2023,
+        launchLabel: "2023",
+        indexKey: "hanoi",
+        typeZh: "2 房",
+        typeEn: "2BR"
+      }
+    ]
   }
 };

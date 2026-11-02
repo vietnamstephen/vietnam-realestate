@@ -74,6 +74,12 @@
         title: "租金行情（月租 · 按房型）", project: "楼盘", city: "城市", district: "区域", unit: "房型", area: "面积", rent: "月租金", yield: "毛租金回报",
         yieldBasis: "租金回报率口径", ccy: "货币"
       },
+      rentTrend: {
+        title: "开盘至今租金涨幅（估算）", sub: "以片区租金指数反推开盘年租金，看涨幅趋势；非报价",
+        project: "楼盘", launch: "开盘", rentLaunch: "开盘时月租（估算）", growth: "累计涨幅", cagr: "年化", basis: "口径",
+        yoyTitle: "逐年同比", estTag: "估算", lowerBound: "下限", newProj: "新盘 · 无历史", preIndex: "早于指数起点", unit: "美元/㎡·月",
+        basisHint: "口径"
+      },
       projects: {
         title: "主流楼盘历史数据（含价格走势）",
         desc: "走势图 = 各年代表性成交/挂牌均价（USD/㎡），起点为该盘开盘年、终点为 2026 年；图下「年份: 单价 → 年份: 单价」即开盘价到现价，不是「开盘价区间的上下限」。下方另标注每盘开盘时间与销售状态（在售/预售/已交付）。价格与配额为代表性估算。",
@@ -230,6 +236,12 @@
         title: "Rental Market (monthly rent by unit type)", project: "Project", city: "City", district: "District", unit: "Unit", area: "Area", rent: "Monthly rent", yield: "Gross yield",
         yieldBasis: "Yield basis", ccy: "Currency"
       },
+      rentTrend: {
+        title: "Rent growth since launch (est.)", sub: "Launch-year rent back-cast from submarket rent index — directional, not a quote",
+        project: "Project", launch: "Launch", rentLaunch: "Rent at launch (est.)", growth: "Total growth", cagr: "CAGR", basis: "Basis",
+        yoyTitle: "Year-on-year", estTag: "est.", lowerBound: "min.", newProj: "New · no history", preIndex: "before index start", unit: "USD/sqm/mo",
+        basisHint: "Method"
+      },
       projects: {
         title: "Project Database (with price trends)",
         desc: "Trend = representative average price by year (USD/sqm), starting at each project's launch year and ending in 2026; the caption \"year: price → year: price\" is launch price to current price, NOT the low/high of a launch range. Launch timing and sales status (selling / pre-sale / delivered) are tagged under each name. Estimates for reference.",
@@ -385,6 +397,12 @@
       rents: {
         title: "Giá thuê (hằng tháng · theo loại căn)", project: "Dự án", city: "Thành phố", district: "Khu vực", unit: "Loại căn", area: "Diện tích", rent: "Thuê/tháng", yield: "Lợi suất gộp",
         yieldBasis: "Cơ sở tính lợi suất", ccy: "Tiền tệ"
+      },
+      rentTrend: {
+        title: "Tăng giá thuê từ lúc mở bán (ước)", sub: "Giá thuê năm mở bán được suy ngược từ chỉ số khu vực — chỉ để xem xu hướng",
+        project: "Dự án", launch: "Mở bán", rentLaunch: "Giá thuê lúc mở bán (ước)", growth: "Tăng lũy kế", cagr: "Bình quân/năm", basis: "Cơ sở",
+        yoyTitle: "So với năm trước", estTag: "ước", lowerBound: "tối thiểu", newProj: "Mới · chưa có lịch sử", preIndex: "trước mốc chỉ số", unit: "USD/m²/tháng",
+        basisHint: "Cơ sở"
       },
       projects: {
         title: "CSDL dự án chính (kèm xu hướng giá)",
@@ -1474,6 +1492,115 @@
     document.getElementById('rents-body').innerHTML = rows.join('');
     document.getElementById('rents-yield-basis').innerHTML = '<b>' + t('rents.yieldBasis') + '</b>：' + (zh ? D.rents.yieldBasisZh : D.rents.yieldBasisEn);
     document.getElementById('rents-note').innerHTML = (zh ? D.rents.noteZh : D.rents.noteEn) + ' · <span class="td-muted">' + (zh ? D.rents.asOfZh : D.rents.asOfEn) + '</span>';
+    renderRentTrend();
+  }
+
+  /* ------- 开盘至今租金涨幅（片区指数反推） ------- */
+  function rtSeries(key) {
+    const R = D.rentTrend;
+    return R.series.find(s => s.key === key) || null;
+  }
+  function rtName(s) {
+    if (!s) return '—';
+    return lang === 'zh' ? s.nameZh : lang === 'vi' ? (s.nameVi || s.nameEn) : s.nameEn;
+  }
+  function renderRentTrend() {
+    const R = D.rentTrend;
+    if (!R) return;
+    const zh = lang === 'zh';
+    const y0 = R.years[0], y1 = R.years[R.years.length - 1];
+    const iLast = R.years.length - 1;
+
+    /* --- 表格 --- */
+    const rows = R.projects.map(p => {
+      const s = rtSeries(p.indexKey);
+      const it = (D.rents.items || []).find(r => r.nameEn === p.nameEn || r.nameZh === p.nameEn);
+      const row = it && it.rows.find(x => x.typeZh === p.typeZh || x.typeEn === p.typeEn);
+      if (!s || !row) return '';
+      const baseYear = Math.max(p.launchYear, y0);
+      const i0 = R.years.indexOf(baseYear);
+      const ratio = s.values[iLast] / s.values[i0];
+      const n = y1 - R.years[i0];
+      const pre = p.launchYear < y0;
+      const isNew = p.launchYear >= y1;
+      const rentLaunch = [Math.round(row.rentVnd[0] / ratio), Math.round(row.rentVnd[1] / ratio)];
+      const growth = isNew ? '—' : (pre ? '≥ ' : '') + '+' + ((ratio - 1) * 100).toFixed(1) + '%';
+      const cagr = (!isNew && n > 0) ? '+' + (Math.pow(ratio, 1 / n) * 100 - 100).toFixed(1) + '%' : '—';
+      const tags = [];
+      if (isNew) tags.push('<span class="chip chip-mid">' + t('rentTrend.newProj') + '</span>');
+      if (pre) tags.push('<span class="chip">' + t('rentTrend.preIndex') + '</span>');
+      if (s.est) tags.push('<span class="chip">' + t('rentTrend.estTag') + '</span>');
+      const city = it ? (zh ? it.cityZh : it.cityEn) : '';
+      return `<tr>
+        <td data-label="${t('rentTrend.project')}"><b>${it ? (zh ? it.nameZh : it.nameEn) : p.nameEn}</b></td>
+        <td data-label="${t('rents.city')}" class="td-muted">${city}</td>
+        <td data-label="${t('rentTrend.launch')}">${p.launchLabel}</td>
+        <td data-label="${t('rents.unit')}">${zh ? p.typeZh : p.typeEn}</td>
+        <td data-label="${t('rentTrend.rentLaunch')}" class="td-muted">${isNew ? '—' : rentRange(rentLaunch)}</td>
+        <td data-label="${t('rents.rent')}"><b>${rentRange(row.rentVnd)}</b></td>
+        <td data-label="${t('rentTrend.growth')}"><span class="rt-growth${isNew ? '' : ' up'}">${growth}</span></td>
+        <td data-label="${t('rentTrend.cagr')}" class="td-muted">${cagr}</td>
+        <td data-label="${t('rentTrend.basis')}" class="td-muted">${rtName(s)}${tags.length ? '<div class="tag-row">' + tags.join('') + '</div>' : ''}</td>
+      </tr>`;
+    }).filter(Boolean);
+    const tb = document.getElementById('rent-trend-body');
+    if (tb) tb.innerHTML = rows.join('');
+
+    /* --- 逐年同比 --- */
+    const yoyBox = document.getElementById('rent-trend-yoy');
+    if (yoyBox) {
+      const mk = s => {
+        const out = [];
+        for (let i = 1; i < s.values.length; i++) {
+          const g = (s.values[i] / s.values[i - 1] - 1) * 100;
+          out.push('<span class="rt-chip"><b>' + R.years[i] + '</b> ' + (g >= 0 ? '+' : '') + g.toFixed(1) + '%</span>');
+        }
+        return '<div class="rt-yoy-row"><span class="rt-yoy-name">' + rtName(s) + '</span>' + out.join('') + '</div>';
+      };
+      const a = rtSeries('hcmcAvg'), h = rtSeries('hanoi');
+      yoyBox.innerHTML = '<div class="rt-yoy-title">' + t('rentTrend.yoyTitle') + '</div>'
+        + (a ? mk(a) : '') + (h ? mk(h) : '');
+    }
+
+    /* --- 逐年事件 --- */
+    const evBox = document.getElementById('rent-trend-events');
+    if (evBox) evBox.innerHTML = R.events.map(e =>
+      '<div class="rt-event"><span class="rt-year">' + e.year + '</span><span class="td-muted">'
+      + (lang === 'vi' ? (e.textVi || e.textEn) : zh ? e.textZh : e.textEn) + '</span></div>').join('');
+
+    const bsBox = document.getElementById('rent-trend-basis');
+    if (bsBox) bsBox.textContent = t('rentTrend.basisHint') + '：'
+      + (lang === 'vi' ? R.basisVi : zh ? R.basisZh : R.basisEn)
+      + ' · ' + (zh ? R.asOfZh : R.asOfEn);
+
+    renderRentTrendChart();
+  }
+  function renderRentTrendChart() {
+    const R = D.rentTrend;
+    if (!R || !window.Chart) return;
+    const cv = document.getElementById('chart-rent-index');
+    if (!cv) return;
+    if (charts.rentIndex) { charts.rentIndex.destroy(); delete charts.rentIndex; }
+    const show = ['d1', 'thuThiem', 'thaoDien', 'd7', 'hanoi'];
+    const datasets = show.map(k => rtSeries(k)).filter(Boolean).map(s => ({
+      label: rtName(s),
+      data: s.values,
+      borderColor: PALETTE[s.color] || PALETTE.blue,
+      backgroundColor: (PALETTE[s.color] || PALETTE.blue) + '1a',
+      tension: 0.3, borderWidth: s.est ? 2 : 3, borderDash: s.est ? [6, 4] : [],
+      pointRadius: 3, pointHitRadius: 12, fill: false
+    }));
+    charts.rentIndex = new Chart(cv, {
+      type: 'line',
+      data: { labels: R.years.map(String), datasets: datasets },
+      options: Object.assign({}, baseOpts(), {
+        scales: {
+          x: { grid: { display: false } },
+          y: { title: { display: true, text: lang === 'zh' ? R.unitZh : R.unitEn }, grid: { color: 'rgba(128,128,128,0.12)' } }
+        },
+        plugins: { legend: { position: 'top', labels: { usePointStyle: true, boxWidth: 8 } } }
+      })
+    });
   }
   function applyRentCcy() {
     document.querySelectorAll('.ccy-btn').forEach(b => b.classList.toggle('active', b.dataset.ccy === rentCcy));
@@ -1530,6 +1657,10 @@
     // 十年房价 + 时间波动轴
     buildPrice10Chart();
     buildTimelineChart();
+
+    // 房贷利率月度曲线 + 租金指数
+    buildLoanTrendChart();
+    renderRentTrendChart();
 
     // GDP
     buildMacroCharts();
@@ -1952,6 +2083,8 @@
         document.getElementById('main-scroll').scrollTop = 0;
         document.body.classList.remove('nav-open');
         if (target === 'map') initMap();
+        // 切到某区块时强制重算图表尺寸：命中隐藏区块中创建的 Chart（宽度曾为 0）
+        setTimeout(() => { Object.keys(charts).forEach(k => { const c = charts[k]; if (c && typeof c.resize === 'function') c.resize(); }); }, 60);
       });
     });
   }

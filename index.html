@@ -412,6 +412,29 @@
           <p class="note-text" id="rents-yield-basis" style="margin-top:12px"></p>
           <p class="note-text" id="rents-note"></p>
         </div>
+
+        <div class="card">
+          <div class="rent-head">
+            <h3 data-i18n="rentTrend.title">开盘至今租金涨幅（估算）</h3>
+            <div class="td-muted rt-sub" data-i18n="rentTrend.sub"></div>
+          </div>
+          <div class="chart-box"><canvas id="chart-rent-index"></canvas></div>
+          <div class="rt-yoy" id="rent-trend-yoy"></div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr>
+                <th data-i18n="rentTrend.project">楼盘</th><th data-i18n="rents.city">城市</th>
+                <th data-i18n="rentTrend.launch">开盘</th><th data-i18n="rents.unit">房型</th>
+                <th data-i18n="rentTrend.rentLaunch">开盘时月租（估算）</th><th data-i18n="rents.rent">现月租</th>
+                <th data-i18n="rentTrend.growth">累计涨幅</th><th data-i18n="rentTrend.cagr">年化</th>
+                <th data-i18n="rentTrend.basis">口径</th>
+              </tr></thead>
+              <tbody id="rent-trend-body"></tbody>
+            </table>
+          </div>
+          <div class="rt-events" id="rent-trend-events"></div>
+          <p class="note-text" id="rent-trend-basis"></p>
+        </div>
       </section>
 
       <!-- 09 新盘 -->
