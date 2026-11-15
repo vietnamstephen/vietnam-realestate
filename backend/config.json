@@ -1,0 +1,58 @@
+{
+  "timezone": "Asia/Ho_Chi_Minh",
+  "run_hour": 5,
+  "run_minute": 0,
+  "top_n": 12,
+  "news_max": 80,
+  "data_file": "../js/data.js",
+  "state_dir": "state",
+  "log_dir": "logs",
+  "backup_dir": "backups",
+  "node_bin": "",
+  "llm": {
+    "provider": "none",
+    "ollama_url": "",
+    "ollama_model": "",
+    "openai_base_url": "",
+    "openai_api_key_env": "",
+    "openai_model": "",
+    "timeout": 60
+  },
+  "feeds": [
+    {
+      "name": "Google News VI · Bất động sản",
+      "lang": "vi",
+      "url": "https://news.google.com/rss/search?q=b%E1%BA%A5t+%C4%91%E1%BB%99ng+s%E1%BA%A3n&hl=vi&gl=VN&ceid=VN:vi"
+    },
+    {
+      "name": "Google News VI · Nhà đất",
+      "lang": "vi",
+      "url": "https://news.google.com/rss/search?q=nh%C3%A0+%C4%91%E1%BA%A5t&hl=vi&gl=VN&ceid=VN:vi"
+    },
+    {
+      "name": "Google News VI · Chung cư",
+      "lang": "vi",
+      "url": "https://news.google.com/rss/search?q=chung+c%C6%B0&hl=vi&gl=VN&ceid=VN:vi"
+    },
+    {
+      "name": "VnExpress · Bất động sản",
+      "lang": "vi",
+      "url": "https://vnexpress.net/rss/bat-dong-san.rss"
+    },
+    {
+      "name": "CafeF · Bất động sản",
+      "lang": "vi",
+      "url": "https://cafef.vn/bat-dong-san.rss"
+    },
+    {
+      "name": "Google News EN · Vietnam property",
+      "lang": "en",
+      "url": "https://news.google.com/rss/search?q=Vietnam+real+estate&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News ZH · 越南 房地产",
+      "lang": "zh",
+      "url": "https://news.google.com/rss/search?q=%E8%B6%8A%E5%8D%97+%E6%88%BF%E5%9C%B0%E4%BA%A7&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    }
+  ]
+}

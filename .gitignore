@@ -1,0 +1,7 @@
+backend/logs/
+backend/backups/
+backend/state/
+backend/__pycache__/
+**/__pycache__/
+*.pyc
+js/data.js.tmp

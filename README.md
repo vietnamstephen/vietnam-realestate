@@ -14,8 +14,13 @@
 | `js/data.js` | 数据，字段 `lastUpdatedAt` 标记更新时间 |
 | `js/app.js` | 渲染逻辑 |
 
-数据由本地定时任务每日更新后推送，本仓库仅托管静态文件。
+数据由 GitHub Actions 每日 05:00（Asia/Saigon，即 22:00 UTC）自动抓取并推送，不调用模型。
 
-同步脚本 `sync_from_source.sh`：把源项目（`~/WorkBuddy/2026-10-06-22-23-12/vietnam-realestate/`）的
-`index.html`、`css/style.css`、`js/data.js`、`js/app.js` 复制进来，有变更才 commit + push，
-无变更输出 `NO_CHANGE` 并退出 0。
+- 工作流：`.github/workflows/daily-update.yml`（也可手动 `workflow_dispatch`）
+- 脚本：`backend/updater.py --no-llm` 抓取 RSS，更新 `hotTopics`、`newsFeed` 与 `meta` 时间戳
+- 周一另写一份模板化周度统计：`reviews/weekly-YYYY-MM-DD.md`，并在 `newsFeed` 顶部加一条「复盘 / Weekly」
+- 不更新房价、政策、利率、汇率、新盘等需检索或模型撰写的字段
+
+本地同步脚本 `sync_from_source.sh` 仍可手动把源项目（`~/WorkBuddy/2026-10-06-22-23-12/vietnam-realestate/`）的
+`index.html`、`css/style.css`、`js/data.js`、`js/app.js` 复制进来并推送。日常更新已改走 Actions；
+再跑该脚本可能用本机较旧的 `data.js` 覆盖 Actions 的结果，请谨慎。
