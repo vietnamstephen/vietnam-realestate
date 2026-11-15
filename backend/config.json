@@ -54,5 +54,22 @@
       "lang": "zh",
       "url": "https://news.google.com/rss/search?q=%E8%B6%8A%E5%8D%97+%E6%88%BF%E5%9C%B0%E4%BA%A7&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
     }
-  ]
+  ],
+  "ai_enrichment": {
+    "local_only": true,
+    "note": "AI research/polish/narrative stays on the Mac run.sh path, never GitHub Actions. Do not put TOKENHUB_API_KEY in repo secrets.",
+    "tokenhub": {
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "models": [
+        "deepseek-v4.1-flash",
+        "hy4"
+      ],
+      "api_key_env": "TOKENHUB_API_KEY",
+      "api_key_file_env": "TOKENHUB_KEY_FILE",
+      "api_key_file": "~/.config/tokenhub/api_key",
+      "timeout_sec": 180,
+      "max_tokens": 4096,
+      "base_url_note": "Guangzhou official: https://tokenhub.tencentmaas.com/v1 (https://cloud.tencent.com/document/product/1823/130078). Singapore official: https://tokenhub-intl.tencentcloudmaas.com/v1. API keys are not interchangeable across sites (error 401002)."
+    }
+  }
 }

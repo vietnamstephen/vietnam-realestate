@@ -24,3 +24,6 @@
 本地同步脚本 `sync_from_source.sh` 仍可手动把源项目（`~/WorkBuddy/2026-10-06-22-23-12/vietnam-realestate/`）的
 `index.html`、`css/style.css`、`js/data.js`、`js/app.js` 复制进来并推送。日常更新已改走 Actions；
 再跑该脚本可能用本机较旧的 `data.js` 覆盖 Actions 的结果，请谨慎。
+
+本机（非 Actions）若要做研究字段、中文摘要润色或撰写式复盘，走 `backend/ai_enrich.py`：Gemini CLI → TokenHub `deepseek-v4.1-flash` → TokenHub `hy4`。不调用付费 DeepSeek API，不用 GitHub secrets。TokenHub 密钥只在运行时从本机读取，不要写进仓库。
+
